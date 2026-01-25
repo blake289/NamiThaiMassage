@@ -117,30 +117,32 @@ export default function Header() {
                         </button>
 
                         {isInfoOpen && (
-                            <div className={styles.dropdown}>
-                                <div className={styles.dropdownSection}>
-                                    <h4 className={styles.dropdownHeading}>Massage Types</h4>
-                                    {infoLinks.massageTypes.map((link) => (
-                                        <Link key={link.href} href={link.href} className={styles.dropdownLink} onClick={() => setIsInfoOpen(false)}>
-                                            {link.label}
-                                        </Link>
-                                    ))}
-                                </div>
-                                <div className={styles.dropdownSection}>
-                                    <h4 className={styles.dropdownHeading}>Who We Help</h4>
-                                    {infoLinks.whoWeHelp.map((link) => (
-                                        <Link key={link.href} href={link.href} className={styles.dropdownLink} onClick={() => setIsInfoOpen(false)}>
-                                            {link.label}
-                                        </Link>
-                                    ))}
-                                </div>
-                                <div className={styles.dropdownSection}>
-                                    <h4 className={styles.dropdownHeading}>Locations We Serve</h4>
-                                    {infoLinks.locations.map((link) => (
-                                        <Link key={link.href} href={link.href} className={styles.dropdownLink} onClick={() => setIsInfoOpen(false)}>
-                                            {link.label}
-                                        </Link>
-                                    ))}
+                            <div className={styles.dropdownWrapper}>
+                                <div className={styles.dropdown}>
+                                    <div className={styles.dropdownSection}>
+                                        <h4 className={styles.dropdownHeading}>Massage Types</h4>
+                                        {infoLinks.massageTypes.map((link) => (
+                                            <Link key={link.href} href={link.href} className={styles.dropdownLink} onClick={() => setIsInfoOpen(false)}>
+                                                {link.label}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                    <div className={styles.dropdownSection}>
+                                        <h4 className={styles.dropdownHeading}>Who We Help</h4>
+                                        {infoLinks.whoWeHelp.map((link) => (
+                                            <Link key={link.href} href={link.href} className={styles.dropdownLink} onClick={() => setIsInfoOpen(false)}>
+                                                {link.label}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                    <div className={styles.dropdownSection}>
+                                        <h4 className={styles.dropdownHeading}>Locations We Serve</h4>
+                                        {infoLinks.locations.map((link) => (
+                                            <Link key={link.href} href={link.href} className={styles.dropdownLink} onClick={() => setIsInfoOpen(false)}>
+                                                {link.label}
+                                            </Link>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         )}
