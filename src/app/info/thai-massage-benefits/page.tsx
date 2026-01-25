@@ -1,16 +1,63 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import styles from './page.module.css';
+import styles from '../page.module.css';
 
 export const metadata: Metadata = {
     title: 'Thai Massage Benefits | Health & Wellness Guide | Nami Thai Massage',
     description: 'Discover the incredible health benefits of traditional Thai massage in San Diego. Learn how Thai massage therapy relieves pain, improves flexibility, reduces stress, and promotes wellness at Nami Thai Massage in North Park.',
     keywords: 'Thai massage benefits, Thai massage San Diego, traditional Thai massage, Thai yoga massage, Sen energy lines, Thai massage therapy North Park, massage health benefits, flexibility improvement, stress relief massage',
+    alternates: {
+        canonical: 'https://namithaimassage.com/info/thai-massage-benefits',
+    },
+    openGraph: {
+        title: 'Thai Massage Benefits | Health & Wellness Guide',
+        description: 'Discover the health benefits of traditional Thai massage: pain relief, flexibility, stress reduction, and more.',
+        url: 'https://namithaimassage.com/info/thai-massage-benefits',
+        siteName: 'Nami Thai Massage',
+        locale: 'en_US',
+        type: 'article',
+        images: [
+            {
+                url: 'https://namithaimassage.com/images/thai-massage-new.png',
+                width: 1200,
+                height: 630,
+                alt: 'Thai Massage Benefits and Techniques at Nami Thai Massage San Diego',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Thai Massage Benefits | Nami Thai Massage',
+        description: 'Discover the health benefits of traditional Thai massage in San Diego.',
+        images: ['https://namithaimassage.com/images/thai-massage-new.png'],
+    },
+};
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://namithaimassage.com" },
+        { "@type": "ListItem", position: 2, name: "Services", item: "https://namithaimassage.com/services" },
+        { "@type": "ListItem", position: 3, name: "Thai Massage Benefits", item: "https://namithaimassage.com/info/thai-massage-benefits" },
+    ],
+};
+
+const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Thai Massage",
+    description: "Traditional Thai massage combining acupressure, yoga-like stretching, and energy work to improve flexibility, relieve pain, reduce stress, and promote total body wellness.",
+    provider: { "@type": "LocalBusiness", "@id": "https://namithaimassage.com/#business", name: "Nami Thai Massage" },
+    areaServed: { "@type": "City", name: "San Diego" },
+    serviceType: "Thai Massage Therapy",
 };
 
 export default function ThaiMassageBenefitsPage() {
     return (
         <main className={styles.infoPage}>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
             <div className={styles.container}>
                 {/* Breadcrumb */}
                 <nav className={styles.breadcrumb}>
@@ -163,8 +210,19 @@ export default function ThaiMassageBenefitsPage() {
                         <div className={styles.relatedLinks}>
                             <Link href="/info/deep-tissue-massage" className={styles.relatedLink}>Deep Tissue Massage</Link>
                             <Link href="/info/sports-massage" className={styles.relatedLink}>Sports Massage</Link>
-                            <Link href="/info/massage-for-athletes" className={styles.relatedLink}>Massage for Athletes</Link>
-                            <Link href="/info/massage-north-park" className={styles.relatedLink}>Massage in North Park</Link>
+                            <Link href="/info/swedish-massage" className={styles.relatedLink}>Swedish Massage</Link>
+                            <Link href="/info/hot-stone-massage" className={styles.relatedLink}>Hot Stone Massage</Link>
+                        </div>
+                    </div>
+
+                    <div className={styles.relatedSection}>
+                        <h3 className={styles.relatedTitle}>Serving San Diego Neighborhoods</h3>
+                        <div className={styles.relatedLinks}>
+                            <Link href="/info/massage-north-park" className={styles.relatedLink}>North Park</Link>
+                            <Link href="/info/massage-hillcrest" className={styles.relatedLink}>Hillcrest</Link>
+                            <Link href="/info/massage-university-heights" className={styles.relatedLink}>University Heights</Link>
+                            <Link href="/info/massage-normal-heights" className={styles.relatedLink}>Normal Heights</Link>
+                            <Link href="/info/massage-balboa-park" className={styles.relatedLink}>Balboa Park</Link>
                         </div>
                     </div>
                 </div>

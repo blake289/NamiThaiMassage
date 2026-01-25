@@ -6,11 +6,38 @@ export const metadata: Metadata = {
     title: 'Massage for Stress Relief San Diego | Relaxation Therapy | Nami Thai Massage',
     description: 'Escape stress and anxiety with therapeutic massage in North Park, San Diego. Expert stress relief massage helps you relax, sleep better, and restore mental clarity. Find your calm.',
     keywords: 'stress relief massage San Diego, anxiety massage North Park, relaxation massage, mental health massage, calming massage therapy, stress reduction, cortisol reduction massage, peaceful massage San Diego',
+    alternates: {
+        canonical: 'https://namithaimassage.com/info/massage-for-stress-relief',
+    },
+    openGraph: {
+        title: 'Massage for Stress Relief | Relaxation Therapy San Diego',
+        description: 'Escape stress and anxiety with therapeutic massage in North Park, San Diego. Find your calm and restore mental clarity.',
+        url: 'https://namithaimassage.com/info/massage-for-stress-relief',
+        siteName: 'Nami Thai Massage',
+        locale: 'en_US',
+        type: 'article',
+    },
+    twitter: {
+        card: 'summary',
+        title: 'Massage for Stress Relief | Relaxation Therapy',
+        description: 'Escape stress and anxiety with therapeutic massage in San Diego.',
+    },
+};
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://namithaimassage.com" },
+        { "@type": "ListItem", position: 2, name: "Helpful Info", item: "https://namithaimassage.com/services" },
+        { "@type": "ListItem", position: 3, name: "Stress Relief", item: "https://namithaimassage.com/info/massage-for-stress-relief" },
+    ],
 };
 
 export default function StressReliefMassagePage() {
     return (
         <main className={styles.infoPage}>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <div className={styles.container}>
                 <nav className={styles.breadcrumb}>
                     <Link href="/">Home</Link>

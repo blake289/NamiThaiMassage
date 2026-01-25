@@ -6,11 +6,38 @@ export const metadata: Metadata = {
     title: 'Massage for Chronic Pain San Diego | Pain Relief Therapy | Nami Thai Massage',
     description: 'Find lasting relief from chronic pain with therapeutic massage in North Park, San Diego. Expert treatment for back pain, neck pain, fibromyalgia, and persistent muscle tension. Drug-free pain management.',
     keywords: 'chronic pain massage San Diego, pain relief massage North Park, back pain treatment, fibromyalgia massage, muscle pain therapy, sciatica massage, drug-free pain relief, therapeutic massage San Diego',
+    alternates: {
+        canonical: 'https://namithaimassage.com/info/massage-for-chronic-pain',
+    },
+    openGraph: {
+        title: 'Massage for Chronic Pain | Pain Relief Therapy San Diego',
+        description: 'Find lasting relief from chronic pain with therapeutic massage in North Park, San Diego. Expert treatment for back pain, neck pain, and fibromyalgia.',
+        url: 'https://namithaimassage.com/info/massage-for-chronic-pain',
+        siteName: 'Nami Thai Massage',
+        locale: 'en_US',
+        type: 'article',
+    },
+    twitter: {
+        card: 'summary',
+        title: 'Massage for Chronic Pain | Pain Relief Therapy',
+        description: 'Find lasting relief from chronic pain with therapeutic massage in San Diego.',
+    },
+};
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://namithaimassage.com" },
+        { "@type": "ListItem", position: 2, name: "Helpful Info", item: "https://namithaimassage.com/services" },
+        { "@type": "ListItem", position: 3, name: "Chronic Pain Relief", item: "https://namithaimassage.com/info/massage-for-chronic-pain" },
+    ],
 };
 
 export default function ChronicPainMassagePage() {
     return (
         <main className={styles.infoPage}>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <div className={styles.container}>
                 <nav className={styles.breadcrumb}>
                     <Link href="/">Home</Link>

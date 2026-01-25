@@ -44,6 +44,18 @@ export default function Footer() {
                         </nav>
                     </div>
 
+                    {/* Helpful Info */}
+                    <div className={styles.navSection}>
+                        <h4 className={styles.sectionTitle}>Helpful Info</h4>
+                        <nav className={styles.nav}>
+                            <Link href="/info/thai-massage-benefits">Thai Massage Benefits</Link>
+                            <Link href="/info/massage-for-stress-relief">Stress Relief</Link>
+                            <Link href="/info/massage-north-park">North Park</Link>
+                            <Link href="/info/massage-hillcrest">Hillcrest</Link>
+                            <Link href="/info/massage-for-athletes">For Athletes</Link>
+                        </nav>
+                    </div>
+
                     {/* Contact */}
                     <div className={styles.contactSection}>
                         <h4 className={styles.sectionTitle}>Visit Us</h4>

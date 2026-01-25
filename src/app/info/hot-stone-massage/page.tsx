@@ -6,11 +6,49 @@ export const metadata: Metadata = {
     title: 'Hot Stone Massage San Diego | Heated Stone Therapy | Nami Thai Massage',
     description: 'Indulge in luxurious hot stone massage in North Park, San Diego. Warm basalt stones melt away tension, improve circulation, and promote deep relaxation. Experience the ultimate spa treatment.',
     keywords: 'hot stone massage San Diego, heated stone therapy North Park, warm stone massage, basalt stone massage, relaxation massage San Diego, luxury spa massage, muscle relaxation, therapeutic heat massage',
+    alternates: {
+        canonical: 'https://namithaimassage.com/info/hot-stone-massage',
+    },
+    openGraph: {
+        title: 'Hot Stone Massage San Diego | Luxury Therapy',
+        description: 'Indulge in luxurious hot stone massage in North Park, San Diego. Warm basalt stones melt away tension and promote deep relaxation.',
+        url: 'https://namithaimassage.com/info/hot-stone-massage',
+        siteName: 'Nami Thai Massage',
+        locale: 'en_US',
+        type: 'article',
+    },
+    twitter: {
+        card: 'summary',
+        title: 'Hot Stone Massage San Diego | Luxury Therapy',
+        description: 'Indulge in luxurious hot stone massage in North Park, San Diego.',
+    },
+};
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://namithaimassage.com" },
+        { "@type": "ListItem", position: 2, name: "Services", item: "https://namithaimassage.com/services" },
+        { "@type": "ListItem", position: 3, name: "Hot Stone Massage", item: "https://namithaimassage.com/info/hot-stone-massage" },
+    ],
+};
+
+const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Hot Stone Massage",
+    description: "Luxurious hot stone massage using smooth, heated basalt stones to melt away tension, improve circulation, and promote deep relaxation.",
+    provider: { "@type": "LocalBusiness", "@id": "https://namithaimassage.com/#business", name: "Nami Thai Massage" },
+    areaServed: { "@type": "City", name: "San Diego" },
+    serviceType: "Hot Stone Massage Therapy",
 };
 
 export default function HotStoneMassagePage() {
     return (
         <main className={styles.infoPage}>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
             <div className={styles.container}>
                 <nav className={styles.breadcrumb}>
                     <Link href="/">Home</Link>
@@ -139,8 +177,19 @@ export default function HotStoneMassagePage() {
                         <div className={styles.relatedLinks}>
                             <Link href="/info/swedish-massage" className={styles.relatedLink}>Swedish Massage</Link>
                             <Link href="/info/massage-for-stress-relief" className={styles.relatedLink}>Stress Relief</Link>
-                            <Link href="/info/massage-north-park" className={styles.relatedLink}>North Park Massage</Link>
-                            <Link href="/services" className={styles.relatedLink}>All Services</Link>
+                            <Link href="/info/deep-tissue-massage" className={styles.relatedLink}>Deep Tissue</Link>
+                            <Link href="/info/thai-massage-benefits" className={styles.relatedLink}>Thai Massage</Link>
+                        </div>
+                    </div>
+
+                    <div className={styles.relatedSection}>
+                        <h3 className={styles.relatedTitle}>Serving San Diego Neighborhoods</h3>
+                        <div className={styles.relatedLinks}>
+                            <Link href="/info/massage-north-park" className={styles.relatedLink}>North Park</Link>
+                            <Link href="/info/massage-hillcrest" className={styles.relatedLink}>Hillcrest</Link>
+                            <Link href="/info/massage-university-heights" className={styles.relatedLink}>University Heights</Link>
+                            <Link href="/info/massage-normal-heights" className={styles.relatedLink}>Normal Heights</Link>
+                            <Link href="/info/massage-balboa-park" className={styles.relatedLink}>Balboa Park</Link>
                         </div>
                     </div>
                 </div>

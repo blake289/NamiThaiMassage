@@ -9,6 +9,19 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "https://namithaimassage.com/contact",
     },
+    openGraph: {
+        title: "Contact & Book | Nami Thai Massage San Diego",
+        description: "Book your massage appointment in North Park, San Diego. Online booking available 24/7. View location, hours, and parking info.",
+        url: "https://namithaimassage.com/contact",
+        siteName: "Nami Thai Massage",
+        locale: "en_US",
+        type: "website",
+    },
+    twitter: {
+        card: "summary",
+        title: "Contact & Book | Nami Thai Massage San Diego",
+        description: "Book your massage appointment in North Park, San Diego. Online booking available 24/7.",
+    },
 };
 
 // FAQ data

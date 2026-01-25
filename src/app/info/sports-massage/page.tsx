@@ -6,11 +6,58 @@ export const metadata: Metadata = {
     title: 'Sports Massage San Diego | Athletic Recovery Therapy | Nami Thai Massage',
     description: 'Professional sports massage in North Park, San Diego for athletes and active individuals. Enhance performance, speed recovery, prevent injuries, and optimize your training with expert sports massage therapy.',
     keywords: 'sports massage San Diego, athletic massage North Park, muscle recovery massage, injury prevention massage, performance massage, runner massage San Diego, athlete massage therapy, post-workout massage',
+    alternates: {
+        canonical: 'https://namithaimassage.com/info/sports-massage',
+    },
+    openGraph: {
+        title: 'Sports Massage San Diego | Athletic Recovery | Nami Thai Massage',
+        description: 'Professional sports massage for athletes in North Park. Enhance performance, speed recovery, prevent injuries.',
+        url: 'https://namithaimassage.com/info/sports-massage',
+        siteName: 'Nami Thai Massage',
+        locale: 'en_US',
+        type: 'website',
+        images: [
+            {
+                url: 'https://namithaimassage.com/images/sports-massage-new.png',
+                width: 1200,
+                height: 630,
+                alt: 'Sports Massage Therapy for Athletes at Nami Thai Massage San Diego',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Sports Massage San Diego | Nami Thai Massage',
+        description: 'Professional sports massage for athletes in North Park, San Diego.',
+        images: ['https://namithaimassage.com/images/sports-massage-new.png'],
+    },
+};
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://namithaimassage.com" },
+        { "@type": "ListItem", position: 2, name: "Services", item: "https://namithaimassage.com/services" },
+        { "@type": "ListItem", position: 3, name: "Sports Massage", item: "https://namithaimassage.com/info/sports-massage" },
+    ],
+};
+
+const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Sports Massage",
+    description: "Targeted massage therapy for athletes and active individuals. Enhance performance, speed recovery, and prevent injuries with expert sports massage techniques.",
+    provider: { "@type": "LocalBusiness", "@id": "https://namithaimassage.com/#business", name: "Nami Thai Massage" },
+    areaServed: { "@type": "City", name: "San Diego" },
+    serviceType: "Sports Massage Therapy",
 };
 
 export default function SportsMassagePage() {
     return (
         <main className={styles.infoPage}>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
             <div className={styles.container}>
                 <nav className={styles.breadcrumb}>
                     <Link href="/">Home</Link>
@@ -154,7 +201,18 @@ export default function SportsMassagePage() {
                             <Link href="/info/deep-tissue-massage" className={styles.relatedLink}>Deep Tissue Massage</Link>
                             <Link href="/info/massage-for-athletes" className={styles.relatedLink}>Massage for Athletes</Link>
                             <Link href="/info/thai-massage-benefits" className={styles.relatedLink}>Thai Massage</Link>
-                            <Link href="/info/massage-balboa-park" className={styles.relatedLink}>Near Balboa Park</Link>
+                            <Link href="/info/swedish-massage" className={styles.relatedLink}>Swedish Massage</Link>
+                        </div>
+                    </div>
+
+                    <div className={styles.relatedSection}>
+                        <h3 className={styles.relatedTitle}>Serving San Diego Neighborhoods</h3>
+                        <div className={styles.relatedLinks}>
+                            <Link href="/info/massage-north-park" className={styles.relatedLink}>North Park</Link>
+                            <Link href="/info/massage-hillcrest" className={styles.relatedLink}>Hillcrest</Link>
+                            <Link href="/info/massage-university-heights" className={styles.relatedLink}>University Heights</Link>
+                            <Link href="/info/massage-normal-heights" className={styles.relatedLink}>Normal Heights</Link>
+                            <Link href="/info/massage-balboa-park" className={styles.relatedLink}>Balboa Park</Link>
                         </div>
                     </div>
                 </div>

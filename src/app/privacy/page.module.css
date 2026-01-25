@@ -1,0 +1,107 @@
+.page {
+    min-height: 100vh;
+}
+
+/* Hero */
+.hero {
+    padding: var(--space-4xl) 0 var(--space-2xl);
+    background: var(--gradient-dark);
+    text-align: center;
+}
+
+.heroTitle {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 400;
+    color: var(--color-cream);
+    margin-bottom: var(--space-lg);
+}
+
+.goldText {
+    background: linear-gradient(135deg, var(--color-gold-dark) 0%, var(--color-gold) 30%, var(--color-gold-pale) 60%, var(--color-gold) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.goldLine {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-gold-dark), var(--color-gold), var(--color-gold-pale));
+    margin: 0 auto;
+}
+
+/* Content */
+.content {
+    padding: var(--space-3xl) 0 var(--space-4xl);
+    background-color: var(--color-cream);
+}
+
+.contentWrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.lastUpdated {
+    font-size: var(--text-sm);
+    color: rgba(44, 62, 45, 0.6);
+    margin-bottom: var(--space-2xl);
+}
+
+.sectionTitle {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    font-weight: 500;
+    color: var(--color-forest-dark);
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-md);
+}
+
+.sectionTitle:first-of-type {
+    margin-top: 0;
+}
+
+.text {
+    font-size: var(--text-base);
+    line-height: 1.8;
+    color: var(--color-text);
+    margin-bottom: var(--space-md);
+}
+
+.list {
+    list-style: disc;
+    padding-left: var(--space-xl);
+    margin-bottom: var(--space-lg);
+}
+
+.list li {
+    font-size: var(--text-base);
+    line-height: 1.8;
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+}
+
+.link {
+    color: var(--color-gold-dark);
+    text-decoration: underline;
+    transition: color var(--transition-fast);
+}
+
+.link:hover {
+    color: var(--color-forest-dark);
+}
+
+.businessInfo {
+    margin-top: var(--space-2xl);
+    padding: var(--space-lg);
+    background-color: rgba(44, 62, 45, 0.05);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--color-gold);
+}
+
+.businessInfo p {
+    font-size: var(--text-base);
+    line-height: 1.8;
+    color: var(--color-text);
+    margin: 0;
+}

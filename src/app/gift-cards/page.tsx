@@ -9,6 +9,19 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "https://namithaimassage.com/gift-cards",
     },
+    openGraph: {
+        title: "Massage Gift Certificates | Nami Thai Massage",
+        description: "Give the gift of relaxation. Digital massage gift certificates for Nami Thai Massage in North Park, San Diego. Valid for any service, no expiration.",
+        url: "https://namithaimassage.com/gift-cards",
+        siteName: "Nami Thai Massage",
+        locale: "en_US",
+        type: "website",
+    },
+    twitter: {
+        card: "summary",
+        title: "Massage Gift Certificates | Nami Thai Massage",
+        description: "Give the gift of relaxation. Digital massage gift certificates valid for any service.",
+    },
 };
 
 // Product schema for gift certificate

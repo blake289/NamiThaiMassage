@@ -298,3 +298,11 @@
     background: rgba(201, 162, 39, 0.1);
     border-color: var(--color-gold);
 }
+
+/* Map Container */
+.mapContainer {
+    margin-top: var(--space-2xl);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid rgba(201, 162, 39, 0.2);
+}

@@ -6,11 +6,38 @@ export const metadata: Metadata = {
     title: 'Massage for Office Workers San Diego | Desk Job Pain Relief | Nami Thai Massage',
     description: 'Relieve neck pain, back tension, and desk job discomfort with massage therapy in North Park, San Diego. Expert treatment for office workers, remote workers, and computer professionals. End workday pain.',
     keywords: 'massage for office workers San Diego, desk job back pain relief, neck pain massage, computer worker massage, posture correction massage, work from home massage, tech neck treatment, ergonomic pain relief',
+    alternates: {
+        canonical: 'https://namithaimassage.com/info/massage-for-office-workers',
+    },
+    openGraph: {
+        title: 'Massage for Office Workers | Desk Job Pain Relief',
+        description: 'Relieve neck pain, back tension, and desk job discomfort with massage therapy in North Park, San Diego.',
+        url: 'https://namithaimassage.com/info/massage-for-office-workers',
+        siteName: 'Nami Thai Massage',
+        locale: 'en_US',
+        type: 'article',
+    },
+    twitter: {
+        card: 'summary',
+        title: 'Massage for Office Workers | Desk Job Pain Relief',
+        description: 'Relieve neck pain, back tension, and desk job discomfort in San Diego.',
+    },
+};
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://namithaimassage.com" },
+        { "@type": "ListItem", position: 2, name: "Helpful Info", item: "https://namithaimassage.com/services" },
+        { "@type": "ListItem", position: 3, name: "Massage for Office Workers", item: "https://namithaimassage.com/info/massage-for-office-workers" },
+    ],
 };
 
 export default function OfficeWorkersMassagePage() {
     return (
         <main className={styles.infoPage}>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <div className={styles.container}>
                 <nav className={styles.breadcrumb}>
                     <Link href="/">Home</Link>

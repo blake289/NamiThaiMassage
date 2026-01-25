@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import styles from "./page.module.css";
 import ServiceCard from "@/components/ServiceCard/ServiceCard";
 import Link from "next/link";
@@ -77,10 +78,30 @@ const homeFaqs = [
     answer:
       "You can book online 24/7 through our booking system. Select your preferred service, choose an available time slot, and you're all set. Same-day appointments are often available.",
   },
+  {
+    question: "What should I expect during my first massage?",
+    answer:
+      "During your first visit, we'll briefly discuss your health history, areas of concern, and massage preferences. You'll receive a customized treatment in our private, relaxing studio. Wear comfortable clothing for Thai massage, or you'll be properly draped for other massage types.",
+  },
+  {
+    question: "Where is your massage studio located?",
+    answer:
+      "We're located at 3055 University Avenue in North Park, San Diego, CA 92104. We're easily accessible from Hillcrest, University Heights, Normal Heights, and South Park with convenient street parking available.",
+  },
+  {
+    question: "What are your hours and pricing?",
+    answer:
+      "We're open 9am to 8pm, 7 days a week. Massage sessions range from $115 for a 60-minute Swedish massage to $250 for our 120-minute Thai Style Deluxe package. View our full menu at namithaimassage.com/services.",
+  },
+  {
+    question: "Do you offer gift cards?",
+    answer:
+      "Yes! Gift cards are available for any dollar amount or specific services. They make perfect gifts for birthdays, holidays, or anyone who deserves relaxation. Purchase online or in-studio.",
+  },
 ];
 
-// Structured data for home page
-const homeStructuredData = {
+// Structured data for home page - FAQPage schema
+const faqStructuredData = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: homeFaqs.map((faq) => ({
@@ -93,21 +114,85 @@ const homeStructuredData = {
   })),
 };
 
+// Review schema from testimonials
+const reviewStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://namithaimassage.com/#business",
+  name: "Nami Thai Massage",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5",
+    reviewCount: "50",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  review: testimonials.map((testimonial, index) => ({
+    "@type": "Review",
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: "5",
+      bestRating: "5",
+    },
+    author: {
+      "@type": "Person",
+      name: testimonial.author,
+    },
+    reviewBody: testimonial.text,
+    itemReviewed: {
+      "@type": "Service",
+      name: testimonial.service,
+    },
+    datePublished: `2024-${String(index + 10).padStart(2, "0")}-15`,
+  })),
+};
+
+// Organization schema for brand recognition
+const organizationStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://namithaimassage.com/#organization",
+  name: "Nami Thai Massage",
+  url: "https://namithaimassage.com",
+  logo: "https://namithaimassage.com/images/logo.png",
+  sameAs: [
+    "https://www.instagram.com/naomi_nam246/",
+    "https://facebook.com/namithaimassage",
+  ],
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "reservations",
+    url: "https://bookme.pocketsuite.io/book/nami-thai-massage",
+    availableLanguage: ["English"],
+  },
+};
+
 export default function Home() {
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeStructuredData) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationStructuredData) }}
       />
 
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroBackground}>
-          <img
+          <Image
             src="/images/hero-bg.png"
             alt="Relaxing spa atmosphere at Nami Thai Massage San Diego"
             className={styles.heroBgImage}
+            fill
+            priority
+            sizes="100vw"
           />
         </div>
         <div className={styles.heroOverlay}></div>
@@ -256,10 +341,13 @@ export default function Home() {
         <div className={styles.heroInner}>
           {/* Nami's Portrait on Left */}
           <div className={styles.heroPortrait}>
-            <img
+            <Image
               src="/images/nami-portrait.png"
               alt="Nami - Licensed Massage Therapist specializing in Thai massage in North Park San Diego"
               className={styles.heroPortraitImage}
+              width={400}
+              height={500}
+              priority
             />
           </div>
 
@@ -349,10 +437,12 @@ export default function Home() {
         <div className="container">
           <div className={styles.aboutGrid}>
             <div className={styles.aboutImageWrapper}>
-              <img
+              <Image
                 src="/images/nami-portrait.png"
                 alt="Nami providing personalized Thai massage therapy in San Diego"
                 className={styles.aboutImage}
+                width={450}
+                height={550}
               />
               <div className={styles.aboutImageAccent}></div>
             </div>

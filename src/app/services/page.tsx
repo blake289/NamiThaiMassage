@@ -10,6 +10,28 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "https://namithaimassage.com/services",
     },
+    openGraph: {
+        title: 'Massage Services & Pricing | Nami Thai Massage San Diego',
+        description: 'Thai massage, deep tissue, Swedish, sports massage & more. Pricing from $70-$215 in North Park.',
+        url: 'https://namithaimassage.com/services',
+        siteName: 'Nami Thai Massage',
+        locale: 'en_US',
+        type: 'website',
+        images: [
+            {
+                url: 'https://namithaimassage.com/images/nami-portrait.png',
+                width: 1200,
+                height: 630,
+                alt: 'Massage Services at Nami Thai Massage San Diego',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Massage Services & Pricing | Nami Thai Massage',
+        description: 'Thai massage, deep tissue, Swedish, sports massage & more in North Park San Diego.',
+        images: ['https://namithaimassage.com/images/nami-portrait.png'],
+    },
 };
 
 // All massage services with SEO-enhanced descriptions

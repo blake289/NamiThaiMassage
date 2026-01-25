@@ -6,11 +6,38 @@ export const metadata: Metadata = {
     title: 'Massage for Seniors San Diego | Elderly Massage Therapy | Nami Thai Massage',
     description: 'Gentle, therapeutic massage for seniors in North Park, San Diego. Relieve arthritis pain, improve circulation, enhance mobility, and promote well-being for older adults. Compassionate elderly care.',
     keywords: 'massage for seniors San Diego, elderly massage North Park, geriatric massage therapy, arthritis massage, senior pain relief, gentle massage older adults, circulation improvement elderly, mobility massage',
+    alternates: {
+        canonical: 'https://namithaimassage.com/info/massage-for-seniors',
+    },
+    openGraph: {
+        title: 'Massage for Seniors | Elderly Massage Therapy San Diego',
+        description: 'Gentle, therapeutic massage for seniors in North Park, San Diego. Relieve arthritis pain and improve circulation.',
+        url: 'https://namithaimassage.com/info/massage-for-seniors',
+        siteName: 'Nami Thai Massage',
+        locale: 'en_US',
+        type: 'article',
+    },
+    twitter: {
+        card: 'summary',
+        title: 'Massage for Seniors | Elderly Massage Therapy',
+        description: 'Gentle, therapeutic massage for seniors in San Diego.',
+    },
+};
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://namithaimassage.com" },
+        { "@type": "ListItem", position: 2, name: "Helpful Info", item: "https://namithaimassage.com/services" },
+        { "@type": "ListItem", position: 3, name: "Massage for Seniors", item: "https://namithaimassage.com/info/massage-for-seniors" },
+    ],
 };
 
 export default function SeniorsMassagePage() {
     return (
         <main className={styles.infoPage}>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <div className={styles.container}>
                 <nav className={styles.breadcrumb}>
                     <Link href="/">Home</Link>

@@ -6,11 +6,49 @@ export const metadata: Metadata = {
     title: 'Swedish Massage San Diego | Relaxation Therapy | Nami Thai Massage',
     description: 'Experience the ultimate relaxation with Swedish massage in North Park, San Diego. Gentle, flowing strokes relieve stress, improve circulation, and promote total body wellness. Book your relaxation massage today.',
     keywords: 'Swedish massage San Diego, relaxation massage North Park, stress relief massage, gentle massage therapy, wellness massage San Diego, calming massage, circulation improvement, relaxation therapy',
+    alternates: {
+        canonical: 'https://namithaimassage.com/info/swedish-massage',
+    },
+    openGraph: {
+        title: 'Swedish Massage San Diego | Relaxation Therapy',
+        description: 'Experience ultimate relaxation with Swedish massage in North Park, San Diego. Gentle, flowing strokes relieve stress and improve circulation.',
+        url: 'https://namithaimassage.com/info/swedish-massage',
+        siteName: 'Nami Thai Massage',
+        locale: 'en_US',
+        type: 'article',
+    },
+    twitter: {
+        card: 'summary',
+        title: 'Swedish Massage San Diego | Relaxation Therapy',
+        description: 'Experience ultimate relaxation with Swedish massage in North Park, San Diego.',
+    },
+};
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://namithaimassage.com" },
+        { "@type": "ListItem", position: 2, name: "Services", item: "https://namithaimassage.com/services" },
+        { "@type": "ListItem", position: 3, name: "Swedish Massage", item: "https://namithaimassage.com/info/swedish-massage" },
+    ],
+};
+
+const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Swedish Massage",
+    description: "Classic relaxation massage using gentle, flowing strokes to relieve stress, improve circulation, and promote total body wellness.",
+    provider: { "@type": "LocalBusiness", "@id": "https://namithaimassage.com/#business", name: "Nami Thai Massage" },
+    areaServed: { "@type": "City", name: "San Diego" },
+    serviceType: "Swedish Massage Therapy",
 };
 
 export default function SwedishMassagePage() {
     return (
         <main className={styles.infoPage}>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
             <div className={styles.container}>
                 <nav className={styles.breadcrumb}>
                     <Link href="/">Home</Link>
@@ -141,7 +179,18 @@ export default function SwedishMassagePage() {
                             <Link href="/info/hot-stone-massage" className={styles.relatedLink}>Hot Stone Massage</Link>
                             <Link href="/info/massage-for-stress-relief" className={styles.relatedLink}>Stress Relief</Link>
                             <Link href="/info/thai-massage-benefits" className={styles.relatedLink}>Thai Massage</Link>
-                            <Link href="/info/massage-hillcrest" className={styles.relatedLink}>Massage in Hillcrest</Link>
+                            <Link href="/info/deep-tissue-massage" className={styles.relatedLink}>Deep Tissue</Link>
+                        </div>
+                    </div>
+
+                    <div className={styles.relatedSection}>
+                        <h3 className={styles.relatedTitle}>Serving San Diego Neighborhoods</h3>
+                        <div className={styles.relatedLinks}>
+                            <Link href="/info/massage-north-park" className={styles.relatedLink}>North Park</Link>
+                            <Link href="/info/massage-hillcrest" className={styles.relatedLink}>Hillcrest</Link>
+                            <Link href="/info/massage-university-heights" className={styles.relatedLink}>University Heights</Link>
+                            <Link href="/info/massage-normal-heights" className={styles.relatedLink}>Normal Heights</Link>
+                            <Link href="/info/massage-balboa-park" className={styles.relatedLink}>Balboa Park</Link>
                         </div>
                     </div>
                 </div>

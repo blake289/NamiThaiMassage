@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 
@@ -8,6 +9,19 @@ export const metadata: Metadata = {
         "Meet Nami, your licensed massage therapist in North Park, San Diego. Specializing in traditional Thai massage combined with sports therapy for personalized healing.",
     alternates: {
         canonical: "https://namithaimassage.com/about",
+    },
+    openGraph: {
+        title: "About Nami | Licensed Massage Therapist San Diego",
+        description: "Meet Nami, your licensed massage therapist in North Park, San Diego. Specializing in traditional Thai massage combined with sports therapy.",
+        url: "https://namithaimassage.com/about",
+        siteName: "Nami Thai Massage",
+        locale: "en_US",
+        type: "profile",
+    },
+    twitter: {
+        card: "summary",
+        title: "About Nami | Licensed Massage Therapist San Diego",
+        description: "Meet Nami, your licensed massage therapist in North Park, San Diego.",
     },
 };
 
@@ -64,10 +78,13 @@ export default function AboutPage() {
                 <div className="container">
                     <div className={styles.storyGrid}>
                         <div className={styles.storyImageWrapper}>
-                            <img
+                            <Image
                                 src="/images/nami-portrait.png"
                                 alt="Nami - Licensed Massage Therapist specializing in Thai massage and sports therapy in San Diego"
                                 className={styles.storyImage}
+                                width={450}
+                                height={550}
+                                priority
                             />
                             <div className={styles.imageAccent}></div>
                         </div>

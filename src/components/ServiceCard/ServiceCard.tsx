@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './ServiceCard.module.css';
 
 interface ServiceCardProps {
@@ -19,11 +20,21 @@ export default function ServiceCard({
     bookingUrl = 'https://bookme.pocketsuite.io/book/nami-thai-massage',
     image,
 }: ServiceCardProps) {
+    // Generate SEO-friendly alt text
+    const altText = `${name} - Professional massage therapy at Nami Thai Massage San Diego`;
+
     return (
         <div className={`${styles.card} ${featured ? styles.featured : ''} ${image ? styles.hasImage : ''}`}>
             {image && (
                 <div className={styles.imageWrapper}>
-                    <img src={image} alt={name} className={styles.image} />
+                    <Image
+                        src={image}
+                        alt={altText}
+                        className={styles.image}
+                        width={400}
+                        height={300}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
                 </div>
             )}
             {featured && <span className={styles.featuredBadge}>Signature</span>}

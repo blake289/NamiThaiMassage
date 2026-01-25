@@ -1,9 +1,27 @@
 import styles from './page.module.css';
 import Link from 'next/link';
 
-export const metadata = {
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
     title: 'Book Your Session | Nami Thai Massage',
     description: 'Schedule your personalized massage session at Nami Thai Massage in North Park, San Diego. Easy online booking with flexible appointment times.',
+    alternates: {
+        canonical: 'https://namithaimassage.com/book',
+    },
+    openGraph: {
+        title: 'Book Your Massage Session | Nami Thai Massage',
+        description: 'Schedule your personalized massage session in North Park, San Diego. Easy online booking available 24/7.',
+        url: 'https://namithaimassage.com/book',
+        siteName: 'Nami Thai Massage',
+        locale: 'en_US',
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary',
+        title: 'Book Your Massage Session | Nami Thai Massage',
+        description: 'Schedule your personalized massage session in North Park, San Diego.',
+    },
 };
 
 // Quick booking options

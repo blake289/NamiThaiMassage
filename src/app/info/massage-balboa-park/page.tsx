@@ -6,11 +6,38 @@ export const metadata: Metadata = {
     title: 'Massage Near Balboa Park San Diego | Post-Activity Recovery | Nami Thai Massage',
     description: 'Find massage therapy near Balboa Park in San Diego. Perfect for runners, hikers, tennis players, and zoo visitors. Recover from Balboa Park activities at Nami Thai Massage in North Park.',
     keywords: 'massage near Balboa Park, Balboa Park massage San Diego, runner massage San Diego, post-hiking massage, San Diego Zoo massage, tennis massage, Morley Field massage, sports massage near Balboa Park',
+    alternates: {
+        canonical: 'https://namithaimassage.com/info/massage-balboa-park',
+    },
+    openGraph: {
+        title: 'Massage Near Balboa Park San Diego | Post-Activity Recovery',
+        description: 'Find massage therapy near Balboa Park in San Diego. Perfect for runners, hikers, and zoo visitors.',
+        url: 'https://namithaimassage.com/info/massage-balboa-park',
+        siteName: 'Nami Thai Massage',
+        locale: 'en_US',
+        type: 'article',
+    },
+    twitter: {
+        card: 'summary',
+        title: 'Massage Near Balboa Park San Diego',
+        description: 'Find massage therapy near Balboa Park in San Diego.',
+    },
+};
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://namithaimassage.com" },
+        { "@type": "ListItem", position: 2, name: "Locations", item: "https://namithaimassage.com/contact" },
+        { "@type": "ListItem", position: 3, name: "Balboa Park Area", item: "https://namithaimassage.com/info/massage-balboa-park" },
+    ],
 };
 
 export default function BalboaParkMassagePage() {
     return (
         <main className={styles.infoPage}>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <div className={styles.container}>
                 <nav className={styles.breadcrumb}>
                     <Link href="/">Home</Link>
@@ -124,6 +151,19 @@ export default function BalboaParkMassagePage() {
                         </Link>
                     </div>
 
+                    <div className={styles.mapContainer}>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.5!2d-117.1277!3d32.7489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9551e1c5a1d1d%3A0x0!2s3055%20University%20Ave%2C%20San%20Diego%2C%20CA!5e0!3m2!1sen!2sus!4v1706139200000!5m2!1sen!2sus"
+                            width="100%"
+                            height="300"
+                            style={{ border: 0, borderRadius: '12px' }}
+                            allowFullScreen
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            title="Nami Thai Massage - Near Balboa Park, San Diego"
+                        />
+                    </div>
+
                     <div className={styles.ctaSection}>
                         <h2 className={styles.ctaTitle}>Complete Your Balboa Park Day</h2>
                         <p className={styles.ctaText}>
@@ -136,12 +176,23 @@ export default function BalboaParkMassagePage() {
                     </div>
 
                     <div className={styles.relatedSection}>
-                        <h3 className={styles.relatedTitle}>Related Services</h3>
+                        <h3 className={styles.relatedTitle}>Our Services</h3>
                         <div className={styles.relatedLinks}>
+                            <Link href="/info/thai-massage-benefits" className={styles.relatedLink}>Thai Massage</Link>
+                            <Link href="/info/deep-tissue-massage" className={styles.relatedLink}>Deep Tissue</Link>
                             <Link href="/info/sports-massage" className={styles.relatedLink}>Sports Massage</Link>
-                            <Link href="/info/massage-for-athletes" className={styles.relatedLink}>Athletes</Link>
+                            <Link href="/info/swedish-massage" className={styles.relatedLink}>Swedish Massage</Link>
+                            <Link href="/info/hot-stone-massage" className={styles.relatedLink}>Hot Stone</Link>
+                        </div>
+                    </div>
+
+                    <div className={styles.relatedSection}>
+                        <h3 className={styles.relatedTitle}>Nearby Areas</h3>
+                        <div className={styles.relatedLinks}>
                             <Link href="/info/massage-north-park" className={styles.relatedLink}>North Park</Link>
                             <Link href="/info/massage-hillcrest" className={styles.relatedLink}>Hillcrest</Link>
+                            <Link href="/info/massage-university-heights" className={styles.relatedLink}>University Heights</Link>
+                            <Link href="/info/massage-normal-heights" className={styles.relatedLink}>Normal Heights</Link>
                         </div>
                     </div>
                 </div>

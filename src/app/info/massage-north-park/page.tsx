@@ -6,11 +6,47 @@ export const metadata: Metadata = {
     title: 'Massage in North Park San Diego | Nami Thai Massage | University Ave',
     description: 'Find the best massage therapy in North Park, San Diego at Nami Thai Massage on University Avenue. Thai massage, deep tissue, Swedish, and more. Book your North Park massage today.',
     keywords: 'massage North Park San Diego, North Park massage therapy, massage University Avenue, Thai massage North Park, deep tissue North Park, spa North Park San Diego, best massage North Park, massage 92104',
+    alternates: {
+        canonical: 'https://namithaimassage.com/info/massage-north-park',
+    },
+    openGraph: {
+        title: 'Massage in North Park San Diego | Nami Thai Massage',
+        description: 'Professional massage therapy on University Avenue in North Park. Thai massage, deep tissue, Swedish, and more.',
+        url: 'https://namithaimassage.com/info/massage-north-park',
+        siteName: 'Nami Thai Massage',
+        locale: 'en_US',
+        type: 'website',
+        images: [
+            {
+                url: 'https://namithaimassage.com/images/nami-portrait.png',
+                width: 1200,
+                height: 630,
+                alt: 'Nami Thai Massage Studio in North Park San Diego',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Massage in North Park San Diego | Nami Thai Massage',
+        description: 'Professional massage therapy on University Avenue in North Park, San Diego.',
+        images: ['https://namithaimassage.com/images/nami-portrait.png'],
+    },
+};
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://namithaimassage.com" },
+        { "@type": "ListItem", position: 2, name: "Locations", item: "https://namithaimassage.com/contact" },
+        { "@type": "ListItem", position: 3, name: "North Park", item: "https://namithaimassage.com/info/massage-north-park" },
+    ],
 };
 
 export default function NorthParkMassagePage() {
     return (
         <main className={styles.infoPage}>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <div className={styles.container}>
                 <nav className={styles.breadcrumb}>
                     <Link href="/">Home</Link>
@@ -118,6 +154,19 @@ export default function NorthParkMassagePage() {
                         </Link>
                     </div>
 
+                    <div className={styles.mapContainer}>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.5!2d-117.1277!3d32.7489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9551e1c5a1d1d%3A0x0!2s3055%20University%20Ave%2C%20San%20Diego%2C%20CA!5e0!3m2!1sen!2sus!4v1706139200000!5m2!1sen!2sus"
+                            width="100%"
+                            height="300"
+                            style={{ border: 0, borderRadius: '12px' }}
+                            allowFullScreen
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            title="Nami Thai Massage Location - 3055 University Avenue, North Park, San Diego"
+                        />
+                    </div>
+
                     <div className={styles.ctaSection}>
                         <h2 className={styles.ctaTitle}>Experience the Best Massage in North Park</h2>
                         <p className={styles.ctaText}>
@@ -127,6 +176,17 @@ export default function NorthParkMassagePage() {
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Appointment
                         </Link>
+                    </div>
+
+                    <div className={styles.relatedSection}>
+                        <h3 className={styles.relatedTitle}>Our Services</h3>
+                        <div className={styles.relatedLinks}>
+                            <Link href="/info/thai-massage-benefits" className={styles.relatedLink}>Thai Massage</Link>
+                            <Link href="/info/deep-tissue-massage" className={styles.relatedLink}>Deep Tissue</Link>
+                            <Link href="/info/swedish-massage" className={styles.relatedLink}>Swedish Massage</Link>
+                            <Link href="/info/sports-massage" className={styles.relatedLink}>Sports Massage</Link>
+                            <Link href="/info/hot-stone-massage" className={styles.relatedLink}>Hot Stone</Link>
+                        </div>
                     </div>
 
                     <div className={styles.relatedSection}>

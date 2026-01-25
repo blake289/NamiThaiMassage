@@ -6,11 +6,49 @@ export const metadata: Metadata = {
     title: 'Prenatal Massage San Diego | Pregnancy Massage Therapy | Nami Thai Massage',
     description: 'Safe, nurturing prenatal massage in North Park, San Diego. Relieve pregnancy discomfort, reduce swelling, ease back pain, and promote relaxation during this special time. Expert pregnancy massage therapy.',
     keywords: 'prenatal massage San Diego, pregnancy massage North Park, maternity massage, safe massage during pregnancy, back pain pregnancy massage, swelling relief massage, prenatal therapy San Diego, expecting mother massage',
+    alternates: {
+        canonical: 'https://namithaimassage.com/info/prenatal-massage',
+    },
+    openGraph: {
+        title: 'Prenatal Massage San Diego | Pregnancy Wellness',
+        description: 'Safe, nurturing prenatal massage in North Park, San Diego. Relieve pregnancy discomfort, reduce swelling, and ease back pain.',
+        url: 'https://namithaimassage.com/info/prenatal-massage',
+        siteName: 'Nami Thai Massage',
+        locale: 'en_US',
+        type: 'article',
+    },
+    twitter: {
+        card: 'summary',
+        title: 'Prenatal Massage San Diego | Pregnancy Wellness',
+        description: 'Safe, nurturing prenatal massage in North Park, San Diego.',
+    },
+};
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://namithaimassage.com" },
+        { "@type": "ListItem", position: 2, name: "Services", item: "https://namithaimassage.com/services" },
+        { "@type": "ListItem", position: 3, name: "Prenatal Massage", item: "https://namithaimassage.com/info/prenatal-massage" },
+    ],
+};
+
+const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Prenatal Massage",
+    description: "Safe, nurturing prenatal massage therapy for expecting mothers. Relieve pregnancy discomfort, reduce swelling, and promote relaxation.",
+    provider: { "@type": "LocalBusiness", "@id": "https://namithaimassage.com/#business", name: "Nami Thai Massage" },
+    areaServed: { "@type": "City", name: "San Diego" },
+    serviceType: "Prenatal Massage Therapy",
 };
 
 export default function PrenatalMassagePage() {
     return (
         <main className={styles.infoPage}>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
             <div className={styles.container}>
                 <nav className={styles.breadcrumb}>
                     <Link href="/">Home</Link>
@@ -137,8 +175,19 @@ export default function PrenatalMassagePage() {
                         <div className={styles.relatedLinks}>
                             <Link href="/info/swedish-massage" className={styles.relatedLink}>Swedish Massage</Link>
                             <Link href="/info/massage-for-stress-relief" className={styles.relatedLink}>Stress Relief</Link>
-                            <Link href="/info/massage-hillcrest" className={styles.relatedLink}>Hillcrest Area</Link>
+                            <Link href="/info/hot-stone-massage" className={styles.relatedLink}>Hot Stone</Link>
                             <Link href="/services" className={styles.relatedLink}>All Services</Link>
+                        </div>
+                    </div>
+
+                    <div className={styles.relatedSection}>
+                        <h3 className={styles.relatedTitle}>Serving San Diego Neighborhoods</h3>
+                        <div className={styles.relatedLinks}>
+                            <Link href="/info/massage-north-park" className={styles.relatedLink}>North Park</Link>
+                            <Link href="/info/massage-hillcrest" className={styles.relatedLink}>Hillcrest</Link>
+                            <Link href="/info/massage-university-heights" className={styles.relatedLink}>University Heights</Link>
+                            <Link href="/info/massage-normal-heights" className={styles.relatedLink}>Normal Heights</Link>
+                            <Link href="/info/massage-balboa-park" className={styles.relatedLink}>Balboa Park</Link>
                         </div>
                     </div>
                 </div>

@@ -6,11 +6,38 @@ export const metadata: Metadata = {
     title: 'Massage for Athletes San Diego | Sports Recovery Therapy | Nami Thai Massage',
     description: 'Professional massage therapy for athletes in North Park, San Diego. Enhance performance, speed recovery, prevent injuries. Perfect for runners, cyclists, CrossFit athletes, and all active San Diego residents.',
     keywords: 'massage for athletes San Diego, sports recovery massage, runner massage North Park, cyclist massage, CrossFit recovery, athlete muscle recovery, performance massage, training massage therapy',
+    alternates: {
+        canonical: 'https://namithaimassage.com/info/massage-for-athletes',
+    },
+    openGraph: {
+        title: 'Massage for Athletes | Sports Recovery Therapy San Diego',
+        description: 'Professional massage therapy for athletes in North Park, San Diego. Enhance performance and speed recovery.',
+        url: 'https://namithaimassage.com/info/massage-for-athletes',
+        siteName: 'Nami Thai Massage',
+        locale: 'en_US',
+        type: 'article',
+    },
+    twitter: {
+        card: 'summary',
+        title: 'Massage for Athletes | Sports Recovery Therapy',
+        description: 'Professional massage therapy for athletes in San Diego.',
+    },
+};
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://namithaimassage.com" },
+        { "@type": "ListItem", position: 2, name: "Helpful Info", item: "https://namithaimassage.com/services" },
+        { "@type": "ListItem", position: 3, name: "Massage for Athletes", item: "https://namithaimassage.com/info/massage-for-athletes" },
+    ],
 };
 
 export default function AthletesMassagePage() {
     return (
         <main className={styles.infoPage}>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <div className={styles.container}>
                 <nav className={styles.breadcrumb}>
                     <Link href="/">Home</Link>

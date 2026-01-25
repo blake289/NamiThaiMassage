@@ -1,8 +1,24 @@
 import type { Metadata } from "next";
+import { Cormorant_Garamond, Lato } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import ChatButton from "@/components/ChatButton/ChatButton";
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-heading",
+  display: "swap",
+});
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+  variable: "--font-body",
+  display: "swap",
+});
 
 const siteUrl = "https://namithaimassage.com";
 
@@ -89,8 +105,6 @@ const structuredData = {
       description:
         "Expert Thai massage therapist in North Park, San Diego. Personalized sessions blending traditional Thai massage techniques with modern sports therapy for pain relief, relaxation, and athletic recovery.",
       url: siteUrl,
-      telephone: "",
-      email: "",
       image: `${siteUrl}/images/nami-portrait.png`,
       logo: `${siteUrl}/logo.png`,
       priceRange: "$$",
@@ -98,10 +112,11 @@ const structuredData = {
       paymentAccepted: "Cash, Credit Card",
       address: {
         "@type": "PostalAddress",
+        streetAddress: "3055 University Avenue",
         addressLocality: "San Diego",
         addressRegion: "CA",
+        postalCode: "92104",
         addressCountry: "US",
-        neighborhood: "North Park",
       },
       geo: {
         "@type": "GeoCoordinates",
@@ -114,10 +129,12 @@ const structuredData = {
           name: "San Diego",
           sameAs: "https://en.wikipedia.org/wiki/San_Diego",
         },
-        {
-          "@type": "Neighborhood",
-          name: "North Park",
-        },
+        { "@type": "Neighborhood", name: "North Park" },
+        { "@type": "Neighborhood", name: "Hillcrest" },
+        { "@type": "Neighborhood", name: "University Heights" },
+        { "@type": "Neighborhood", name: "Normal Heights" },
+        { "@type": "Neighborhood", name: "South Park" },
+        { "@type": "Neighborhood", name: "Balboa Park Area" },
       ],
       openingHoursSpecification: {
         "@type": "OpeningHoursSpecification",
@@ -133,7 +150,9 @@ const structuredData = {
         opens: "09:00",
         closes: "20:00",
       },
-      sameAs: [],
+      sameAs: [
+        "https://www.instagram.com/naomi_nam246/",
+      ],
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "Massage Services",
@@ -212,7 +231,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${cormorant.variable} ${lato.variable}`}>
       <head>
         <script
           type="application/ld+json"

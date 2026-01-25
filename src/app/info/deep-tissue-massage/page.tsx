@@ -6,11 +6,86 @@ export const metadata: Metadata = {
     title: 'Deep Tissue Massage San Diego | Pain Relief Therapy | Nami Thai Massage',
     description: 'Experience professional deep tissue massage in North Park, San Diego. Target chronic muscle tension, knots, and deep-seated pain with therapeutic techniques. Book your deep tissue massage session today.',
     keywords: 'deep tissue massage San Diego, deep tissue massage North Park, muscle tension relief, chronic pain massage, therapeutic massage San Diego, deep muscle therapy, trigger point therapy, massage for knots',
+    alternates: {
+        canonical: 'https://namithaimassage.com/info/deep-tissue-massage',
+    },
+    openGraph: {
+        title: 'Deep Tissue Massage San Diego | Nami Thai Massage',
+        description: 'Professional deep tissue massage for chronic pain relief in North Park, San Diego. Release muscle tension and restore mobility.',
+        url: 'https://namithaimassage.com/info/deep-tissue-massage',
+        siteName: 'Nami Thai Massage',
+        locale: 'en_US',
+        type: 'website',
+        images: [
+            {
+                url: 'https://namithaimassage.com/images/deep-tissue-massage-new.png',
+                width: 1200,
+                height: 630,
+                alt: 'Deep Tissue Massage Therapy at Nami Thai Massage San Diego',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Deep Tissue Massage San Diego | Nami Thai Massage',
+        description: 'Professional deep tissue massage for chronic pain relief in North Park, San Diego.',
+        images: ['https://namithaimassage.com/images/deep-tissue-massage-new.png'],
+    },
+};
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+        {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://namithaimassage.com",
+        },
+        {
+            "@type": "ListItem",
+            position: 2,
+            name: "Services",
+            item: "https://namithaimassage.com/services",
+        },
+        {
+            "@type": "ListItem",
+            position: 3,
+            name: "Deep Tissue Massage",
+            item: "https://namithaimassage.com/info/deep-tissue-massage",
+        },
+    ],
+};
+
+const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Deep Tissue Massage",
+    description: "Therapeutic deep tissue massage targeting the deepest layers of muscle and connective tissue to release chronic tension, break up adhesions, and restore proper muscle function.",
+    provider: {
+        "@type": "LocalBusiness",
+        "@id": "https://namithaimassage.com/#business",
+        name: "Nami Thai Massage",
+    },
+    areaServed: {
+        "@type": "City",
+        name: "San Diego",
+    },
+    serviceType: "Deep Tissue Massage Therapy",
 };
 
 export default function DeepTissueMassagePage() {
     return (
         <main className={styles.infoPage}>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+            />
             <div className={styles.container}>
                 <nav className={styles.breadcrumb}>
                     <Link href="/">Home</Link>
@@ -157,6 +232,17 @@ export default function DeepTissueMassagePage() {
                             <Link href="/info/swedish-massage" className={styles.relatedLink}>Swedish Massage</Link>
                             <Link href="/info/massage-for-chronic-pain" className={styles.relatedLink}>Chronic Pain Relief</Link>
                             <Link href="/info/massage-for-office-workers" className={styles.relatedLink}>Office Workers</Link>
+                        </div>
+                    </div>
+
+                    <div className={styles.relatedSection}>
+                        <h3 className={styles.relatedTitle}>Serving San Diego Neighborhoods</h3>
+                        <div className={styles.relatedLinks}>
+                            <Link href="/info/massage-north-park" className={styles.relatedLink}>North Park</Link>
+                            <Link href="/info/massage-hillcrest" className={styles.relatedLink}>Hillcrest</Link>
+                            <Link href="/info/massage-university-heights" className={styles.relatedLink}>University Heights</Link>
+                            <Link href="/info/massage-normal-heights" className={styles.relatedLink}>Normal Heights</Link>
+                            <Link href="/info/massage-balboa-park" className={styles.relatedLink}>Balboa Park</Link>
                         </div>
                     </div>
                 </div>
