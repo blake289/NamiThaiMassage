@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: calc(var(--header-height-mobile) + var(--space-3xl)) var(--container-padding) var(--space-3xl);
+  padding: calc(var(--header-height-mobile) + var(--space-3xl)) var(--container-padding) calc(var(--space-3xl) + 100px);
   background: var(--color-forest-dark);
   overflow: hidden;
   /* Prevent any horizontal overflow on mobile */
@@ -192,7 +192,8 @@
   width: 280px;
   height: 280px;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center 15%;
+  transform: scale(1.3);
   border-radius: 50%;
   border: 3px solid rgba(201, 162, 39, 0.4);
   box-shadow: 0 0 40px rgba(201, 162, 39, 0.2), 0 20px 40px rgba(0, 0, 0, 0.4);
@@ -295,20 +296,64 @@
   }
 }
 
+/* Google Reviews Badge */
+.googleReviewsBadge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+  padding: var(--space-sm) var(--space-lg);
+  background: rgba(26, 37, 24, 0.6);
+  border: 1px solid rgba(201, 162, 39, 0.3);
+  border-radius: var(--radius-full);
+}
+
+.starsContainer {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  color: var(--color-gold);
+  font-size: var(--text-lg);
+  text-shadow: 0 0 10px rgba(201, 162, 39, 0.5);
+}
+
+.reviewsInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ratingText {
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-cream);
+  line-height: 1.2;
+}
+
+.googleText {
+  font-size: var(--text-xs);
+  color: rgba(245, 242, 237, 0.6);
+  line-height: 1.2;
+}
+
 .heroScroll {
   position: absolute;
-  bottom: var(--space-2xl);
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   display: none;
   flex-direction: column;
   align-items: center;
   gap: var(--space-sm);
-  color: rgba(245, 242, 237, 0.5);
+  color: rgba(245, 242, 237, 0.6);
   font-size: var(--text-xs);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   z-index: 2;
+  margin-top: var(--space-2xl);
 }
 
 @media (min-width: 768px) {
@@ -318,10 +363,11 @@
 }
 
 .scrollLine {
-  width: 1px;
-  height: 40px;
-  background: linear-gradient(to bottom, var(--color-gold), transparent);
+  width: 2px;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--color-gold), var(--color-gold-dark) 60%, transparent);
   animation: scrollPulse 2s ease-in-out infinite;
+  box-shadow: 0 0 8px rgba(201, 162, 39, 0.4);
 }
 
 @keyframes scrollPulse {
@@ -340,10 +386,57 @@
 
 /* ===== Gold Text ===== */
 .goldText {
-  background: linear-gradient(135deg, var(--color-gold-dark) 0%, var(--color-gold) 30%, var(--color-gold-pale) 60%, var(--color-gold) 100%);
+  background: linear-gradient(90deg,
+      var(--color-gold-dark) 0%,
+      var(--color-gold) 20%,
+      var(--color-gold-pale) 40%,
+      #fff 50%,
+      var(--color-gold-pale) 60%,
+      var(--color-gold) 80%,
+      var(--color-gold-dark) 100%);
+  background-size: 300% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  animation: goldShimmer 8s ease-in-out infinite;
+  filter: drop-shadow(0 0 0px transparent);
+}
+
+@keyframes goldShimmer {
+  0% {
+    background-position: 100% 50%;
+    filter: drop-shadow(0 0 0px transparent);
+  }
+
+  20% {
+    background-position: 50% 50%;
+    filter: drop-shadow(0 0 4px rgba(201, 162, 39, 0.4));
+  }
+
+  40% {
+    background-position: 0% 50%;
+    filter: drop-shadow(0 0 8px rgba(201, 162, 39, 0.6));
+  }
+
+  50% {
+    background-position: 0% 50%;
+    filter: drop-shadow(0 0 12px rgba(232, 212, 139, 0.8));
+  }
+
+  60% {
+    background-position: 0% 50%;
+    filter: drop-shadow(0 0 8px rgba(201, 162, 39, 0.6));
+  }
+
+  80% {
+    background-position: 50% 50%;
+    filter: drop-shadow(0 0 4px rgba(201, 162, 39, 0.4));
+  }
+
+  100% {
+    background-position: 100% 50%;
+    filter: drop-shadow(0 0 0px transparent);
+  }
 }
 
 /* ===== Buttons ===== */
@@ -422,6 +515,59 @@
   height: 2px;
   background: linear-gradient(90deg, var(--color-gold-dark), var(--color-gold), var(--color-gold-pale));
   margin: var(--space-lg) auto;
+  animation: goldLineGlow 6s ease-in-out infinite;
+  box-shadow: 0 0 8px rgba(201, 162, 39, 0.3);
+}
+
+@keyframes goldLineGlow {
+  0% {
+    width: 60px;
+    height: 2px;
+    box-shadow: 0 0 8px rgba(201, 162, 39, 0.3);
+    opacity: 0.8;
+  }
+
+  15% {
+    width: 80px;
+    height: 2px;
+    box-shadow: 0 0 15px rgba(201, 162, 39, 0.5);
+    opacity: 1;
+  }
+
+  30% {
+    width: 100px;
+    height: 3px;
+    box-shadow: 0 0 25px rgba(201, 162, 39, 0.7);
+    opacity: 1;
+  }
+
+  50% {
+    width: 120px;
+    height: 3px;
+    box-shadow: 0 0 35px rgba(232, 212, 139, 0.9), 0 0 60px rgba(201, 162, 39, 0.4);
+    opacity: 1;
+  }
+
+  70% {
+    width: 100px;
+    height: 3px;
+    box-shadow: 0 0 25px rgba(201, 162, 39, 0.7);
+    opacity: 1;
+  }
+
+  85% {
+    width: 80px;
+    height: 2px;
+    box-shadow: 0 0 15px rgba(201, 162, 39, 0.5);
+    opacity: 1;
+  }
+
+  100% {
+    width: 60px;
+    height: 2px;
+    box-shadow: 0 0 8px rgba(201, 162, 39, 0.3);
+    opacity: 0.8;
+  }
 }
 
 .sectionDescription {
@@ -461,8 +607,38 @@
 
 /* ===== About Section ===== */
 .about {
+  position: relative;
   padding: var(--space-5xl) 0;
   background-color: var(--color-forest-dark);
+  overflow: hidden;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/aromatherapy.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.about::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom,
+      var(--color-forest-dark) 0%,
+      rgba(26, 37, 24, 0.85) 30%,
+      rgba(26, 37, 24, 0.85) 70%,
+      var(--color-forest-dark) 100%);
+  z-index: 1;
+}
+
+.about>* {
+  position: relative;
+  z-index: 2;
 }
 
 .aboutGrid {
@@ -535,8 +711,37 @@
 
 /* ===== Testimonials Section ===== */
 .testimonials {
+  position: relative;
   padding: var(--space-5xl) 0;
   background-color: var(--color-forest);
+  overflow: hidden;
+}
+
+.testimonials::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/spa-stones.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.12;
+  z-index: 0;
+}
+
+.testimonials::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg,
+      rgba(42, 63, 38, 0.9) 0%,
+      rgba(26, 37, 24, 0.85) 50%,
+      rgba(42, 63, 38, 0.9) 100%);
+  z-index: 1;
+}
+
+.testimonials>* {
+  position: relative;
+  z-index: 2;
 }
 
 .testimonialGrid {
@@ -609,11 +814,36 @@
 
 /* ===== CTA Section ===== */
 .cta {
+  position: relative;
   padding: var(--space-5xl) 0;
-  background: linear-gradient(135deg,
-      var(--color-forest-dark) 0%,
-      var(--color-warm-black) 100%);
   text-align: center;
+  overflow: hidden;
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/thai-massage.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.cta::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg,
+      rgba(26, 37, 24, 0.92) 0%,
+      rgba(17, 17, 17, 0.9) 100%);
+  z-index: 1;
+}
+
+.cta>* {
+  position: relative;
+  z-index: 2;
 }
 
 .ctaContent {
@@ -662,4 +892,55 @@
     width: auto;
     max-width: none;
   }
+}
+
+/* ===== FAQ Section ===== */
+.faq {
+  padding: var(--space-5xl) 0;
+  background-color: var(--color-forest-dark);
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.faqItem {
+  padding: var(--space-xl);
+  background-color: rgba(26, 37, 24, 0.6);
+  border: 1px solid rgba(201, 162, 39, 0.15);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+}
+
+.faqItem:hover {
+  border-color: rgba(201, 162, 39, 0.3);
+}
+
+.faqQuestion {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  color: var(--color-gold);
+  margin-bottom: var(--space-md);
+}
+
+.faqAnswer {
+  font-size: var(--text-base);
+  color: rgba(245, 242, 237, 0.8);
+  line-height: 1.7;
+}
+
+.faqFooter {
+  text-align: center;
+  margin-top: var(--space-3xl);
 }

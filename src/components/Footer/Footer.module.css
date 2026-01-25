@@ -167,3 +167,34 @@
 .legal a:hover {
     color: var(--color-gold);
 }
+
+/* Social Media Links */
+.socialLinks {
+    display: flex;
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+}
+
+.socialIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: rgba(245, 242, 237, 0.7);
+    border: 1px solid rgba(201, 162, 39, 0.3);
+    border-radius: 50%;
+    transition: all var(--transition-base);
+}
+
+.socialIcon:hover {
+    color: var(--color-gold);
+    border-color: var(--color-gold);
+    background-color: rgba(201, 162, 39, 0.1);
+    transform: translateY(-2px);
+}
+
+.socialIcon svg {
+    width: 18px;
+    height: 18px;
+}

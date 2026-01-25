@@ -199,7 +199,8 @@
 
 /* Gift Info */
 .giftInfo {
-    /* No special styles needed */
+    /* Container element - no additional styles needed */
+    display: block;
 }
 
 .giftTitle {
@@ -412,4 +413,67 @@
 .btnSecondary:hover {
     background: var(--color-gold);
     color: var(--color-forest-dark);
+}
+
+/* ===== Popular Section ===== */
+.popularSection {
+    padding: var(--space-4xl) 0;
+    background-color: var(--color-warm-black);
+}
+
+.recommendedGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .recommendedGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.recommendedCard {
+    padding: var(--space-xl);
+    background-color: rgba(45, 59, 41, 0.4);
+    border: 1px solid rgba(201, 162, 39, 0.15);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.recommendedCard:hover {
+    border-color: rgba(201, 162, 39, 0.4);
+}
+
+.recommendedCard h3 {
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    color: var(--color-cream);
+    margin-bottom: var(--space-sm);
+}
+
+.recommendedPrice {
+    font-family: var(--font-heading);
+    font-size: var(--text-2xl);
+    color: var(--color-gold);
+    margin-bottom: var(--space-sm);
+}
+
+.recommendedDesc {
+    font-size: var(--text-sm);
+    color: rgba(245, 242, 237, 0.7);
+    line-height: 1.6;
+}
+
+.viewAllLink {
+    text-align: center;
+    margin-top: var(--space-2xl);
+}
+
+.stepText a {
+    color: var(--color-gold);
+    text-decoration: underline;
 }

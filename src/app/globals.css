@@ -268,6 +268,70 @@ a:hover {
   color: var(--color-text-dark);
 }
 
+
+
+/* Royal Thai-inspired divider */
+.royal-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  margin: var(--space-xl) 0;
+}
+
+.royal-divider::before,
+.royal-divider::after {
+  content: '';
+  height: 1px;
+  width: 80px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+}
+
+/* Golden glow effect */
+.golden-glow {
+  box-shadow: 0 0 30px rgba(201, 162, 39, 0.3),
+    0 0 60px rgba(201, 162, 39, 0.2),
+    0 4px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Royal border frame */
+.royal-frame {
+  position: relative;
+  border: 2px solid rgba(201, 162, 39, 0.5) !important;
+  border-radius: var(--radius-lg);
+}
+
+.royal-frame::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  border: 1px solid rgba(201, 162, 39, 0.25);
+  border-radius: var(--radius-md);
+  pointer-events: none;
+}
+
+/* Lotus pattern subtle overlay */
+.lotus-pattern {
+  position: relative;
+}
+
+.lotus-pattern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(ellipse 50px 60px at 50% 50%, rgba(201, 162, 39, 0.08) 0%, transparent 60%);
+  background-size: 120px 120px;
+  pointer-events: none;
+  z-index: 0;
+}
+
 /* ===== Image Styles ===== */
 img {
   max-width: 100%;
@@ -347,8 +411,10 @@ select {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-gold);
 }
+
 /* Mobile fix: hide accent elements that cause overflow */
 @media (max-width: 767px) {
+
   .aboutImageAccent,
   [class*="aboutImageAccent"],
   [class*="imageAccent"] {
