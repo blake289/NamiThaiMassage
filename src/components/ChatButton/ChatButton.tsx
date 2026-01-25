@@ -40,7 +40,14 @@ export default function ChatButton() {
             {isOpen && (
                 <div className={styles.chatPopup}>
                     <div className={styles.popupHeader}>
-                        <h3 className={styles.popupTitle}>Send us a message</h3>
+                        <div className={styles.headerContent}>
+                            <img
+                                src="/images/nami-portrait.png"
+                                alt="Nami"
+                                className={styles.avatarImage}
+                            />
+                            <h3 className={styles.popupTitle}>Text me!</h3>
+                        </div>
                         <button
                             className={styles.closeButton}
                             onClick={() => setIsOpen(false)}
@@ -83,7 +90,7 @@ export default function ChatButton() {
                                 name="message"
                                 value={formData.message}
                                 onChange={handleChange}
-                                placeholder="How can we help?"
+                                placeholder="How can I help?"
                                 className={styles.textarea}
                                 rows={3}
                                 required

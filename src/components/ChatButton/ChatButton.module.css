@@ -40,6 +40,21 @@
     background: linear-gradient(135deg, var(--color-gold-dark) 0%, var(--color-gold) 100%);
 }
 
+.headerContent {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.avatarImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 2px solid var(--color-forest-dark);
+}
+
 .popupTitle {
     font-family: var(--font-heading);
     font-size: var(--text-lg);

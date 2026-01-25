@@ -228,6 +228,35 @@ a:hover {
   background: linear-gradient(135deg, var(--color-gold-dark) 0%, var(--color-gold) 50%, var(--color-gold-light) 100%);
   color: var(--color-forest-dark);
   box-shadow: var(--shadow-gold);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent);
+  animation: buttonSheen 4s ease-in-out infinite;
+}
+
+@keyframes buttonSheen {
+
+  0%,
+  100% {
+    left: -100%;
+  }
+
+  50%,
+  60% {
+    left: 150%;
+  }
 }
 
 .btn-primary:hover {

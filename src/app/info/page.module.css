@@ -1,0 +1,300 @@
+.infoPage {
+    min-height: 100vh;
+    padding-top: calc(var(--header-height-mobile) + var(--space-3xl));
+    padding-bottom: var(--space-5xl);
+    background: var(--color-forest-dark);
+}
+
+@media (min-width: 768px) {
+    .infoPage {
+        padding-top: calc(var(--header-height) + var(--space-4xl));
+    }
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: var(--text-sm);
+    color: rgba(245, 242, 237, 0.6);
+    margin-bottom: var(--space-xl);
+}
+
+.breadcrumb a {
+    color: var(--color-gold);
+    transition: opacity var(--transition-fast);
+}
+
+.breadcrumb a:hover {
+    opacity: 0.8;
+}
+
+.breadcrumb span {
+    color: rgba(245, 242, 237, 0.4);
+}
+
+.heroSection {
+    text-align: center;
+    margin-bottom: var(--space-4xl);
+}
+
+.subtitle {
+    font-size: var(--text-xs);
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-gold);
+    margin-bottom: var(--space-md);
+}
+
+.title {
+    font-family: var(--font-heading);
+    font-size: var(--text-4xl);
+    font-weight: 400;
+    color: var(--color-cream);
+    margin-bottom: var(--space-lg);
+    line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: var(--text-5xl);
+    }
+}
+
+.goldLine {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-gold-dark), var(--color-gold), var(--color-gold-pale));
+    margin: 0 auto var(--space-xl);
+}
+
+.intro {
+    font-size: var(--text-lg);
+    color: rgba(245, 242, 237, 0.85);
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Content Sections */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4xl);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.sectionTitle {
+    font-family: var(--font-heading);
+    font-size: var(--text-2xl);
+    font-weight: 400;
+    color: var(--color-cream);
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.sectionTitle::before {
+    content: '';
+    width: 4px;
+    height: 24px;
+    background: linear-gradient(180deg, var(--color-gold), var(--color-gold-dark));
+    border-radius: 2px;
+}
+
+.paragraph {
+    font-size: var(--text-base);
+    color: rgba(245, 242, 237, 0.8);
+    line-height: 1.8;
+}
+
+.paragraph strong {
+    color: var(--color-cream);
+}
+
+/* Benefits List */
+.benefitsList {
+    display: grid;
+    gap: var(--space-md);
+}
+
+@media (min-width: 768px) {
+    .benefitsList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.benefitItem {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    background: rgba(42, 63, 38, 0.3);
+    border: 1px solid rgba(201, 162, 39, 0.15);
+    border-radius: var(--radius-md);
+}
+
+.benefitIcon {
+    color: var(--color-gold);
+    font-size: var(--text-xl);
+    flex-shrink: 0;
+}
+
+.benefitText {
+    font-size: var(--text-sm);
+    color: rgba(245, 242, 237, 0.85);
+    line-height: 1.6;
+}
+
+/* Location Box */
+.locationBox {
+    padding: var(--space-xl);
+    background: linear-gradient(135deg, rgba(42, 63, 38, 0.5) 0%, rgba(26, 37, 24, 0.8) 100%);
+    border: 1px solid rgba(201, 162, 39, 0.3);
+    border-radius: var(--radius-lg);
+    text-align: center;
+}
+
+.locationTitle {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    color: var(--color-gold);
+    margin-bottom: var(--space-md);
+}
+
+.locationAddress {
+    font-size: var(--text-base);
+    color: var(--color-cream);
+    margin-bottom: var(--space-sm);
+}
+
+.locationNeighborhoods {
+    font-size: var(--text-sm);
+    color: rgba(245, 242, 237, 0.7);
+    margin-bottom: var(--space-lg);
+}
+
+/* CTA Section */
+.ctaSection {
+    text-align: center;
+    padding: var(--space-3xl);
+    background: linear-gradient(135deg, rgba(201, 162, 39, 0.1) 0%, rgba(26, 37, 24, 0.8) 100%);
+    border: 1px solid rgba(201, 162, 39, 0.3);
+    border-radius: var(--radius-lg);
+    margin-top: var(--space-3xl);
+}
+
+.ctaTitle {
+    font-family: var(--font-heading);
+    font-size: var(--text-2xl);
+    color: var(--color-cream);
+    margin-bottom: var(--space-md);
+}
+
+.ctaText {
+    font-size: var(--text-base);
+    color: rgba(245, 242, 237, 0.8);
+    margin-bottom: var(--space-xl);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ctaButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-md) var(--space-2xl);
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-forest-dark);
+    background: linear-gradient(135deg, var(--color-gold-dark) 0%, var(--color-gold) 50%, var(--color-gold-light) 100%);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-gold);
+    position: relative;
+    overflow: hidden;
+}
+
+.ctaButton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.3),
+            transparent);
+    animation: buttonSheen 4s ease-in-out infinite;
+}
+
+@keyframes buttonSheen {
+
+    0%,
+    100% {
+        left: -100%;
+    }
+
+    50%,
+    60% {
+        left: 150%;
+    }
+}
+
+.ctaButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(201, 162, 39, 0.4);
+}
+
+/* Related Links */
+.relatedSection {
+    margin-top: var(--space-4xl);
+    padding-top: var(--space-3xl);
+    border-top: 1px solid rgba(201, 162, 39, 0.2);
+}
+
+.relatedTitle {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    color: var(--color-cream);
+    margin-bottom: var(--space-lg);
+    text-align: center;
+}
+
+.relatedLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+}
+
+.relatedLink {
+    padding: var(--space-sm) var(--space-lg);
+    font-size: var(--text-sm);
+    color: var(--color-gold);
+    border: 1px solid rgba(201, 162, 39, 0.3);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-fast);
+}
+
+.relatedLink:hover {
+    background: rgba(201, 162, 39, 0.1);
+    border-color: var(--color-gold);
+}
