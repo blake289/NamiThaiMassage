@@ -291,21 +291,6 @@ export default function Home() {
                 View Services
               </Link>
             </div>
-
-            {/* Google Reviews Badge */}
-            <div className={styles.googleReviewsBadge}>
-              <div className={styles.starsContainer}>
-                <span className={styles.star}>★</span>
-                <span className={styles.star}>★</span>
-                <span className={styles.star}>★</span>
-                <span className={styles.star}>★</span>
-                <span className={styles.star}>★</span>
-              </div>
-              <div className={styles.reviewsInfo}>
-                <span className={styles.ratingText}>5.0 Rating</span>
-                <span className={styles.googleText}>on Google Reviews</span>
-              </div>
-            </div>
           </div>
         </div>
         <div className={styles.heroScroll}>

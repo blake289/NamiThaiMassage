@@ -240,6 +240,135 @@
     color: rgba(245, 242, 237, 0.8);
 }
 
+/* ===== Amount Selection ===== */
+.amountSection {
+    margin-bottom: var(--space-xl);
+}
+
+.amountTitle {
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    color: var(--color-cream);
+    margin-bottom: var(--space-md);
+}
+
+.amountGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+}
+
+@media (min-width: 480px) {
+    .amountGrid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.amountCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-md);
+    background: rgba(45, 59, 41, 0.5);
+    border: 1px solid rgba(201, 162, 39, 0.2);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.amountCard:hover {
+    border-color: var(--color-gold);
+    background: rgba(201, 162, 39, 0.1);
+}
+
+.amountCardPopular {
+    border-color: var(--color-gold);
+    background: rgba(201, 162, 39, 0.1);
+}
+
+.popularBadge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2px 8px;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-forest-dark);
+    background: linear-gradient(135deg, var(--color-gold-dark), var(--color-gold));
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.amountValue {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    font-weight: 500;
+    color: var(--color-gold);
+}
+
+.amountDesc {
+    font-size: var(--text-xs);
+    color: rgba(245, 242, 237, 0.6);
+    text-align: center;
+}
+
+/* ===== Delivery Options ===== */
+.deliverySection {
+    margin-bottom: var(--space-xl);
+}
+
+.deliveryOptions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+}
+
+@media (min-width: 480px) {
+    .deliveryOptions {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.deliveryCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-lg);
+    background: rgba(45, 59, 41, 0.5);
+    border: 1px solid rgba(201, 162, 39, 0.2);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.deliveryCard:hover {
+    border-color: var(--color-gold);
+    background: rgba(201, 162, 39, 0.1);
+}
+
+.deliveryIcon {
+    font-size: var(--text-2xl);
+}
+
+.deliveryName {
+    font-family: var(--font-heading);
+    font-size: var(--text-base);
+    font-weight: 500;
+    color: var(--color-cream);
+}
+
+.deliveryDesc {
+    font-size: var(--text-xs);
+    color: rgba(245, 242, 237, 0.6);
+    text-align: center;
+}
+
 /* ===== How It Works ===== */
 .howItWorks {
     padding: var(--space-5xl) 0;

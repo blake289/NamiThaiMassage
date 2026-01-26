@@ -10,6 +10,7 @@ const navLinks = [
     { href: '/services', label: 'Services' },
     { href: '/about', label: 'About' },
     { href: '/gift-cards', label: 'Gift Cards' },
+    { href: '/blog', label: 'Blog' },
 ];
 
 const infoLinks = {

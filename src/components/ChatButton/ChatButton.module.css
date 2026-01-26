@@ -84,6 +84,13 @@
     padding: var(--space-lg);
 }
 
+.introMessage {
+    font-size: var(--text-sm);
+    color: var(--color-cream);
+    margin: 0 0 var(--space-md) 0;
+    opacity: 0.9;
+}
+
 .formGroup {
     margin-bottom: var(--space-md);
 }
@@ -154,59 +161,167 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 75px;
-    height: 75px;
-    background: linear-gradient(135deg, var(--color-gold-dark) 0%, var(--color-gold) 50%, var(--color-gold-light) 100%);
+    gap: var(--space-sm);
+    padding: var(--space-md) var(--space-lg);
+    background: linear-gradient(135deg, #b8860b 0%, #daa520 30%, #f4c430 60%, #ffe066 100%);
     color: var(--color-forest-dark);
     border: none;
-    border-radius: 50%;
-    box-shadow: var(--shadow-gold), var(--shadow-lg);
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(218, 165, 32, 0.5), var(--shadow-lg);
     transition: all var(--transition-base);
     cursor: pointer;
     position: relative;
-    padding: 3px;
-    overflow: hidden;
+    animation: wiggle 3s ease-in-out infinite;
+    animation-delay: 2s;
 }
 
 .chatButton:hover {
-    transform: scale(1.1) translateY(-2px);
-    box-shadow: 0 6px 30px rgba(201, 162, 39, 0.5), var(--shadow-lg);
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 6px 30px rgba(218, 165, 32, 0.6), var(--shadow-lg);
+    animation: none;
 }
 
 .chatButton:active {
-    transform: scale(1.05);
+    transform: scale(1);
 }
 
-.buttonAvatar {
+.smsIcon {
+    color: var(--color-forest-dark);
+    flex-shrink: 0;
+}
+
+.textMeLabel {
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+}
+
+/* Wiggle animation for attention */
+@keyframes wiggle {
+
+    0%,
+    90%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    92% {
+        transform: rotate(-5deg);
+    }
+
+    94% {
+        transform: rotate(5deg);
+    }
+
+    96% {
+        transform: rotate(-5deg);
+    }
+
+    98% {
+        transform: rotate(5deg);
+    }
+}
+
+/* Button wrapper for mist effect */
+.buttonWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* Mist container */
+.mistContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center 15%;
-}
-
-/* Pulse animation for attention */
-.chatButton::before {
-    content: '';
-    position: absolute;
-    inset: -4px;
-    border-radius: 50%;
-    background: rgba(201, 162, 39, 0.3);
-    animation: pulse 2s ease-in-out infinite;
+    pointer-events: none;
     z-index: -1;
 }
 
-@keyframes pulse {
+/* Mist particles */
+.mistParticle {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(244, 196, 48, 0.7) 0%, rgba(244, 196, 48, 0) 70%);
+    filter: blur(2px);
+    animation: mistFloat 4s ease-in-out infinite;
+}
 
-    0%,
-    100% {
-        transform: scale(1);
-        opacity: 0.5;
+.mist1 {
+    width: 30px;
+    height: 30px;
+    left: 5%;
+    bottom: 50%;
+    animation-delay: 0s;
+    animation-duration: 2.5s;
+}
+
+.mist2 {
+    width: 24px;
+    height: 24px;
+    left: 25%;
+    bottom: 50%;
+    animation-delay: 0.4s;
+    animation-duration: 3s;
+}
+
+.mist3 {
+    width: 35px;
+    height: 35px;
+    left: 45%;
+    bottom: 50%;
+    animation-delay: 0.8s;
+    animation-duration: 3.5s;
+}
+
+.mist4 {
+    width: 28px;
+    height: 28px;
+    left: 65%;
+    bottom: 50%;
+    animation-delay: 1.2s;
+    animation-duration: 2.8s;
+}
+
+.mist5 {
+    width: 32px;
+    height: 32px;
+    left: 80%;
+    bottom: 50%;
+    animation-delay: 1.6s;
+    animation-duration: 3.2s;
+}
+
+.mist6 {
+    width: 26px;
+    height: 26px;
+    left: 15%;
+    bottom: 50%;
+    animation-delay: 2s;
+    animation-duration: 3.8s;
+}
+
+@keyframes mistFloat {
+    0% {
+        opacity: 0;
+        transform: translateY(0) scale(0.6);
     }
 
-    50% {
-        transform: scale(1.15);
+    15% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.6;
+    }
+
+    100% {
         opacity: 0;
+        transform: translateY(-120px) scale(1.4);
     }
 }
 
@@ -222,7 +337,10 @@
     }
 
     .chatButton {
-        width: 55px;
-        height: 55px;
+        padding: var(--space-sm) var(--space-md);
+    }
+
+    .textMeLabel {
+        font-size: var(--text-sm);
     }
 }

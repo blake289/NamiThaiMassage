@@ -82,7 +82,7 @@ export default function GiftCardsPage() {
                                     <div className={styles.giftCardDivider}></div>
                                     <div className={styles.giftCardValue}>
                                         <span className={styles.valueLabel}>Gift Certificate</span>
-                                        <span className={styles.valueAmount}>$150</span>
+                                        <span className={styles.valueAmount}>Any Amount</span>
                                     </div>
                                     <div className={styles.giftCardFooter}>
                                         <span>North Park, San Diego</span>
@@ -101,11 +101,52 @@ export default function GiftCardsPage() {
                             <div className={styles.goldLine}></div>
                             <p className={styles.giftText}>
                                 Treat a loved one to a transformative massage experience. Our
-                                digital gift certificates make the perfect present for
+                                gift certificates make the perfect present for
                                 birthdays, holidays, anniversaries, Mother&apos;s Day,
-                                Father&apos;s Day, or simply to show someone you care about
-                                their well-being.
+                                Father&apos;s Day, or simply to show someone you care.
                             </p>
+
+                            {/* Gift Amount Options */}
+                            <div className={styles.amountSection}>
+                                <h3 className={styles.amountTitle}>Choose Amount</h3>
+                                <div className={styles.amountGrid}>
+                                    <div className={styles.amountCard}>
+                                        <span className={styles.amountValue}>$75</span>
+                                        <span className={styles.amountDesc}>60 min massage</span>
+                                    </div>
+                                    <div className={styles.amountCard}>
+                                        <span className={styles.amountValue}>$100</span>
+                                        <span className={styles.amountDesc}>75 min massage</span>
+                                    </div>
+                                    <div className={`${styles.amountCard} ${styles.amountCardPopular}`}>
+                                        <span className={styles.popularBadge}>Most Popular</span>
+                                        <span className={styles.amountValue}>$150</span>
+                                        <span className={styles.amountDesc}>90 min Thai Style</span>
+                                    </div>
+                                    <div className={styles.amountCard}>
+                                        <span className={styles.amountValue}>$200</span>
+                                        <span className={styles.amountDesc}>Signature package</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Delivery Options */}
+                            <div className={styles.deliverySection}>
+                                <h3 className={styles.amountTitle}>Delivery Method</h3>
+                                <div className={styles.deliveryOptions}>
+                                    <div className={styles.deliveryCard}>
+                                        <span className={styles.deliveryIcon}>📧</span>
+                                        <span className={styles.deliveryName}>Digital Delivery</span>
+                                        <span className={styles.deliveryDesc}>Instant email delivery with custom message</span>
+                                    </div>
+                                    <div className={styles.deliveryCard}>
+                                        <span className={styles.deliveryIcon}>🎁</span>
+                                        <span className={styles.deliveryName}>Physical Card</span>
+                                        <span className={styles.deliveryDesc}>Beautiful printed card mailed to recipient</span>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div className={styles.giftDetails}>
                                 <div className={styles.giftDetailItem}>
                                     <span className={styles.detailIcon}>✦</span>
@@ -122,19 +163,7 @@ export default function GiftCardsPage() {
                                 <div className={styles.giftDetailItem}>
                                     <span className={styles.detailIcon}>✦</span>
                                     <span className={styles.detailText}>
-                                        Delivered instantly via email
-                                    </span>
-                                </div>
-                                <div className={styles.giftDetailItem}>
-                                    <span className={styles.detailIcon}>✦</span>
-                                    <span className={styles.detailText}>
                                         Add a personalized message
-                                    </span>
-                                </div>
-                                <div className={styles.giftDetailItem}>
-                                    <span className={styles.detailIcon}>✦</span>
-                                    <span className={styles.detailText}>
-                                        Can be combined with any add-on treatment
                                     </span>
                                 </div>
                             </div>
@@ -144,7 +173,7 @@ export default function GiftCardsPage() {
                                 rel="noopener noreferrer"
                                 className={styles.btnPrimary}
                             >
-                                Purchase Gift Certificate - $150
+                                Purchase Gift Certificate
                             </a>
                         </div>
                     </div>

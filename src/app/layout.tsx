@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import ChatButton from "@/components/ChatButton/ChatButton";
+import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
 
 const siteUrl = "https://namithaimassage.com";
 
@@ -220,6 +221,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <LoadingScreen />
         <Header />
         <main>{children}</main>
         <Footer />
