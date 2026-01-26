@@ -29,6 +29,10 @@ export default function OfficeWorkersMassagePage() {
                         dealing with neck pain, shoulder tension, or lower back discomfort, massage therapy at
                         Nami Thai Massage in North Park can help you feel like yourself again.
                     </p>
+                    <p className={styles.intro}>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        {' '}• Evening appointments perfect for after-work relief
+                    </p>
                 </header>
 
                 <div className={styles.content}>
@@ -36,8 +40,9 @@ export default function OfficeWorkersMassagePage() {
                         <h2 className={styles.sectionTitle}>The Desk Job Pain Problem</h2>
                         <p className={styles.paragraph}>
                             Whether you work in an office in <strong>downtown San Diego</strong>, commute to <strong>Sorrento
-                                Valley</strong> tech companies, or work remotely from your <strong>Hillcrest</strong> apartment,
-                            prolonged sitting creates predictable patterns of muscle tension and pain:
+                                Valley</strong> tech companies, or work remotely from your <Link href="/info/massage-hillcrest">Hillcrest</Link> apartment,
+                            prolonged sitting creates predictable patterns of muscle tension and pain. With over 10 years of experience
+                            treating desk workers, our licensed therapist understands exactly where office work creates problems.
                         </p>
                         <p className={styles.paragraph}>
                             <strong>Tech Neck:</strong> Forward head posture from looking at screens • <strong>Rounded
@@ -101,15 +106,17 @@ export default function OfficeWorkersMassagePage() {
                             For San Diego office workers, we often recommend a combination approach:
                         </p>
                         <p className={styles.paragraph}>
-                            <strong>Deep Tissue Massage</strong> for chronic knots and adhesions in the upper back and
-                            shoulders • <strong>Thai Massage</strong> stretching to counteract sitting posture and
-                            improve flexibility • <strong>Swedish Massage</strong> for overall relaxation and stress
-                            relief after demanding workweeks
+                            <Link href="/info/deep-tissue-massage"><strong>Deep Tissue Massage</strong></Link> for chronic knots and
+                            adhesions in the upper back and shoulders • <Link href="/info/thai-massage-benefits"><strong>Thai
+                            Massage</strong></Link> stretching to counteract sitting posture and improve flexibility •
+                            <Link href="/info/swedish-massage"><strong>Swedish Massage</strong></Link> for overall relaxation and
+                            <Link href="/info/massage-for-stress-relief"> stress relief</Link> after demanding workweeks
                         </p>
                         <p className={styles.paragraph}>
-                            Many of our clients from <strong>North Park, Hillcrest, University Heights</strong>, and
-                            <strong> Normal Heights</strong> tech and professional offices schedule regular sessions
-                            to maintain pain-free, productive work lives.
+                            Many of our clients from <Link href="/info/massage-north-park"><strong>North Park</strong></Link>,
+                            <Link href="/info/massage-hillcrest"><strong>Hillcrest</strong></Link>, <Link href="/info/massage-university-heights"><strong>University
+                            Heights</strong></Link>, and <Link href="/info/massage-normal-heights"><strong>Normal Heights</strong></Link> tech
+                            and professional offices schedule regular sessions to maintain pain-free, productive work lives.
                         </p>
                     </section>
 
@@ -120,6 +127,10 @@ export default function OfficeWorkersMassagePage() {
                             Perfect for after-work appointments • Easy access from downtown San Diego,
                             Hillcrest, and tech hubs throughout the city
                         </p>
+                        <p className={styles.locationNeighborhoods}>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            {' '}• Same-day appointments often available
+                        </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Book Your Session
                         </Link>
@@ -129,7 +140,11 @@ export default function OfficeWorkersMassagePage() {
                         <h2 className={styles.ctaTitle}>End Desk Job Pain Today</h2>
                         <p className={styles.ctaText}>
                             Don&apos;t let your work hurt your body. Schedule a massage session and
-                            return to the office feeling refreshed and pain-free.
+                            return to the office feeling refreshed and pain-free. Most new clients feel significant
+                            relief after just one session.
+                        </p>
+                        <p className={styles.ctaText}>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Appointment

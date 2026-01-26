@@ -42,6 +42,33 @@
     line-height: 1.7;
 }
 
+.heroContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-top: var(--space-lg);
+}
+
+.phoneLink {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: var(--text-base);
+    font-weight: 500;
+    color: var(--color-gold);
+    transition: all var(--transition-base);
+}
+
+.phoneLink:hover {
+    color: var(--color-gold-light);
+    transform: translateY(-1px);
+}
+
+.phoneLink svg {
+    color: var(--color-gold);
+}
+
 /* ===== Shared ===== */
 .goldText {
     background: linear-gradient(135deg, var(--color-gold-dark) 0%, var(--color-gold) 30%, var(--color-gold-pale) 60%, var(--color-gold) 100%);
@@ -217,6 +244,30 @@
     margin-bottom: var(--space-xl);
 }
 
+.giftMicrocopy {
+    font-size: var(--text-sm);
+    color: rgba(245, 242, 237, 0.7);
+    margin-bottom: var(--space-md);
+    font-style: italic;
+}
+
+.giftNote {
+    font-size: var(--text-sm);
+    color: rgba(245, 242, 237, 0.6);
+    margin-top: var(--space-md);
+}
+
+.inlinePhone {
+    color: var(--color-gold);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color var(--transition-base);
+}
+
+.inlinePhone:hover {
+    color: var(--color-gold-light);
+}
+
 .giftDetails {
     display: flex;
     flex-direction: column;
@@ -327,6 +378,18 @@
     line-height: 1.7;
 }
 
+.stepText a {
+    color: var(--color-gold);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(201, 162, 39, 0.3);
+    transition: all var(--transition-base);
+}
+
+.stepText a:hover {
+    color: var(--color-gold-light);
+    border-bottom-color: var(--color-gold-light);
+}
+
 /* ===== CTA ===== */
 .cta {
     padding: var(--space-4xl) 0;
@@ -359,14 +422,36 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-md);
-    align-items: center;
+    align-items: stretch;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (min-width: 480px) {
     .ctaButtons {
         flex-direction: row;
         justify-content: center;
+        align-items: center;
+        max-width: none;
     }
+}
+
+.ctaPhone {
+    font-size: var(--text-sm);
+    color: rgba(245, 242, 237, 0.7);
+    margin-top: var(--space-md);
+}
+
+.ctaPhone a {
+    color: var(--color-gold);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color var(--transition-base);
+}
+
+.ctaPhone a:hover {
+    color: var(--color-gold-light);
 }
 
 /* ===== Buttons ===== */
@@ -374,10 +459,10 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: var(--space-md) var(--space-2xl);
+    padding: var(--space-lg) var(--space-2xl);
     font-family: var(--font-body);
     font-size: var(--text-sm);
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--color-forest-dark);
@@ -385,6 +470,13 @@
     border-radius: var(--radius-sm);
     transition: all var(--transition-base);
     box-shadow: var(--shadow-gold);
+}
+
+@media (min-width: 480px) {
+    .btnPrimary {
+        padding: var(--space-md) var(--space-2xl);
+        font-weight: 500;
+    }
 }
 
 .btnPrimary:hover {
@@ -397,9 +489,9 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: var(--space-md) var(--space-2xl);
+    padding: var(--space-md) var(--space-xl);
     font-family: var(--font-body);
-    font-size: var(--text-sm);
+    font-size: var(--text-xs);
     font-weight: 500;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -408,6 +500,13 @@
     border: 1px solid var(--color-gold);
     border-radius: var(--radius-sm);
     transition: all var(--transition-base);
+}
+
+@media (min-width: 480px) {
+    .btnSecondary {
+        padding: var(--space-md) var(--space-2xl);
+        font-size: var(--text-sm);
+    }
 }
 
 .btnSecondary:hover {

@@ -29,6 +29,10 @@ export default function NorthParkMassagePage() {
                         destination for exceptional massage therapy. Escape the bustle of San Diego&apos;s most vibrant
                         neighborhood and discover deep relaxation just steps from your favorite North Park spots.
                     </p>
+                    <p className={styles.intro}>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        {' '}• Same-day appointments available
+                    </p>
                 </header>
 
                 <div className={styles.content}>
@@ -43,7 +47,9 @@ export default function NorthParkMassagePage() {
                         <p className={styles.paragraph}>
                             Whether you live in North Park, work in the area, or are visiting one of San Diego&apos;s
                             most walkable neighborhoods, our convenient location on University Ave puts relaxation
-                            within easy reach.
+                            within easy reach. With over 10 years of experience, our licensed massage therapist Nami
+                            specializes in authentic <Link href="/info/thai-massage-benefits">Thai massage techniques</Link> alongside
+                            popular modalities like <Link href="/info/deep-tissue-massage">deep tissue</Link> and Swedish massage.
                         </p>
                     </section>
 
@@ -100,9 +106,11 @@ export default function NorthParkMassagePage() {
                         </p>
                         <p className={styles.paragraph}>
                             Our North Park neighbors appreciate our <strong>5-star Google reviews</strong>, our authentic
-                            Thai massage techniques, and our warm, welcoming atmosphere. Whether you&apos;re grabbing coffee
-                            at Dark Horse, shopping at Pigment, or dining at one of University Avenue&apos;s amazing restaurants,
-                            stop in for the massage experience North Park deserves.
+                            Thai massage techniques, and our warm, welcoming atmosphere. Whether you&apos;re an <Link href="/info/massage-for-office-workers">office
+                            worker</Link> dealing with desk tension, an <Link href="/info/massage-for-athletes">athlete</Link> seeking
+                            recovery, or just need stress relief, we provide expert care tailored to your needs. Whether you&apos;re
+                            grabbing coffee at Dark Horse, shopping at Pigment, or dining at one of University Avenue&apos;s amazing
+                            restaurants, stop in for the massage experience North Park deserves.
                         </p>
                     </section>
 
@@ -113,6 +121,10 @@ export default function NorthParkMassagePage() {
                             On University Ave in the heart of North Park • Free street parking available •
                             Walking distance from North Park Way and 30th Street
                         </p>
+                        <p className={styles.locationNeighborhoods}>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            {' '}• Walk-ins welcome when available
+                        </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Book North Park Massage
                         </Link>
@@ -122,7 +134,10 @@ export default function NorthParkMassagePage() {
                         <h2 className={styles.ctaTitle}>Experience the Best Massage in North Park</h2>
                         <p className={styles.ctaText}>
                             Join your neighbors who&apos;ve discovered their favorite local massage studio.
-                            Book your session at Nami Thai Massage today.
+                            Book your session at Nami Thai Massage today. Evening and weekend appointments available.
+                        </p>
+                        <p className={styles.ctaText}>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Appointment

@@ -70,15 +70,32 @@ export default function ContactPage() {
             {/* Hero */}
             <section className={styles.hero}>
                 <div className="container">
-                    <p className={styles.heroSubtitle}>North Park, San Diego</p>
+                    <p className={styles.heroSubtitle}>North Park, San Diego · Licensed Massage Therapist</p>
                     <h1 className={styles.heroTitle}>
                         Book Your <span className={styles.goldText}>Massage Appointment</span>
                     </h1>
                     <div className={styles.goldLine}></div>
                     <p className={styles.heroDescription}>
-                        Ready to experience personalized Thai massage therapy? Book online
-                        24/7 or reach out with any questions before your first visit.
+                        Ready to experience personalized <Link href="/info/thai-massage-benefits" className={styles.inlineLink}>Thai massage therapy</Link>? Book online
+                        24/7 or call for same-day appointments.
                     </p>
+
+                    {/* Primary Contact CTAs */}
+                    <div className={styles.heroContact}>
+                        <a href="tel:+16192873034" className={styles.phoneButton}>
+                            📞 Call (619) 287-3034
+                        </a>
+                        <span className={styles.divider}>or</span>
+                        <a
+                            href="https://bookme.pocketsuite.io/book/nami-thai-massage"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.bookButton}
+                        >
+                            Book Online 24/7
+                        </a>
+                    </div>
+                    <p className={styles.heroMicrocopy}>Same-day appointments often available · Flexible evening & weekend hours</p>
                 </div>
             </section>
 
@@ -122,13 +139,27 @@ export default function ContactPage() {
 
                             <div className={styles.infoGroup}>
                                 <div className={styles.infoItem}>
+                                    <div className={styles.infoIcon}>📞</div>
+                                    <div className={styles.infoContent}>
+                                        <h3 className={styles.infoLabel}>Phone</h3>
+                                        <p className={styles.infoText}>
+                                            <a href="tel:+16192873034" className={styles.phoneLink}>
+                                                (619) 287-3034
+                                            </a>
+                                            <br />
+                                            <span className={styles.phoneNote}>Call for appointments & questions</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className={styles.infoItem}>
                                     <div className={styles.infoIcon}>📍</div>
                                     <div className={styles.infoContent}>
                                         <h3 className={styles.infoLabel}>Address</h3>
                                         <p className={styles.infoText}>
                                             3055 University Avenue
                                             <br />
-                                            San Diego, CA
+                                            San Diego, CA 92104
                                         </p>
                                     </div>
                                 </div>
@@ -185,7 +216,7 @@ export default function ContactPage() {
                         </h2>
                         <div className={styles.goldLine}></div>
                         <p className={styles.formIntro}>
-                            Have a question before booking? Fill out the form below and we&apos;ll get back to you within 24 hours.
+                            Have a question before booking? Fill out the form below and we&apos;ll get back to you within 24 hours. Or call <a href="tel:+16192873034" className={styles.inlineLink}>(619) 287-3034</a> to speak with Nami directly.
                         </p>
                     </div>
 

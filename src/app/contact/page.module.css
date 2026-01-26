@@ -35,11 +35,111 @@
 }
 
 .heroDescription {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 700px;
+    margin: 0 auto var(--space-xl);
     font-size: var(--text-lg);
     color: rgba(245, 242, 237, 0.7);
     line-height: 1.7;
+}
+
+.heroContact {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-md);
+    margin-top: var(--space-xl);
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 520px) {
+    .heroContact {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: none;
+    }
+}
+
+.phoneButton,
+.bookButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-body);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-base);
+    text-decoration: none;
+}
+
+.phoneButton {
+    padding: var(--space-lg) var(--space-xl);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-forest-dark);
+    background: linear-gradient(135deg, var(--color-gold-dark) 0%, var(--color-gold) 50%, var(--color-gold-light) 100%);
+    box-shadow: var(--shadow-gold);
+}
+
+@media (min-width: 520px) {
+    .phoneButton {
+        padding: var(--space-md) var(--space-xl);
+        font-weight: 500;
+    }
+}
+
+.phoneButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(201, 162, 39, 0.4);
+}
+
+.bookButton {
+    padding: var(--space-md) var(--space-lg);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    color: var(--color-gold);
+    background: transparent;
+    border: 1px solid var(--color-gold);
+}
+
+@media (min-width: 520px) {
+    .bookButton {
+        padding: var(--space-md) var(--space-xl);
+        font-size: var(--text-sm);
+    }
+}
+
+.bookButton:hover {
+    background: var(--color-gold);
+    color: var(--color-forest-dark);
+}
+
+.divider {
+    color: rgba(201, 162, 39, 0.4);
+    font-size: var(--text-sm);
+}
+
+.heroMicrocopy {
+    margin-top: var(--space-md);
+    font-size: var(--text-sm);
+    color: rgba(245, 242, 237, 0.6);
+    font-style: italic;
+}
+
+.inlineLink {
+    color: var(--color-gold-light);
+    text-decoration: underline;
+    text-decoration-color: rgba(201, 162, 39, 0.3);
+    text-underline-offset: 2px;
+    transition: all var(--transition-base);
+}
+
+.inlineLink:hover {
+    color: var(--color-gold-pale);
+    text-decoration-color: var(--color-gold);
 }
 
 /* ===== Shared ===== */
@@ -130,6 +230,25 @@
     font-size: var(--text-base);
     color: rgba(245, 242, 237, 0.8);
     line-height: 1.6;
+}
+
+.infoText .phoneLink {
+    color: var(--color-gold);
+    font-weight: 600;
+    font-size: var(--text-lg);
+    text-decoration: none;
+    transition: all var(--transition-base);
+}
+
+.infoText .phoneLink:hover {
+    color: var(--color-gold-light);
+    text-shadow: 0 0 8px rgba(201, 162, 39, 0.4);
+}
+
+.phoneNote {
+    font-size: var(--text-xs);
+    color: rgba(245, 242, 237, 0.6);
+    font-style: italic;
 }
 
 /* Map Container */

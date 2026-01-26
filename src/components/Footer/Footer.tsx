@@ -44,12 +44,16 @@ export default function Footer() {
                         </nav>
                     </div>
 
-                    {/* Contact */}
+                    {/* Contact - Full NAP for Local SEO */}
                     <div className={styles.contactSection}>
                         <h4 className={styles.sectionTitle}>Visit Us</h4>
                         <address className={styles.address}>
+                            <p className={styles.businessName}>Nami Thai Massage</p>
                             <p>3055 University Avenue</p>
-                            <p>San Diego, CA</p>
+                            <p>San Diego, CA 92104</p>
+                            <a href="tel:+16192873034" className={styles.phoneLink}>
+                                📞 (619) 287-3034
+                            </a>
                         </address>
                         <a
                             href="https://bookme.pocketsuite.io/book/nami-thai-massage"

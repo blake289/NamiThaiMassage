@@ -1,0 +1,99 @@
+.stickyBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 0;
+    background: rgba(26, 37, 24, 0.98);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(201, 162, 39, 0.3);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 400;
+    animation: slideUp 0.3s ease;
+}
+
+/* Hide on desktop */
+@media (min-width: 1024px) {
+    .stickyBar {
+        display: none;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.phoneButton,
+.bookButton {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+    padding: var(--space-lg) var(--space-md);
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    border: none;
+    cursor: pointer;
+}
+
+.phoneButton {
+    background: transparent;
+    color: var(--color-gold);
+    border-right: 1px solid rgba(201, 162, 39, 0.2);
+}
+
+.phoneButton:active {
+    background: rgba(201, 162, 39, 0.1);
+}
+
+.bookButton {
+    background: linear-gradient(135deg, var(--color-gold-dark) 0%, var(--color-gold) 50%, var(--color-gold-light) 100%);
+    color: var(--color-forest-dark);
+}
+
+.bookButton:active {
+    transform: scale(0.98);
+}
+
+.phoneButton svg,
+.bookButton svg {
+    flex-shrink: 0;
+}
+
+@media (max-width: 380px) {
+
+    .phoneButton,
+    .bookButton {
+        font-size: var(--text-xs);
+        padding: var(--space-md) var(--space-sm);
+    }
+
+    .phoneButton span,
+    .bookButton span {
+        display: none;
+    }
+
+    /* Show icons only on very small screens */
+    .phoneButton::after {
+        content: '📞';
+        font-size: var(--text-lg);
+    }
+
+    .bookButton::after {
+        content: '📅';
+        font-size: var(--text-lg);
+    }
+}

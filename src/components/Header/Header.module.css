@@ -19,7 +19,8 @@
 }
 
 .scrolled {
-    background-color: rgba(26, 37, 24, 0.98);
+    background-color: rgba(26, 37, 24, 0.75);
+    backdrop-filter: blur(16px);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -31,6 +32,7 @@
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 var(--container-padding);
+    gap: var(--space-md);
 }
 
 /* Logo */
@@ -41,14 +43,14 @@
 }
 
 .logoImage {
-    height: 60px;
+    height: 70px;
     width: auto;
     object-fit: contain;
 }
 
 @media (min-width: 768px) {
     .logoImage {
-        height: 80px;
+        height: 100px;
     }
 }
 
@@ -93,6 +95,43 @@
 
 .navLink:hover::after {
     width: 100%;
+}
+
+/* Phone Link - Desktop & Mobile */
+.headerPhone {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-gold);
+    text-decoration: none;
+    transition: all var(--transition-base);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    white-space: nowrap;
+    min-height: 44px;
+    /* Ensure touch-friendly on mobile */
+}
+
+@media (min-width: 768px) {
+    .headerPhone {
+        font-size: var(--text-base);
+        padding: var(--space-xs) var(--space-md);
+    }
+}
+
+@media (min-width: 1280px) {
+    .headerPhone {
+        font-size: var(--text-lg);
+    }
+}
+
+.headerPhone:hover {
+    color: var(--color-gold-light);
+    background: rgba(201, 162, 39, 0.1);
+    text-shadow: 0 0 8px rgba(201, 162, 39, 0.3);
 }
 
 /* CTA Button */
@@ -213,6 +252,29 @@
 
 .mobileLink:hover {
     color: var(--color-gold);
+}
+
+/* Mobile Phone Link */
+.mobilePhone {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+    padding: var(--space-md) var(--space-xl);
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    font-weight: 600;
+    color: var(--color-forest-dark);
+    background: linear-gradient(135deg, var(--color-gold-dark) 0%, var(--color-gold) 50%, var(--color-gold-light) 100%);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-gold);
+}
+
+.mobilePhone:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(201, 162, 39, 0.4);
 }
 
 .mobileCtaBtn {

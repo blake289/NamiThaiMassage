@@ -32,6 +32,10 @@ export default function ThaiMassageBenefitsPage() {
                         in North Park, San Diego, we bring authentic Thai massage techniques to help you
                         achieve optimal health and relaxation.
                     </p>
+                    <p className={styles.intro}>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        {' '}• Experience authentic Thai massage today
+                    </p>
                 </header>
 
                 {/* Content */}
@@ -40,15 +44,16 @@ export default function ThaiMassageBenefitsPage() {
                         <h2 className={styles.sectionTitle}>What is Traditional Thai Massage?</h2>
                         <p className={styles.paragraph}>
                             Often called &ldquo;lazy person&apos;s yoga,&rdquo; <strong>Thai massage</strong> is a 2,500-year-old
-                            healing practice that originated in Thailand. Unlike Western massage styles, Thai massage
-                            is performed on a floor mat with the client fully clothed in comfortable attire. The therapist
-                            uses their hands, thumbs, elbows, knees, and feet to apply pressure along the body&apos;s
+                            healing practice that originated in Thailand. Unlike Western massage styles like <Link href="/info/swedish-massage">Swedish
+                            massage</Link>, Thai massage is performed on a floor mat with the client fully clothed in comfortable attire.
+                            The therapist uses their hands, thumbs, elbows, knees, and feet to apply pressure along the body&apos;s
                             <strong> Sen energy lines</strong> while guiding you through assisted yoga stretches.
                         </p>
                         <p className={styles.paragraph}>
-                            At our <strong>North Park massage studio</strong>, Nami brings her authentic Thai training
-                            and years of experience to deliver traditional Thai massage that honors this ancient practice
-                            while addressing modern health concerns common among San Diego residents.
+                            At our <Link href="/info/massage-north-park"><strong>North Park massage studio</strong></Link>, Nami brings
+                            her authentic Thai training and over 10 years of experience to deliver traditional Thai massage that honors
+                            this ancient practice while addressing modern health concerns common among San Diego residents. She specializes
+                            in combining Thai techniques with <Link href="/info/deep-tissue-massage">deep tissue</Link> work for maximum therapeutic benefit.
                         </p>
                     </section>
 
@@ -103,16 +108,17 @@ export default function ThaiMassageBenefitsPage() {
                     <section className={styles.section}>
                         <h2 className={styles.sectionTitle}>Who Benefits Most from Thai Massage?</h2>
                         <p className={styles.paragraph}>
-                            Thai massage in San Diego is ideal for a wide range of people. <strong>Office workers</strong> from
-                            nearby Hillcrest and University Heights find relief from desk-related tension. <strong>Athletes</strong> use
-                            it for recovery and flexibility. Those with <strong>chronic pain</strong> conditions benefit from
-                            the therapeutic stretching. Even people simply seeking <strong>stress relief</strong> from busy
-                            San Diego lifestyles discover profound relaxation.
+                            Thai massage in San Diego is ideal for a wide range of people. <Link href="/info/massage-for-office-workers"><strong>Office
+                            workers</strong></Link> from nearby <Link href="/info/massage-hillcrest">Hillcrest</Link> and <Link href="/info/massage-university-heights">University
+                            Heights</Link> find relief from desk-related tension. <Link href="/info/massage-for-athletes"><strong>Athletes</strong></Link> use
+                            it for recovery and flexibility. Those with <Link href="/info/massage-for-chronic-pain"><strong>chronic pain</strong></Link> conditions
+                            benefit from the therapeutic stretching. Even people simply seeking <Link href="/info/massage-for-stress-relief"><strong>stress
+                            relief</strong></Link> from busy San Diego lifestyles discover profound relaxation.
                         </p>
                         <p className={styles.paragraph}>
-                            Whether you live in North Park, Normal Heights, South Park, or anywhere in greater San Diego,
-                            Nami Thai Massage offers convenient access to authentic Thai massage therapy that can transform
-                            your health and well-being.
+                            Whether you live in <Link href="/info/massage-north-park">North Park</Link>, <Link href="/info/massage-normal-heights">Normal
+                            Heights</Link>, or anywhere in greater San Diego, Nami Thai Massage offers convenient access to authentic Thai massage therapy
+                            that can transform your health and well-being.
                         </p>
                     </section>
 
@@ -123,6 +129,10 @@ export default function ThaiMassageBenefitsPage() {
                         <p className={styles.locationNeighborhoods}>
                             Serving North Park, Hillcrest, University Heights, Normal Heights, South Park,
                             City Heights, Kensington, and all of San Diego
+                        </p>
+                        <p className={styles.locationNeighborhoods}>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            {' '}• Same-day bookings often available
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Book Thai Massage
@@ -150,7 +160,11 @@ export default function ThaiMassageBenefitsPage() {
                         <h2 className={styles.ctaTitle}>Experience Authentic Thai Massage in San Diego</h2>
                         <p className={styles.ctaText}>
                             Ready to discover the transformative benefits of Thai massage? Book your session with
-                            Nami today and feel the difference authentic Thai healing can make.
+                            Nami today and feel the difference authentic Thai healing can make. First-time clients often report
+                            feeling more flexible and energized immediately.
+                        </p>
+                        <p className={styles.ctaText}>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Appointment

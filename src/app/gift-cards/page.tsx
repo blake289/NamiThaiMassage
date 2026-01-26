@@ -62,8 +62,16 @@ export default function GiftCardsPage() {
                     <div className={styles.goldLine}></div>
                     <p className={styles.heroDescription}>
                         Give someone special the gift of relaxation and rejuvenation with a
-                        Nami Thai Massage gift certificate.
+                        Nami Thai Massage gift certificate. Delivered instantly by email.
                     </p>
+                    <div className={styles.heroContact}>
+                        <a href="tel:+16192873034" className={styles.phoneLink}>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92V19.92C22 20.48 21.56 20.93 21 20.99C20.45 21.04 19.92 20.99 19.4 20.88C16.36 20.26 13.45 18.92 10.91 17.03C8.69 15.41 6.78 13.49 5.15 11.27C3.26 8.73 1.92 5.82 1.3 2.78C1.19 2.26 1.14 1.73 1.19 1.18C1.25 0.62 1.7 0.18 2.26 0.18H5.26C5.72 0.18 6.12 0.51 6.21 0.96C6.39 1.86 6.68 2.73 7.07 3.56C7.21 3.87 7.13 4.23 6.88 4.47L5.35 6C6.71 8.51 8.73 10.53 11.24 11.89L12.77 10.36C13.01 10.11 13.37 10.03 13.68 10.17C14.51 10.56 15.38 10.85 16.28 11.03C16.73 11.12 17.06 11.52 17.06 11.98V14.98C17.06 15.54 16.62 15.99 16.06 16.05C15.55 16.1 15.03 16.05 14.52 15.94" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                            </svg>
+                            Questions? Call (619) 287-3034
+                        </a>
+                    </div>
                 </div>
             </section>
 
@@ -104,7 +112,8 @@ export default function GiftCardsPage() {
                                 digital gift certificates make the perfect present for
                                 birthdays, holidays, anniversaries, Mother&apos;s Day,
                                 Father&apos;s Day, or simply to show someone you care about
-                                their well-being.
+                                their well-being. Last-minute gift? No problem—receive your
+                                certificate instantly by email.
                             </p>
                             <div className={styles.giftDetails}>
                                 <div className={styles.giftDetailItem}>
@@ -138,6 +147,10 @@ export default function GiftCardsPage() {
                                     </span>
                                 </div>
                             </div>
+                            <p className={styles.giftMicrocopy}>
+                                <strong>Purchase takes less than 2 minutes</strong> - Instant
+                                delivery via email
+                            </p>
                             <a
                                 href="https://bookme.pocketsuite.io/book/nami-thai-massage"
                                 target="_blank"
@@ -146,6 +159,12 @@ export default function GiftCardsPage() {
                             >
                                 Purchase Gift Certificate - $150
                             </a>
+                            <p className={styles.giftNote}>
+                                Need a custom amount or have questions?{" "}
+                                <a href="tel:+16192873034" className={styles.inlinePhone}>
+                                    Call (619) 287-3034
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -186,9 +205,11 @@ export default function GiftCardsPage() {
                             <div className={styles.stepNumber}>3</div>
                             <h3 className={styles.stepTitle}>Redeem Anytime</h3>
                             <p className={styles.stepText}>
-                                The recipient books online, selects any{" "}
-                                <Link href="/services">massage service</Link>, and applies the
-                                gift certificate at checkout. No expiration date.
+                                The recipient books online or calls (619) 287-3034, selects any{" "}
+                                <Link href="/services">massage service</Link> including our{" "}
+                                <Link href="/services/thai-massage">signature Thai massage</Link>
+                                , and applies the gift certificate at checkout. No expiration
+                                date.
                             </p>
                         </div>
                     </div>
@@ -249,6 +270,7 @@ export default function GiftCardsPage() {
                         </h2>
                         <p className={styles.ctaDescription}>
                             Treat yourself to a massage session in North Park, San Diego.
+                            Same-day appointments available.
                         </p>
                         <div className={styles.ctaButtons}>
                             <a
@@ -263,6 +285,9 @@ export default function GiftCardsPage() {
                                 View All Services
                             </Link>
                         </div>
+                        <p className={styles.ctaPhone}>
+                            Or call <a href="tel:+16192873034">(619) 287-3034</a>
+                        </p>
                     </div>
                 </div>
             </section>

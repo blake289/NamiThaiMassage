@@ -29,6 +29,10 @@ export default function ChronicPainMassagePage() {
                         San Diego, we offer therapeutic massage as a natural, drug-free approach to managing persistent
                         pain conditions and improving your quality of life.
                     </p>
+                    <p className={styles.intro}>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        {' '}• Natural, drug-free pain management
+                    </p>
                 </header>
 
                 <div className={styles.content}>
@@ -41,9 +45,11 @@ export default function ChronicPainMassagePage() {
                             and further discomfort that&apos;s hard to break alone.
                         </p>
                         <p className={styles.paragraph}>
-                            For <strong>San Diego residents</strong> living with chronic pain in <strong>North Park,
-                                Hillcrest, University Heights</strong>, and surrounding areas, massage therapy offers a
-                            powerful complement to other treatments—or sometimes, the primary solution.
+                            For <strong>San Diego residents</strong> living with chronic pain in <Link href="/info/massage-north-park"><strong>North
+                            Park</strong></Link>, <Link href="/info/massage-hillcrest"><strong>Hillcrest</strong></Link>, <Link href="/info/massage-university-heights"><strong>University
+                            Heights</strong></Link>, and surrounding areas, massage therapy offers a powerful complement to other treatments—or sometimes,
+                            the primary solution. With over 10 years of experience, our licensed therapist specializes in chronic pain management using
+                            <Link href="/info/deep-tissue-massage"> deep tissue</Link> and <Link href="/info/thai-massage-benefits">Thai massage</Link> techniques.
                         </p>
                     </section>
 
@@ -116,6 +122,10 @@ export default function ChronicPainMassagePage() {
                         <p className={styles.locationNeighborhoods}>
                             A healing sanctuary for chronic pain sufferers • Serving all of San Diego
                         </p>
+                        <p className={styles.locationNeighborhoods}>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            {' '}• Comprehensive pain management approach
+                        </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Book Pain Relief Session
                         </Link>
@@ -125,7 +135,10 @@ export default function ChronicPainMassagePage() {
                         <h2 className={styles.ctaTitle}>Start Your Journey to Relief</h2>
                         <p className={styles.ctaText}>
                             You don&apos;t have to live with chronic pain. Schedule a consultation and discover
-                            how massage therapy can help restore your quality of life.
+                            how massage therapy can help restore your quality of life. Many clients report improvement after just 2-3 sessions.
+                        </p>
+                        <p className={styles.ctaText}>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Session

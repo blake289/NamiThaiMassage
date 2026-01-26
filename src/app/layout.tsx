@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import ChatButton from "@/components/ChatButton/ChatButton";
+import StickyMobileCTA from "@/components/StickyMobileCTA/StickyMobileCTA";
 
 const siteUrl = "https://namithaimassage.com";
 
@@ -224,6 +225,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <ChatButton />
+        <StickyMobileCTA />
       </body>
     </html>
   );

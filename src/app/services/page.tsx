@@ -218,10 +218,23 @@ export default function ServicesPage() {
                     </h1>
                     <div className={styles.goldLine}></div>
                     <p className={styles.heroDescription}>
-                        From traditional Thai massage to deep tissue therapy, each session
-                        is personalized to your body&apos;s needs. Prices range from $70 for
-                        add-ons to $215 for extended treatments.
+                        From <Link href="/info/thai-massage-benefits" className={styles.inlineLink}>traditional Thai massage</Link> to <Link href="/info/deep-tissue-massage" className={styles.inlineLink}>deep tissue therapy</Link>, each session
+                        is personalized to your body&apos;s needs. Serving <Link href="/info/massage-north-park" className={styles.inlineLink}>North Park</Link>, <Link href="/info/massage-hillcrest" className={styles.inlineLink}>Hillcrest</Link>, <Link href="/info/massage-university-heights" className={styles.inlineLink}>University Heights</Link> & nearby areas.
                     </p>
+                    <div className={styles.heroContact}>
+                        <a href="tel:+16192873034" className={styles.phoneButton}>
+                            📞 (619) 287-3034
+                        </a>
+                        <span className={styles.divider}>or</span>
+                        <a
+                            href="https://bookme.pocketsuite.io/book/nami-thai-massage"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.bookButton}
+                        >
+                            Book Online 24/7
+                        </a>
+                    </div>
                 </div>
             </section>
 
@@ -237,8 +250,7 @@ export default function ServicesPage() {
                         <div className={styles.goldLine}></div>
                         <p className={styles.sectionDescription}>
                             Our signature packages combine multiple therapeutic techniques for
-                            the most comprehensive healing experience. Best value for full
-                            relaxation and pain relief.
+                            the most comprehensive healing experience. Perfect for <Link href="/info/massage-for-stress-relief" className={styles.inlineLink}>stress relief</Link>, <Link href="/info/massage-for-chronic-pain" className={styles.inlineLink}>chronic pain</Link>, and complete relaxation.
                         </p>
                     </div>
 
@@ -261,9 +273,8 @@ export default function ServicesPage() {
                         </h2>
                         <div className={styles.goldLine}></div>
                         <p className={styles.sectionDescription}>
-                            Choose from Swedish, deep tissue, or sports massage in 60 or 90
-                            minute sessions. Each massage is customized to address your
-                            specific concerns.
+                            Choose from <Link href="/info/swedish-massage" className={styles.inlineLink}>Swedish</Link>, <Link href="/info/deep-tissue-massage" className={styles.inlineLink}>deep tissue</Link>, or <Link href="/info/sports-massage" className={styles.inlineLink}>sports massage</Link> in 60 or 90
+                            minute sessions. Great for <Link href="/info/massage-for-athletes" className={styles.inlineLink}>athletes</Link>, <Link href="/info/massage-for-office-workers" className={styles.inlineLink}>office workers</Link>, and anyone seeking therapeutic relief.
                         </p>
                     </div>
 
@@ -286,7 +297,7 @@ export default function ServicesPage() {
                         <div className={styles.goldLine}></div>
                         <p className={styles.sectionDescription}>
                             Customize your massage experience with targeted add-on treatments.
-                            Combine with any massage service for $70 each.
+                            Especially beneficial for <Link href="/info/massage-for-office-workers" className={styles.inlineLink}>desk workers</Link> and those with specific problem areas. Add to any service for $70 each.
                         </p>
                     </div>
 
@@ -326,21 +337,31 @@ export default function ServicesPage() {
                 <div className="container">
                     <div className={styles.ctaContent}>
                         <h2 className={styles.ctaTitle}>
-                            Ready to <span className={styles.goldText}>Book</span> Your
-                            Massage?
+                            Ready to Feel <span className={styles.goldText}>Better</span>?
                         </h2>
                         <p className={styles.ctaDescription}>
                             Schedule your personalized massage session in North Park, San
-                            Diego. Online booking available 24/7.
+                            Diego. <strong>Same-day appointments often available.</strong>
                         </p>
-                        <a
-                            href="https://bookme.pocketsuite.io/book/nami-thai-massage"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={styles.btnPrimary}
-                        >
-                            Book Your Session Now
-                        </a>
+                        <div className={styles.ctaButtons}>
+                            <a
+                                href="https://bookme.pocketsuite.io/book/nami-thai-massage"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.btnPrimary}
+                            >
+                                Book My Appointment
+                            </a>
+                            <a
+                                href="tel:+16192873034"
+                                className={styles.btnSecondary}
+                            >
+                                📞 Call (619) 287-3034
+                            </a>
+                        </div>
+                        <p className={styles.ctaMicrocopy}>
+                            ✓ 5.0 rating · ✓ Flexible cancellation · Not sure which service? <Link href="/contact" className={styles.microLink}>Text or call us</Link>
+                        </p>
                     </div>
                 </div>
             </section>

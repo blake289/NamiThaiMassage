@@ -56,6 +56,18 @@ export default function AboutPage() {
                         About <span className={styles.goldText}>Nami Thai Massage</span>
                     </h1>
                     <div className={styles.goldLine}></div>
+                    <p className={styles.heroDescription}>
+                        Serving North Park, Hillcrest, University Heights, and surrounding San Diego communities
+                    </p>
+                    <div className={styles.heroContact}>
+                        <a href="tel:+16192873034" className={styles.phoneLink}>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92V19.92C22 20.48 21.56 20.93 21 20.99C20.45 21.04 19.92 20.99 19.4 20.88C16.36 20.26 13.45 18.92 10.91 17.03C8.69 15.41 6.78 13.49 5.15 11.27C3.26 8.73 1.92 5.82 1.3 2.78C1.19 2.26 1.14 1.73 1.19 1.18C1.25 0.62 1.7 0.18 2.26 0.18H5.26C5.72 0.18 6.12 0.51 6.21 0.96C6.39 1.86 6.68 2.73 7.07 3.56C7.21 3.87 7.13 4.23 6.88 4.47L5.35 6C6.71 8.51 8.73 10.53 11.24 11.89L12.77 10.36C13.01 10.11 13.37 10.03 13.68 10.17C14.51 10.56 15.38 10.85 16.28 11.03C16.73 11.12 17.06 11.52 17.06 11.98V14.98C17.06 15.54 16.62 15.99 16.06 16.05C15.55 16.1 15.03 16.05 14.52 15.94" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                            </svg>
+                            (619) 287-3034
+                        </a>
+                        <span className={styles.availability}>Same-day appointments available</span>
+                    </div>
                 </div>
             </section>
 
@@ -72,6 +84,14 @@ export default function AboutPage() {
                             <div className={styles.imageAccent}></div>
                         </div>
                         <div className={styles.storyContent}>
+                            {/* Large Logo Display */}
+                            <div className={styles.storyLogo}>
+                                <img
+                                    src="/logo.png"
+                                    alt="Nami Thai Massage"
+                                    className={styles.storyLogoImage}
+                                />
+                            </div>
                             <h2 className={styles.storyTitle}>
                                 Personalized{" "}
                                 <span className={styles.goldText}>Massage Therapy</span>
@@ -82,21 +102,28 @@ export default function AboutPage() {
                                     Welcome to Nami Thai Massage, where holistic healing meets
                                     personalized care.
                                 </strong>{" "}
-                                As a licensed massage therapist in San Diego, I specialize in
-                                blending traditional Thai massage techniques with modern sports
-                                therapy to address your unique needs.
+                                As a licensed massage therapist with over 10 years of experience
+                                in San Diego, I specialize in blending traditional Thai massage
+                                techniques with modern sports therapy to address your unique
+                                needs.
                             </p>
                             <p className={styles.storyText}>
                                 Whether you&apos;re an athlete seeking faster recovery, managing
                                 chronic pain, dealing with stress-related tension, or simply
                                 need deep relaxation, every session is tailored specifically for
-                                your body. Unlike chain massage studios, you receive my full,
-                                undivided attention in a calm, private environment.
+                                your body. My expertise includes{" "}
+                                <Link href="/services/thai-massage">traditional Thai massage</Link>
+                                , deep tissue therapy, sports massage, and{" "}
+                                <Link href="/services">specialized techniques</Link> for chronic
+                                pain management. Unlike chain massage studios, you receive my
+                                full, undivided attention in a calm, private environment.
                             </p>
                             <p className={styles.storyText}>
                                 Located in the heart of{" "}
                                 <strong>North Park, San Diego</strong>, my studio provides a
                                 peaceful escape where your healing journey is the only priority.
+                                I proudly serve clients from North Park, Hillcrest, University
+                                Heights, Banker&apos;s Hill, and throughout central San Diego.
                                 No rushing, no distractions—just dedicated therapeutic care
                                 focused entirely on your well-being.
                             </p>
@@ -134,7 +161,9 @@ export default function AboutPage() {
                             <p className={styles.pillarText}>
                                 Techniques passed down through generations of Thai healers,
                                 focusing on energy lines (Sen) and pressure points to release
-                                blocked energy and promote natural healing.
+                                blocked energy and promote natural healing. I studied
+                                traditional Thai massage techniques in Thailand with certified
+                                masters.
                             </p>
                         </div>
                         <div className={styles.pillar}>
@@ -175,9 +204,10 @@ export default function AboutPage() {
                         <div className={styles.pillar}>
                             <h3 className={styles.pillarTitle}>Athletes & Runners</h3>
                             <p className={styles.pillarText}>
-                                Sports massage for improved performance, faster recovery, and
-                                injury prevention. Regular clients include marathoners, CrossFit
-                                athletes, and weekend warriors.
+                                <Link href="/info/sports-massage">Sports massage</Link> for
+                                improved performance, faster recovery, and injury prevention.
+                                Regular clients include marathoners, CrossFit athletes, and
+                                weekend warriors throughout San Diego.
                             </p>
                         </div>
                         <div className={styles.pillar}>
@@ -193,7 +223,8 @@ export default function AboutPage() {
                             <p className={styles.pillarText}>
                                 Therapeutic massage for ongoing pain management. Gentle yet
                                 effective techniques for conditions like fibromyalgia, sciatica,
-                                and tension headaches.
+                                and tension headaches. Learn more about{" "}
+                                <Link href="/info/pain-management">chronic pain relief</Link>.
                             </p>
                         </div>
                     </div>
@@ -214,6 +245,13 @@ export default function AboutPage() {
                             Diego, my private massage studio offers a peaceful sanctuary for
                             your healing session. With easy street parking and a calm,
                             welcoming atmosphere, you'll feel relaxed the moment you arrive.
+                        </p>
+                        <p className={styles.locationAvailability}>
+                            <strong>Evening and weekend hours available</strong> - Book online
+                            for instant confirmation or call{" "}
+                            <a href="tel:+16192873034" className={styles.inlinePhone}>
+                                (619) 287-3034
+                            </a>
                         </p>
                         <div className={styles.locationCtas}>
                             <a

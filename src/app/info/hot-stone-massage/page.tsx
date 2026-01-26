@@ -29,6 +29,10 @@ export default function HotStoneMassagePage() {
                         Smooth, heated basalt stones combined with expert massage techniques create a deeply relaxing
                         experience that melts away tension and soothes both body and mind.
                     </p>
+                    <p className={styles.intro}>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        {' '}• Ultimate relaxation experience
+                    </p>
                 </header>
 
                 <div className={styles.content}>
@@ -42,8 +46,10 @@ export default function HotStoneMassagePage() {
                         </p>
                         <p className={styles.paragraph}>
                             For <strong>San Diego residents</strong> seeking a premium spa experience without traveling far,
-                            Nami Thai Massage in <strong>North Park</strong> offers authentic hot stone therapy that rivals
-                            any luxury resort treatment.
+                            Nami Thai Massage in <Link href="/info/massage-north-park"><strong>North Park</strong></Link> offers
+                            authentic hot stone therapy that rivals any luxury resort treatment. With over 10 years of experience,
+                            our licensed therapist combines hot stone therapy with <Link href="/info/swedish-massage">Swedish massage</Link> techniques
+                            for maximum relaxation.
                         </p>
                     </section>
 
@@ -106,8 +112,9 @@ export default function HotStoneMassagePage() {
                         <p className={styles.paragraph}>
                             The combination of stone placement and massage creates a unique sensation of radiating warmth
                             that spreads throughout your body. Many clients describe it as one of the most relaxing
-                            experiences they&apos;ve ever had—a true escape from the everyday stress of <strong>Hillcrest,
-                                University Heights</strong>, and San Diego life.
+                            experiences they&apos;ve ever had—a true escape from the everyday stress of <Link href="/info/massage-hillcrest"><strong>Hillcrest</strong></Link>,
+                            <Link href="/info/massage-university-heights"><strong>University Heights</strong></Link>, and San Diego life.
+                            Perfect for <Link href="/info/massage-for-stress-relief">stress relief</Link> and deep muscle relaxation.
                         </p>
                     </section>
 
@@ -118,6 +125,10 @@ export default function HotStoneMassagePage() {
                             Your luxury spa escape in the heart of San Diego • Serving North Park, Hillcrest,
                             University Heights, and surrounding neighborhoods
                         </p>
+                        <p className={styles.locationNeighborhoods}>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            {' '}• Book your luxury escape today
+                        </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Book Hot Stone Massage
                         </Link>
@@ -127,7 +138,10 @@ export default function HotStoneMassagePage() {
                         <h2 className={styles.ctaTitle}>Indulge in Warm Relaxation</h2>
                         <p className={styles.ctaText}>
                             Treat yourself to the ultimate relaxation experience. Book your hot stone
-                            massage at Nami Thai Massage today.
+                            massage at Nami Thai Massage today. Perfect for special occasions or self-care.
+                        </p>
+                        <p className={styles.ctaText}>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Session

@@ -1,29 +1,55 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import styles from './ChatButton.module.css';
 
 export default function ChatButton() {
     const [isOpen, setIsOpen] = useState(false);
+    const [hasInteracted, setHasInteracted] = useState(false);
+    const [showTooltip, setShowTooltip] = useState(true);
+    const exitIntentTriggered = useRef(false);
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
         message: ''
     });
 
-    // Auto-open after a short delay
+    // Less aggressive - only show on exit intent, not scroll
+    // This improves UX by not interrupting browsing
+    useEffect(() => {
+        const handleMouseLeave = (e: MouseEvent) => {
+            // Detect when mouse leaves from top of page (common exit pattern)
+            // Only trigger on desktop (pointer devices)
+            if (e.clientY <= 0 && !exitIntentTriggered.current && !hasInteracted && window.innerWidth >= 768) {
+                setIsOpen(true);
+                setHasInteracted(true);
+                exitIntentTriggered.current = true;
+            }
+        };
+
+        document.addEventListener('mouseleave', handleMouseLeave);
+        return () => document.removeEventListener('mouseleave', handleMouseLeave);
+    }, [hasInteracted]);
+
+    // Hide tooltip after 8 seconds or when user interacts
     useEffect(() => {
         const timer = setTimeout(() => {
-            setIsOpen(true);
-        }, 3000);
+            setShowTooltip(false);
+        }, 8000);
         return () => clearTimeout(timer);
     }, []);
 
+    const handleToggle = () => {
+        setIsOpen(!isOpen);
+        setHasInteracted(true);
+        setShowTooltip(false);
+    };
+
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        // Construct SMS link with form data
-        const phoneNumber = '+16195551234'; // Replace with actual number
-        const smsBody = `Name: ${formData.name}\nPhone: ${formData.phone}\nMessage: ${formData.message}`;
+        // Use actual business phone number
+        const phoneNumber = '+16192873034'; // Nami Thai Massage phone
+        const smsBody = `New message from ${formData.name}\nPhone: ${formData.phone}\nMessage: ${formData.message}`;
         window.location.href = `sms:${phoneNumber}?body=${encodeURIComponent(smsBody)}`;
     };
 
@@ -41,12 +67,15 @@ export default function ChatButton() {
                 <div className={styles.chatPopup}>
                     <div className={styles.popupHeader}>
                         <div className={styles.headerContent}>
-                            <img
-                                src="/images/nami-portrait.png"
-                                alt="Nami"
-                                className={styles.avatarImage}
-                            />
-                            <h3 className={styles.popupTitle}>Text me!</h3>
+                            <div className={styles.smsIcon}>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 2H4C2.9 2 2.01 2.9 2.01 4L2 22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM18 14H6V12H18V14ZM18 11H6V9H18V11ZM18 8H6V6H18V8Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 className={styles.popupTitle}>Text Nami</h3>
+                                <p className={styles.popupSubtitle}>Have a question? Send me a text and I will get back to you ASAP.</p>
+                            </div>
                         </div>
                         <button
                             className={styles.closeButton}
@@ -103,22 +132,24 @@ export default function ChatButton() {
                 </div>
             )}
 
-            {/* Chat Button */}
+            {/* Chat Button - SMS Bubble */}
             <button
-                className={styles.chatButton}
-                onClick={() => setIsOpen(!isOpen)}
-                aria-label={isOpen ? "Close chat" : "Open chat"}
+                className={`${styles.chatButton} ${!hasInteracted ? styles.pulse : ''}`}
+                onClick={handleToggle}
+                aria-label={isOpen ? "Close chat" : "Text Nami"}
             >
+                {showTooltip && !isOpen && (
+                    <div className={styles.tooltip}>Text Me</div>
+                )}
+
                 {isOpen ? (
                     <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
                         <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
                     </svg>
                 ) : (
-                    <img
-                        src="/images/nami-portrait.png"
-                        alt="Chat with Nami"
-                        className={styles.buttonAvatar}
-                    />
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zm-9-4h2v2h-2zm0-6h2v4h-2z" />
+                    </svg>
                 )}
             </button>
         </div>

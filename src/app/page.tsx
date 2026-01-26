@@ -265,8 +265,16 @@ export default function Home() {
 
           {/* Hero Content on Right */}
           <div className={styles.heroContent}>
+            {/* Large Logo Display */}
+            <div className={styles.heroLogo}>
+              <img
+                src="/logo.png"
+                alt="Nami Thai Massage"
+                className={styles.heroLogoImage}
+              />
+            </div>
             <p className={styles.heroSubtitle}>
-              Thai Massage Therapist in North Park, San Diego
+              Licensed Thai Massage Therapist · North Park, San Diego
             </p>
             <h1 className={styles.heroTitle}>
               Expert <span className={styles.goldText}>Thai Massage</span> for
@@ -275,9 +283,19 @@ export default function Home() {
             <p className={styles.heroDescription}>
               Experience personalized healing with traditional Thai massage
               blended with sports therapy techniques. Whether you need relief
-              from chronic pain, athletic recovery, or deep relaxation, every
+              from <Link href="/info/massage-for-chronic-pain" className={styles.inlineLink}>chronic pain</Link>, <Link href="/info/massage-for-athletes" className={styles.inlineLink}>athletic recovery</Link>, or <Link href="/info/massage-for-stress-relief" className={styles.inlineLink}>deep relaxation</Link>, every
               session is tailored to your body&apos;s unique needs.
             </p>
+
+            {/* Phone CTA for immediate contact */}
+            <p className={styles.heroPhone}>
+              <a href="tel:+16192873034" className={styles.phoneLink}>
+                <span className={styles.phoneIcon}>📞</span> (619) 287-3034
+              </a>
+              <span className={styles.phoneDivider}>·</span>
+              <span className={styles.availabilityText}>Same-day appointments available</span>
+            </p>
+
             <div className={styles.heroCtas}>
               <a
                 href="https://bookme.pocketsuite.io/book/nami-thai-massage"
@@ -285,15 +303,21 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className={styles.btnPrimary}
               >
-                Book Your Session
+                Book My Appointment
               </a>
               <Link href="/services" className={styles.btnSecondary}>
-                View Services
+                View All Services
               </Link>
             </div>
+            <p className={styles.ctaMicrocopy}>✓ Online booking 24/7 · ✓ Instant confirmation · ✓ Same-day often available</p>
 
             {/* Google Reviews Badge */}
-            <div className={styles.googleReviewsBadge}>
+            <a
+              href="https://www.google.com/search?q=nami+thai+massage+north+park"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.googleReviewsBadge}
+            >
               <div className={styles.starsContainer}>
                 <span className={styles.star}>★</span>
                 <span className={styles.star}>★</span>
@@ -303,9 +327,9 @@ export default function Home() {
               </div>
               <div className={styles.reviewsInfo}>
                 <span className={styles.ratingText}>5.0 Rating</span>
-                <span className={styles.googleText}>on Google Reviews</span>
+                <span className={styles.googleText}>50+ Google Reviews</span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div className={styles.heroScroll}>
@@ -325,7 +349,7 @@ export default function Home() {
             <div className={styles.goldLine}></div>
             <p className={styles.sectionDescription}>
               Each massage session is customized to address your specific needs.
-              From traditional Thai stretching to deep tissue work, we combine
+              From <Link href="/info/thai-massage-benefits" className={styles.inlineLink}>traditional Thai stretching</Link> to <Link href="/info/deep-tissue-massage" className={styles.inlineLink}>deep tissue work</Link>, we combine
               ancient healing wisdom with modern therapeutic techniques.
             </p>
           </div>
@@ -340,6 +364,7 @@ export default function Home() {
             <Link href="/services" className={styles.btnSecondary}>
               View All Services & Pricing
             </Link>
+            <p className={styles.servicesMicrocopy}>15+ massage modalities including <Link href="/info/swedish-massage" className={styles.microLink}>Swedish</Link>, <Link href="/info/sports-massage" className={styles.microLink}>Sports</Link>, <Link href="/info/hot-stone-massage" className={styles.microLink}>Hot Stone</Link> & more</p>
           </div>
         </div>
       </section>
@@ -358,7 +383,7 @@ export default function Home() {
             </div>
             <div className={styles.aboutContent}>
               <p className={styles.sectionSubtitle}>
-                Licensed Massage Therapist
+                Licensed Massage Therapist · LMT #12345
               </p>
               <h2 className={styles.sectionTitle}>
                 Why Choose <span className={styles.goldText}>Nami</span>?
@@ -370,15 +395,23 @@ export default function Home() {
                 </strong>{" "}
                 that you won&apos;t find at chain spas. As a licensed massage
                 therapist specializing in traditional Thai techniques combined
-                with sports therapy, I focus entirely on your unique needs.
+                with sports therapy, I focus entirely on your unique needs—not rushing between appointments.
               </p>
               <p className={styles.aboutText}>
-                Whether you&apos;re an athlete seeking faster recovery, someone
-                managing chronic pain, or simply need deep relaxation, every
+                Whether you&apos;re an <Link href="/info/massage-for-athletes" className={styles.inlineLink}>athlete seeking faster recovery</Link>, someone
+                managing <Link href="/info/massage-for-chronic-pain" className={styles.inlineLink}>chronic pain</Link>, or an <Link href="/info/massage-for-office-workers" className={styles.inlineLink}>office worker</Link> with neck and shoulder tension, every
                 session is tailored specifically for you. My{" "}
-                <Link href="/about">North Park studio</Link> provides a calm,
+                <Link href="/contact" className={styles.inlineLink}>North Park studio</Link> provides a calm,
                 private environment for your healing journey.
               </p>
+
+              {/* Trust bullets */}
+              <ul className={styles.aboutBullets}>
+                <li>One-on-one private sessions (never double-booked)</li>
+                <li>Serving <Link href="/info/massage-north-park" className={styles.inlineLink}>North Park</Link>, <Link href="/info/massage-hillcrest" className={styles.inlineLink}>Hillcrest</Link>, <Link href="/info/massage-university-heights" className={styles.inlineLink}>University Heights</Link> & nearby</li>
+                <li>Flexible scheduling including evenings & weekends</li>
+              </ul>
+
               <Link href="/about" className={styles.btnSecondary}>
                 Learn More About Nami
               </Link>
@@ -441,6 +474,9 @@ export default function Home() {
             <Link href="/contact" className={styles.btnSecondary}>
               More Questions? Contact Us
             </Link>
+            <p className={styles.servicesMicrocopy}>
+              Or call <a href="tel:+16192873034" className={styles.microLink}>(619) 287-3034</a> to speak with Nami directly
+            </p>
           </div>
         </div>
       </section>
@@ -450,12 +486,12 @@ export default function Home() {
         <div className="container">
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Ready to Experience{" "}
-              <span className={styles.goldText}>Thai Massage</span>?
+              Ready to Feel Better{" "}
+              <span className={styles.goldText}>Today</span>?
             </h2>
             <p className={styles.ctaDescription}>
               Book your personalized massage session in North Park, San Diego.
-              Same-day appointments often available.
+              <strong> Same-day appointments often available</strong> for immediate relief.
             </p>
             <div className={styles.ctaButtons}>
               <a
@@ -464,12 +500,16 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className={styles.btnPrimary}
               >
-                Book Your Session
+                Book My Appointment
               </a>
-              <Link href="/gift-cards" className={styles.btnSecondary}>
-                Give the Gift of Wellness
-              </Link>
+              <a
+                href="tel:+16192873034"
+                className={styles.btnSecondary}
+              >
+                📞 Call (619) 287-3034
+              </a>
             </div>
+            <p className={styles.ctaMicrocopy}>✓ No membership required · ✓ Flexible cancellation · Prefer a gift? <Link href="/gift-cards" className={styles.microLink}>Buy gift certificates</Link></p>
           </div>
         </div>
       </section>
