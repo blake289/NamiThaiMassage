@@ -148,7 +148,10 @@ export default function ChatButton() {
                     </svg>
                 ) : (
                     <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
-                        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zm-9-4h2v2h-2zm0-6h2v4h-2z" />
+                        <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H6L4 18V4H20V16Z"/>
+                        <circle cx="8" cy="10" r="1.5"/>
+                        <circle cx="12" cy="10" r="1.5"/>
+                        <circle cx="16" cy="10" r="1.5"/>
                     </svg>
                 )}
             </button>

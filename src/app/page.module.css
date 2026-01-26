@@ -1078,6 +1078,38 @@
   }
 }
 
+/* ===== Instagram Section ===== */
+.instagram {
+  padding: var(--space-5xl) 0;
+  background: linear-gradient(180deg,
+      rgba(26, 37, 24, 0.8) 0%,
+      rgba(42, 63, 38, 0.6) 50%,
+      rgba(26, 37, 24, 0.8) 100%);
+}
+
+.instagramEmbed {
+  max-width: 540px;
+  margin: var(--space-3xl) auto;
+  padding: var(--space-lg);
+  background: rgba(26, 37, 24, 0.6);
+  border: 1px solid rgba(201, 162, 39, 0.2);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.instagramFrame {
+  display: block;
+  border: none;
+  width: 100%;
+  min-height: 600px;
+  background: transparent;
+}
+
+.instagramFooter {
+  text-align: center;
+  margin-top: var(--space-2xl);
+}
+
 /* ===== FAQ Section ===== */
 .faq {
   padding: var(--space-5xl) 0;

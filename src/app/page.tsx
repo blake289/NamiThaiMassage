@@ -442,6 +442,45 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Instagram Feed Section */}
+      <section className={styles.instagram}>
+        <div className="container">
+          <div className={styles.sectionHeader}>
+            <p className={styles.sectionSubtitle}>Follow Along</p>
+            <h2 className={styles.sectionTitle}>
+              Latest from <span className={styles.goldText}>Instagram</span>
+            </h2>
+            <div className={styles.goldLine}></div>
+            <p className={styles.sectionDescription}>
+              See the latest wellness tips, behind-the-scenes moments, and client transformations
+            </p>
+          </div>
+
+          <div className={styles.instagramEmbed}>
+            <iframe
+              src="https://www.instagram.com/namithaimassage/embed"
+              width="100%"
+              height="600"
+              frameBorder="0"
+              scrolling="no"
+              allowTransparency={true}
+              className={styles.instagramFrame}
+            ></iframe>
+          </div>
+
+          <div className={styles.instagramFooter}>
+            <a
+              href="https://www.instagram.com/namithaimassage"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.btnSecondary}
+            >
+              Follow on Instagram
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className={`${styles.faq} lotus-pattern`}>
         <div className="container">
