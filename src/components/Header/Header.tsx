@@ -154,6 +154,11 @@ export default function Header() {
                     </Link>
                 </nav>
 
+                {/* Phone Number - Desktop */}
+                <a href="tel:+16192873034" className={styles.headerPhone}>
+                    (619) 287-3034
+                </a>
+
                 {/* Book Now CTA */}
                 <Link href="/book" className={styles.ctaBtn}>
                     Book Now
@@ -175,6 +180,11 @@ export default function Header() {
             {/* Mobile Menu */}
             <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.mobileMenuOpen : ''}`}>
                 <nav className={styles.mobileNav}>
+                    {/* Phone Number - Mobile */}
+                    <a href="tel:+16192873034" className={styles.mobilePhone} onClick={closeMenu}>
+                        📞 Call (619) 287-3034
+                    </a>
+
                     {navLinks.map((link) => (
                         <Link
                             key={link.href}

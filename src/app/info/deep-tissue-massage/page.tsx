@@ -29,6 +29,10 @@ export default function DeepTissueMassagePage() {
                         break up adhesions, and restore proper muscle function. At Nami Thai Massage in North Park, San Diego,
                         our skilled therapist delivers precise deep tissue work that brings lasting relief.
                     </p>
+                    <p className={styles.intro}>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        {' '}• Relief often felt after just one session
+                    </p>
                 </header>
 
                 <div className={styles.content}>
@@ -36,15 +40,17 @@ export default function DeepTissueMassagePage() {
                         <h2 className={styles.sectionTitle}>What is Deep Tissue Massage?</h2>
                         <p className={styles.paragraph}>
                             <strong>Deep tissue massage</strong> is a therapeutic technique that focuses on realigning the deeper
-                            layers of muscles and connective tissue. Unlike Swedish massage which uses lighter pressure for relaxation,
-                            deep tissue massage applies sustained pressure using slow, deliberate strokes to target the inner
-                            muscle layers and fascia (the connective tissue surrounding muscles).
+                            layers of muscles and connective tissue. Unlike <Link href="/info/swedish-massage">Swedish massage</Link> which
+                            uses lighter pressure for relaxation, deep tissue massage applies sustained pressure using slow, deliberate
+                            strokes to target the inner muscle layers and fascia (the connective tissue surrounding muscles).
                         </p>
                         <p className={styles.paragraph}>
                             This massage style is especially beneficial for those in <strong>San Diego</strong> who lead active lifestyles,
-                            work physically demanding jobs, or spend long hours at desks in nearby <strong>Hillcrest, University Heights,
-                                or North Park</strong> offices. It&apos;s also excellent for athletes and anyone dealing with chronic muscle
-                            tension or repetitive strain injuries.
+                            work physically demanding jobs, or spend long hours at desks in nearby <Link href="/info/massage-hillcrest"><strong>Hillcrest</strong></Link>,
+                            <Link href="/info/massage-university-heights"><strong>University Heights</strong></Link>, or <Link href="/info/massage-north-park"><strong>North
+                            Park</strong></Link> offices. It&apos;s also excellent for <Link href="/info/massage-for-athletes">athletes</Link> and
+                            anyone dealing with <Link href="/info/massage-for-chronic-pain">chronic muscle tension</Link> or repetitive strain injuries.
+                            Our licensed therapist has over 10 years of experience in therapeutic deep tissue work.
                         </p>
                     </section>
 
@@ -100,10 +106,10 @@ export default function DeepTissueMassagePage() {
                         <h2 className={styles.sectionTitle}>Who Needs Deep Tissue Massage?</h2>
                         <p className={styles.paragraph}>
                             Deep tissue massage is ideal for <strong>San Diego residents</strong> who experience persistent muscle
-                            tension that doesn&apos;t respond to lighter massage techniques. This includes office workers from
-                            <strong> Hillcrest</strong> and <strong>University Heights</strong> suffering from desk-related pain,
-                            athletes training in the <strong>Balboa Park</strong> area, and anyone recovering from injuries or
-                            dealing with conditions like:
+                            tension that doesn&apos;t respond to lighter massage techniques. This includes <Link href="/info/massage-for-office-workers">office
+                            workers</Link> from <strong>Hillcrest</strong> and <strong>University Heights</strong> suffering from desk-related
+                            pain, athletes training in the <Link href="/info/massage-balboa-park"><strong>Balboa Park</strong></Link> area,
+                            and anyone recovering from injuries or dealing with conditions like:
                         </p>
                         <p className={styles.paragraph}>
                             Chronic lower back pain • Neck and shoulder tension • Sciatica • Tennis elbow • Fibromyalgia •
@@ -118,6 +124,10 @@ export default function DeepTissueMassagePage() {
                         <p className={styles.locationNeighborhoods}>
                             Easily accessible from North Park, Hillcrest, University Heights, Normal Heights,
                             South Park, City Heights, and all San Diego neighborhoods
+                        </p>
+                        <p className={styles.locationNeighborhoods}>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            {' '}• Same-day appointments available
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Book Deep Tissue Massage
@@ -143,7 +153,10 @@ export default function DeepTissueMassagePage() {
                         <h2 className={styles.ctaTitle}>Ready to Release Deep Muscle Tension?</h2>
                         <p className={styles.ctaText}>
                             Book your deep tissue massage at Nami Thai Massage in North Park and experience
-                            lasting relief from chronic pain and tension.
+                            lasting relief from chronic pain and tension. Most clients report significant improvement after their first visit.
+                        </p>
+                        <p className={styles.ctaText}>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Session

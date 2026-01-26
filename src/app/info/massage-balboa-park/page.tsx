@@ -29,6 +29,10 @@ export default function BalboaParkMassagePage() {
                         at Morley Field, your body deserves expert recovery. Nami Thai Massage in North Park
                         is just minutes from Balboa Park, offering therapeutic massage to help you recover and recharge.
                     </p>
+                    <p className={styles.intro}>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        {' '}• Perfect post-activity recovery
+                    </p>
                 </header>
 
                 <div className={styles.content}>
@@ -44,6 +48,8 @@ export default function BalboaParkMassagePage() {
                             <strong>Nami Thai Massage</strong> at <strong>3055 University Avenue</strong> is located
                             just minutes east of Balboa Park, making it the perfect stop for post-activity recovery.
                             Continue east on El Prado/University Avenue and you&apos;ll be on our massage table in no time.
+                            With over 10 years of experience, our licensed therapist specializes in <Link href="/info/sports-massage">sports massage</Link> and
+                            <Link href="/info/massage-for-athletes"> athletic recovery</Link>.
                         </p>
                     </section>
 
@@ -101,10 +107,10 @@ export default function BalboaParkMassagePage() {
                             For Balboa Park athletes and visitors, we recommend:
                         </p>
                         <p className={styles.paragraph}>
-                            <strong>Sports Massage:</strong> Targeted recovery for runners, tennis players, and active
-                            visitors • <strong>Thai Massage:</strong> Stretching to improve flexibility after strenuous
-                            activities • <strong>Deep Tissue:</strong> Address specific areas of tension and strain •
-                            <strong> Swedish Massage:</strong> Full-body relaxation after a long day of exploration
+                            <Link href="/info/sports-massage"><strong>Sports Massage:</strong></Link> Targeted recovery for runners, tennis players, and active
+                            visitors • <Link href="/info/thai-massage-benefits"><strong>Thai Massage:</strong></Link> Stretching to improve flexibility after strenuous
+                            activities • <Link href="/info/deep-tissue-massage"><strong>Deep Tissue:</strong></Link> Address specific areas of tension and strain •
+                            <Link href="/info/swedish-massage"><strong>Swedish Massage:</strong></Link> Full-body relaxation after a long day of exploration
                         </p>
                         <p className={styles.paragraph}>
                             Many clients book their massage in advance, timing it perfectly after their planned
@@ -119,6 +125,10 @@ export default function BalboaParkMassagePage() {
                             5-10 minutes east of Balboa Park • Easy drive down University Avenue •
                             Free street parking
                         </p>
+                        <p className={styles.locationNeighborhoods}>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            {' '}• Book around your Balboa Park activities
+                        </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Book Recovery Massage
                         </Link>
@@ -128,7 +138,10 @@ export default function BalboaParkMassagePage() {
                         <h2 className={styles.ctaTitle}>Complete Your Balboa Park Day</h2>
                         <p className={styles.ctaText}>
                             Make massage the perfect ending to your Balboa Park adventure.
-                            Book your session and recover in style.
+                            Book your session and recover in style. Same-day bookings welcome.
+                        </p>
+                        <p className={styles.ctaText}>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Appointment

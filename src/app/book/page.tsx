@@ -59,9 +59,18 @@ export default function BookPage() {
                     </h1>
                     <div className={styles.goldLine}></div>
                     <p className={styles.heroDescription}>
-                        Take the first step towards relaxation and healing.
+                        Join 50+ satisfied clients with <strong>5-star ratings</strong>.
                         Your personalized massage experience awaits.
                     </p>
+                    <div className={styles.heroContact}>
+                        <a href="tel:+16192873034" className={styles.phoneLink}>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92V19.92C22 20.48 21.56 20.93 21 20.99C20.45 21.04 19.92 20.99 19.4 20.88C16.36 20.26 13.45 18.92 10.91 17.03C8.69 15.41 6.78 13.49 5.15 11.27C3.26 8.73 1.92 5.82 1.3 2.78C1.19 2.26 1.14 1.73 1.19 1.18C1.25 0.62 1.7 0.18 2.26 0.18H5.26C5.72 0.18 6.12 0.51 6.21 0.96C6.39 1.86 6.68 2.73 7.07 3.56C7.21 3.87 7.13 4.23 6.88 4.47L5.35 6C6.71 8.51 8.73 10.53 11.24 11.89L12.77 10.36C13.01 10.11 13.37 10.03 13.68 10.17C14.51 10.56 15.38 10.85 16.28 11.03C16.73 11.12 17.06 11.52 17.06 11.98V14.98C17.06 15.54 16.62 15.99 16.06 16.05C15.55 16.1 15.03 16.05 14.52 15.94" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                            </svg>
+                            📞 Call (619) 287-3034
+                        </a>
+                        <span className={styles.availability}>✓ Same-day often available • ✓ Evening & weekend hours</span>
+                    </div>
                 </div>
             </section>
 
@@ -95,11 +104,11 @@ export default function BookPage() {
                                 </svg>
                             </div>
                             <h2 className={styles.bookingCardTitle}>
-                                Ready to <span className={styles.goldText}>Schedule?</span>
+                                Ready to <span className={styles.goldText}>Feel Better?</span>
                             </h2>
                             <p className={styles.bookingCardText}>
-                                Click below to view available times and book your appointment.
-                                You&apos;ll receive instant confirmation and reminders.
+                                <strong>Limited spots available today.</strong> View real-time availability and book your appointment in under 2 minutes.
+                                You&apos;ll receive instant confirmation and automatic reminders.
                             </p>
                             <a
                                 href="https://bookme.pocketsuite.io/book/nami-thai-massage"
@@ -107,13 +116,10 @@ export default function BookPage() {
                                 rel="noopener noreferrer"
                                 className={styles.btnPrimary}
                             >
-                                <span>Book Now</span>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
+                                <span>Book My Appointment →</span>
                             </a>
                             <p className={styles.secureNote}>
-                                🔒 Secure booking powered by PocketSuite
+                                ✓ Instant confirmation · ✓ Flexible cancellation · ✓ 5.0 rating
                             </p>
                         </div>
                     </div>
@@ -153,8 +159,13 @@ export default function BookPage() {
 
                     <div className={styles.viewAllLink}>
                         <Link href="/services">
-                            View All Services →
+                            View All Services & Pricing →
                         </Link>
+                        <p className={styles.servicesNote}>
+                            Not sure which service is right for you? Learn about our{" "}
+                            <Link href="/services/thai-massage">traditional Thai massage</Link>{" "}
+                            or read our <Link href="/info">massage therapy guides</Link>.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -163,10 +174,10 @@ export default function BookPage() {
             <section className={styles.contactAlt}>
                 <div className="container">
                     <div className={styles.contactAltContent}>
-                        <h3 className={styles.contactAltTitle}>Prefer to Talk First?</h3>
+                        <h3 className={styles.contactAltTitle}>Questions? We're Here to Help</h3>
                         <p className={styles.contactAltText}>
-                            Have questions about which service is right for you?
-                            We&apos;re happy to help you find the perfect treatment.
+                            Not sure which massage is right for you? Call or text Nami directly.
+                            <strong> Most clients feel significant relief after their first visit.</strong>
                         </p>
                         <div className={styles.contactMethods}>
                             <a href="tel:+16192873034" className={styles.contactMethod}>
@@ -180,9 +191,13 @@ export default function BookPage() {
                                     <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" strokeWidth="1.5" />
                                     <path d="M2 7L12 13L22 7" stroke="currentColor" strokeWidth="1.5" />
                                 </svg>
-                                <span>Contact Us</span>
+                                <span>Send a Message</span>
                             </Link>
                         </div>
+                        <p className={styles.servingNote}>
+                            Serving North Park, Hillcrest, University Heights, and surrounding
+                            San Diego neighborhoods
+                        </p>
                     </div>
                 </div>
             </section>

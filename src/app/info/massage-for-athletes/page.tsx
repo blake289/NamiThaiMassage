@@ -29,6 +29,10 @@ export default function AthletesMassagePage() {
                         your next marathon, surfing daily, or pushing limits at CrossFit, massage therapy at Nami Thai Massage
                         in North Park helps you perform better and recover faster.
                     </p>
+                    <p className={styles.intro}>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        {' '}• Flexible scheduling for training schedules
+                    </p>
                 </header>
 
                 <div className={styles.content}>
@@ -38,11 +42,13 @@ export default function AthletesMassagePage() {
                             Intense training creates micro-damage in muscle fibers, builds up metabolic waste, and leads
                             to tightness that limits performance. <strong>Regular massage therapy</strong> is an essential
                             recovery tool used by professional athletes worldwide—and it&apos;s equally valuable for recreational
-                            athletes in <strong>San Diego</strong> who want to train consistently and injury-free.
+                            athletes in <strong>San Diego</strong> who want to train consistently and injury-free. With over 10 years
+                            of experience working with athletes, our licensed therapist understands the unique demands of athletic recovery.
                         </p>
                         <p className={styles.paragraph}>
-                            From <strong>Balboa Park</strong> runners to <strong>Pacific Beach</strong> surfers, <strong>Mission
-                                Bay</strong> triathletes to <strong>North Park</strong> CrossFit athletes, massage therapy
+                            From <Link href="/info/massage-balboa-park"><strong>Balboa Park</strong></Link> runners to <strong>Pacific
+                            Beach</strong> surfers, <strong>Mission Bay</strong> triathletes to <Link href="/info/massage-north-park"><strong>North
+                            Park</strong></Link> CrossFit athletes, <Link href="/info/sports-massage">sports massage</Link> therapy
                             supports the active San Diego lifestyle.
                         </p>
                     </section>
@@ -105,6 +111,11 @@ export default function AthletesMassagePage() {
                             Deepening flexibility • <strong>Golf & Tennis:</strong> Arm and shoulder care •
                             <strong> Soccer, Basketball, Volleyball:</strong> Full-body athletic recovery
                         </p>
+                        <p className={styles.paragraph}>
+                            We combine <Link href="/info/sports-massage">sports massage</Link> techniques with <Link href="/info/deep-tissue-massage">deep
+                            tissue</Link> work and <Link href="/info/thai-massage-benefits">Thai massage stretching</Link> for comprehensive
+                            athletic recovery.
+                        </p>
                     </section>
 
                     <div className={styles.locationBox}>
@@ -112,6 +123,10 @@ export default function AthletesMassagePage() {
                         <p className={styles.locationAddress}>3055 University Avenue, San Diego, CA</p>
                         <p className={styles.locationNeighborhoods}>
                             Minutes from Balboa Park • Convenient for Hillcrest gyms • Serving all San Diego athletes
+                        </p>
+                        <p className={styles.locationNeighborhoods}>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            {' '}• Book recovery sessions around your training
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Book Athletic Massage
@@ -122,7 +137,10 @@ export default function AthletesMassagePage() {
                         <h2 className={styles.ctaTitle}>Upgrade Your Recovery Routine</h2>
                         <p className={styles.ctaText}>
                             Join San Diego&apos;s smartest athletes who use regular massage to train harder
-                            and recover faster.
+                            and recover faster. Pre- and post-event sessions available.
+                        </p>
+                        <p className={styles.ctaText}>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Session

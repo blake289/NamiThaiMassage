@@ -29,6 +29,10 @@ export default function UniversityHeightsMassagePage() {
                         University Avenue in neighboring North Park. Experience authentic massage therapy in a
                         convenient location that serves the charming University Heights community.
                     </p>
+                    <p className={styles.intro}>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        {' '}• Walking distance for many UH residents
+                    </p>
                 </header>
 
                 <div className={styles.content}>
@@ -42,8 +46,10 @@ export default function UniversityHeightsMassagePage() {
                         </p>
                         <p className={styles.paragraph}>
                             University Heights is known for its beautiful homes, community spirit, and proximity to
-                            Balboa Park. Add regular massage therapy to your self-care routine and enjoy the best
-                            of San Diego living.
+                            <Link href="/info/massage-balboa-park"> Balboa Park</Link>. Add regular massage therapy to your self-care routine and enjoy the best
+                            of San Diego living. Our licensed therapist has over 10 years of experience providing expert
+                            <Link href="/info/thai-massage-benefits"> Thai massage</Link>, <Link href="/info/deep-tissue-massage">deep tissue</Link>,
+                            and <Link href="/info/swedish-massage">Swedish massage</Link> therapy.
                         </p>
                     </section>
 
@@ -115,6 +121,10 @@ export default function UniversityHeightsMassagePage() {
                         <p className={styles.locationNeighborhoods}>
                             Right on University Ave • Minutes from Park Blvd • Close to Adams Avenue
                         </p>
+                        <p className={styles.locationNeighborhoods}>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            {' '}• Flexible scheduling for your convenience
+                        </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Book Your Session
                         </Link>
@@ -124,7 +134,10 @@ export default function UniversityHeightsMassagePage() {
                         <h2 className={styles.ctaTitle}>Your Neighborhood Massage Studio</h2>
                         <p className={styles.ctaText}>
                             University Heights deserves great massage therapy. Book your session and
-                            discover what your neighbors already know.
+                            discover what your neighbors already know. Most appointments available within 24-48 hours.
+                        </p>
+                        <p className={styles.ctaText}>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Appointment

@@ -29,6 +29,10 @@ export default function SeniorsMassagePage() {
                         in North Park, San Diego, we offer gentle, therapeutic massage adapted to the unique needs
                         of seniors, promoting comfort, mobility, and overall well-being.
                     </p>
+                    <p className={styles.intro}>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        {' '}• Gentle, compassionate care
+                    </p>
                 </header>
 
                 <div className={styles.content}>
@@ -41,9 +45,11 @@ export default function SeniorsMassagePage() {
                             addresses these age-related changes while providing nurturing, compassionate care.
                         </p>
                         <p className={styles.paragraph}>
-                            For older adults in <strong>San Diego&apos;s North Park, Hillcrest, University Heights</strong>,
-                            and surrounding communities, massage offers a drug-free approach to managing pain,
-                            maintaining mobility, and enhancing quality of life.
+                            For older adults in <Link href="/info/massage-north-park"><strong>San Diego&apos;s North Park</strong></Link>,
+                            <Link href="/info/massage-hillcrest"><strong>Hillcrest</strong></Link>, <Link href="/info/massage-university-heights"><strong>University
+                            Heights</strong></Link>, and surrounding communities, massage offers a drug-free approach to managing pain,
+                            maintaining mobility, and enhancing quality of life. Our licensed therapist has over 10 years of experience working
+                            with older adults and adapts techniques for individual needs.
                         </p>
                     </section>
 
@@ -105,8 +111,9 @@ export default function SeniorsMassagePage() {
                         <p className={styles.paragraph}>
                             Conditions we commonly work with include <strong>arthritis, osteoporosis</strong> (with gentle,
                             appropriate techniques), <strong>diabetes-related circulation issues</strong>, and general
-                            age-related muscle stiffness. Always consult with your healthcare provider before starting
-                            massage therapy.
+                            age-related muscle stiffness. We also help with <Link href="/info/massage-for-chronic-pain">chronic pain
+                            management</Link> and <Link href="/info/massage-for-stress-relief">stress relief</Link>. Always consult
+                            with your healthcare provider before starting massage therapy.
                         </p>
                     </section>
 
@@ -115,6 +122,10 @@ export default function SeniorsMassagePage() {
                         <p className={styles.locationAddress}>3055 University Avenue, San Diego, CA</p>
                         <p className={styles.locationNeighborhoods}>
                             Comfortable, accessible setting • Serving seniors throughout San Diego
+                        </p>
+                        <p className={styles.locationNeighborhoods}>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            {' '}• Flexible scheduling and gentle approach
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Book Senior Massage
@@ -125,7 +136,10 @@ export default function SeniorsMassagePage() {
                         <h2 className={styles.ctaTitle}>Age Well with Massage</h2>
                         <p className={styles.ctaText}>
                             You deserve to feel comfortable and cared for at every age. Schedule
-                            a gentle, therapeutic session today.
+                            a gentle, therapeutic session today. Shorter sessions available.
+                        </p>
+                        <p className={styles.ctaText}>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Session

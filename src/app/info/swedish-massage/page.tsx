@@ -29,6 +29,10 @@ export default function SwedishMassagePage() {
                         that promote complete relaxation. At Nami Thai Massage in North Park, San Diego, experience the
                         classic relaxation massage that melts away stress and restores your sense of well-being.
                     </p>
+                    <p className={styles.intro}>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        {' '}• Perfect for first-time massage clients
+                    </p>
                 </header>
 
                 <div className={styles.content}>
@@ -43,8 +47,10 @@ export default function SwedishMassagePage() {
                         <p className={styles.paragraph}>
                             For <strong>San Diego residents</strong> seeking a calming escape from busy lives, Swedish massage
                             offers the perfect balance of therapeutic benefits and pure relaxation. Whether you live in
-                            <strong> North Park, Hillcrest, University Heights</strong>, or nearby neighborhoods, a Swedish
-                            massage session provides a much-needed retreat.
+                            <Link href="/info/massage-north-park"><strong>North Park</strong></Link>, <Link href="/info/massage-hillcrest"><strong>Hillcrest</strong></Link>,
+                            <Link href="/info/massage-university-heights"><strong>University Heights</strong></Link>, or nearby neighborhoods,
+                            a Swedish massage session provides a much-needed retreat. Our licensed therapist has over 10 years of experience
+                            in therapeutic massage techniques.
                         </p>
                     </section>
 
@@ -105,10 +111,10 @@ export default function SwedishMassagePage() {
                             find Swedish massage to be the perfect choice.
                         </p>
                         <p className={styles.paragraph}>
-                            It&apos;s also an excellent option for pregnant women (with prenatal modifications), older adults,
-                            and anyone recovering from illness who needs gentle, nurturing touch. Clients from <strong>Normal Heights,
-                                South Park, City Heights</strong>, and throughout San Diego appreciate Swedish massage for its
-                            accessible, universally beneficial approach.
+                            It&apos;s also an excellent option for <Link href="/info/prenatal-massage">pregnant women</Link> (with prenatal
+                            modifications), <Link href="/info/massage-for-seniors">older adults</Link>, and anyone recovering from illness
+                            who needs gentle, nurturing touch. Those seeking <Link href="/info/massage-for-stress-relief">stress relief</Link> or
+                            help with <Link href="/info/massage-for-chronic-pain">chronic pain</Link> also benefit from Swedish techniques.
                         </p>
                     </section>
 
@@ -119,6 +125,10 @@ export default function SwedishMassagePage() {
                             Your relaxation sanctuary serving North Park, Hillcrest, University Heights,
                             Normal Heights, South Park, and all of San Diego
                         </p>
+                        <p className={styles.locationNeighborhoods}>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            {' '}• Same-day relaxation appointments available
+                        </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Book Swedish Massage
                         </Link>
@@ -128,7 +138,10 @@ export default function SwedishMassagePage() {
                         <h2 className={styles.ctaTitle}>Ready to Unwind and Relax?</h2>
                         <p className={styles.ctaText}>
                             Treat yourself to the classic Swedish massage experience at Nami Thai Massage.
-                            Let go of stress and rediscover your calm.
+                            Let go of stress and rediscover your calm. Evening and weekend sessions available.
+                        </p>
+                        <p className={styles.ctaText}>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Session

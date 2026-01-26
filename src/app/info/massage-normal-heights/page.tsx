@@ -29,6 +29,10 @@ export default function NormalHeightsMassagePage() {
                         Nami Thai Massage on University Avenue in North Park offers authentic bodywork
                         for the eclectic, community-minded Normal Heights neighborhood.
                     </p>
+                    <p className={styles.intro}>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        {' '}• Just minutes from Adams Avenue
+                    </p>
                 </header>
 
                 <div className={styles.content}>
@@ -43,7 +47,9 @@ export default function NormalHeightsMassagePage() {
                         <p className={styles.paragraph}>
                             Normal Heights&apos; artistic, wellness-conscious community appreciates authentic experiences—
                             and that&apos;s exactly what we offer. No cookie-cutter spa treatments here, just genuine
-                            therapeutic massage from a skilled practitioner.
+                            therapeutic massage from a skilled practitioner with over 10 years of experience. We specialize
+                            in <Link href="/info/thai-massage-benefits">Thai massage</Link>, <Link href="/info/deep-tissue-massage">deep
+                            tissue</Link>, and <Link href="/info/swedish-massage">Swedish massage</Link> techniques.
                         </p>
                     </section>
 
@@ -115,6 +121,10 @@ export default function NormalHeightsMassagePage() {
                         <p className={styles.locationNeighborhoods}>
                             Minutes from Adams Avenue • Quick drive from Normal Heights • Free parking
                         </p>
+                        <p className={styles.locationNeighborhoods}>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            {' '}• Same-day appointments often available
+                        </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Book Your Session
                         </Link>
@@ -124,7 +134,10 @@ export default function NormalHeightsMassagePage() {
                         <h2 className={styles.ctaTitle}>Normal Heights&apos; Massage Destination</h2>
                         <p className={styles.ctaText}>
                             Discover why your Normal Heights neighbors make us their go-to for
-                            massage therapy.
+                            massage therapy. Evening and weekend appointments available.
+                        </p>
+                        <p className={styles.ctaText}>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Appointment
