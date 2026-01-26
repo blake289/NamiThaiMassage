@@ -84,14 +84,6 @@ export default function AboutPage() {
                             <div className={styles.imageAccent}></div>
                         </div>
                         <div className={styles.storyContent}>
-                            {/* Large Logo Display */}
-                            <div className={styles.storyLogo}>
-                                <img
-                                    src="/logo.png"
-                                    alt="Nami Thai Massage"
-                                    className={styles.storyLogoImage}
-                                />
-                            </div>
                             <h2 className={styles.storyTitle}>
                                 Personalized{" "}
                                 <span className={styles.goldText}>Massage Therapy</span>

@@ -265,14 +265,6 @@ export default function Home() {
 
           {/* Hero Content on Right */}
           <div className={styles.heroContent}>
-            {/* Large Logo Display */}
-            <div className={styles.heroLogo}>
-              <img
-                src="/logo.png"
-                alt="Nami Thai Massage"
-                className={styles.heroLogoImage}
-              />
-            </div>
             <p className={styles.heroSubtitle}>
               Licensed Thai Massage Therapist · North Park, San Diego
             </p>
