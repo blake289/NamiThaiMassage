@@ -30,7 +30,7 @@ export default function BalboaParkMassagePage() {
                         is just minutes from Balboa Park, offering therapeutic massage to help you recover and recharge.
                     </p>
                     <p className={styles.intro}>
-                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>619-287-3034</a></strong>
                         {' '}• Perfect post-activity recovery
                     </p>
                 </header>
@@ -126,7 +126,7 @@ export default function BalboaParkMassagePage() {
                             Free street parking
                         </p>
                         <p className={styles.locationNeighborhoods}>
-                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
                             {' '}• Book around your Balboa Park activities
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
@@ -141,7 +141,7 @@ export default function BalboaParkMassagePage() {
                             Book your session and recover in style. Same-day bookings welcome.
                         </p>
                         <p className={styles.ctaText}>
-                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Appointment

@@ -30,7 +30,7 @@ export default function SportsMassagePage() {
                         offers expert sports massage for athletes and active individuals throughout San Diego.
                     </p>
                     <p className={styles.intro}>
-                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>619-287-3034</a></strong>
                         {' '}• Pre- and post-event sessions available
                     </p>
                 </header>
@@ -125,7 +125,7 @@ export default function SportsMassagePage() {
                             Near Balboa Park • Minutes from Hillcrest gyms • Serving all San Diego athletic communities
                         </p>
                         <p className={styles.locationNeighborhoods}>
-                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
                             {' '}• Flexible scheduling around training
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
@@ -155,7 +155,7 @@ export default function SportsMassagePage() {
                             recover faster, and perform at their best. Book recovery sessions around your competition schedule.
                         </p>
                         <p className={styles.ctaText}>
-                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Session

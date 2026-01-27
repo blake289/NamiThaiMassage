@@ -1,7 +1,7 @@
 .infoPage {
     min-height: 100vh;
     padding-top: calc(var(--header-height-mobile) + var(--space-2xl));
-    padding-bottom: var(--space-5xl);
+    padding-bottom: var(--section-padding);
     background: linear-gradient(180deg,
         var(--color-forest-dark) 0%,
         rgba(26, 37, 24, 0.95) 50%,
@@ -92,15 +92,13 @@
 }
 
 .goldLine {
-    width: 80px;
-    height: 3px;
+    width: 60px;
+    height: 2px;
     background: linear-gradient(90deg,
         var(--color-gold-dark),
         var(--color-gold),
         var(--color-gold-pale));
     margin: 0 auto var(--space-2xl);
-    border-radius: 2px;
-    box-shadow: 0 2px 8px rgba(201, 162, 39, 0.3);
 }
 
 .intro {
@@ -347,10 +345,10 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: var(--space-lg) var(--space-3xl);
+    padding: var(--space-md) var(--space-2xl);
     font-family: var(--font-body);
-    font-size: var(--text-base);
-    font-weight: 600;
+    font-size: var(--text-sm);
+    font-weight: 500;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--color-forest-dark);

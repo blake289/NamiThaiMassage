@@ -52,7 +52,7 @@ export default function Footer() {
                             <p>3055 University Avenue</p>
                             <p>San Diego, CA 92104</p>
                             <a href="tel:+16192873034" className={styles.phoneLink}>
-                                📞 (619) 287-3034
+                                619-287-3034
                             </a>
                         </address>
                         <a

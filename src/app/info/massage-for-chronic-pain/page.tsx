@@ -30,7 +30,7 @@ export default function ChronicPainMassagePage() {
                         pain conditions and improving your quality of life.
                     </p>
                     <p className={styles.intro}>
-                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>619-287-3034</a></strong>
                         {' '}• Natural, drug-free pain management
                     </p>
                 </header>
@@ -123,7 +123,7 @@ export default function ChronicPainMassagePage() {
                             A healing sanctuary for chronic pain sufferers • Serving all of San Diego
                         </p>
                         <p className={styles.locationNeighborhoods}>
-                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
                             {' '}• Comprehensive pain management approach
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
@@ -138,7 +138,7 @@ export default function ChronicPainMassagePage() {
                             how massage therapy can help restore your quality of life. Many clients report improvement after just 2-3 sessions.
                         </p>
                         <p className={styles.ctaText}>
-                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Session

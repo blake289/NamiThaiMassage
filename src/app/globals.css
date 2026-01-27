@@ -28,6 +28,7 @@
   /* Semantic Colors */
   --color-text-light: var(--color-cream);
   --color-text-dark: var(--color-charcoal);
+  --color-text-muted: rgba(245, 242, 237, 0.7);
   --color-bg-dark: var(--color-forest-dark);
   --color-bg-light: var(--color-warm-white);
   --color-accent: var(--color-gold);
@@ -60,12 +61,15 @@
 
   /* Layout */
   --max-width: 1400px;
+  --max-width-content: 700px;
   --container-padding: clamp(1rem, 3vw, 3rem);
   --header-height: 80px;
   --header-height-mobile: 70px;
+  --section-padding: clamp(3rem, 6vw, 6rem);
+  --section-padding-sm: clamp(2rem, 4vw, 4rem);
 
   /* Border Radius */
-  --radius-sm: 4px;
+  --radius-sm: 6px;
   --radius-md: 8px;
   --radius-lg: 16px;
   --radius-xl: 24px;
@@ -277,7 +281,7 @@ a:hover {
 
 /* ===== Section Styles ===== */
 .section {
-  padding: var(--space-4xl) 0;
+  padding: var(--section-padding) 0;
 }
 
 .section-dark {

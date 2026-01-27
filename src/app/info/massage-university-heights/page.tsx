@@ -30,7 +30,7 @@ export default function UniversityHeightsMassagePage() {
                         convenient location that serves the charming University Heights community.
                     </p>
                     <p className={styles.intro}>
-                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>619-287-3034</a></strong>
                         {' '}• Walking distance for many UH residents
                     </p>
                 </header>
@@ -122,7 +122,7 @@ export default function UniversityHeightsMassagePage() {
                             Right on University Ave • Minutes from Park Blvd • Close to Adams Avenue
                         </p>
                         <p className={styles.locationNeighborhoods}>
-                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
                             {' '}• Flexible scheduling for your convenience
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
@@ -137,7 +137,7 @@ export default function UniversityHeightsMassagePage() {
                             discover what your neighbors already know. Most appointments available within 24-48 hours.
                         </p>
                         <p className={styles.ctaText}>
-                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Appointment

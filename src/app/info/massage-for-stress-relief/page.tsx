@@ -30,7 +30,7 @@ export default function StressReliefMassagePage() {
                         your mind, and restore your sense of calm through nurturing massage therapy.
                     </p>
                     <p className={styles.intro}>
-                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>619-287-3034</a></strong>
                         {' '}• Find your calm today
                     </p>
                 </header>
@@ -124,7 +124,7 @@ export default function StressReliefMassagePage() {
                             Step away from stress • A calm sanctuary serving all of San Diego
                         </p>
                         <p className={styles.locationNeighborhoods}>
-                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
                             {' '}• Feel better in just one hour
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
@@ -139,7 +139,7 @@ export default function StressReliefMassagePage() {
                             restore your peace of mind. Same-day appointments often available.
                         </p>
                         <p className={styles.ctaText}>
-                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Session

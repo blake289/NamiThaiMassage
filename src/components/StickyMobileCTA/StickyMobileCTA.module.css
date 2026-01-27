@@ -9,7 +9,7 @@
     backdrop-filter: blur(12px);
     border-top: 1px solid rgba(201, 162, 39, 0.3);
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
-    z-index: 400;
+    z-index: var(--z-overlay);
     animation: slideUp 0.3s ease;
 }
 
@@ -39,7 +39,7 @@
     align-items: center;
     justify-content: center;
     gap: var(--space-xs);
-    padding: var(--space-lg) var(--space-md);
+    padding: var(--space-md) var(--space-md);
     font-family: var(--font-body);
     font-size: var(--text-sm);
     font-weight: 600;
@@ -73,7 +73,7 @@
     flex-shrink: 0;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 389px) {
 
     .phoneButton,
     .bookButton {
@@ -86,10 +86,10 @@
         display: none;
     }
 
-    /* Show icons only on very small screens */
+    /* Show text only on very small screens */
     .phoneButton::after {
-        content: '📞';
-        font-size: var(--text-lg);
+        content: 'Call';
+        font-size: var(--text-sm);
     }
 
     .bookButton::after {

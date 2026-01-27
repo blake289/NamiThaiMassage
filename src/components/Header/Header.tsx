@@ -111,7 +111,7 @@ export default function Header() {
                             onClick={() => setIsInfoOpen(!isInfoOpen)}
                             aria-expanded={isInfoOpen}
                         >
-                            Helpful Info
+                            More Info
                             <svg className={`${styles.chevron} ${isInfoOpen ? styles.chevronOpen : ''}`} width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
                                 <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" strokeWidth="1.5" fill="none" />
                             </svg>
@@ -156,7 +156,7 @@ export default function Header() {
 
                 {/* Phone Number - Desktop */}
                 <a href="tel:+16192873034" className={styles.headerPhone}>
-                    (619) 287-3034
+                    619-287-3034
                 </a>
 
                 {/* Book Now CTA */}
@@ -182,7 +182,7 @@ export default function Header() {
                 <nav className={styles.mobileNav}>
                     {/* Phone Number - Mobile */}
                     <a href="tel:+16192873034" className={styles.mobilePhone} onClick={closeMenu}>
-                        📞 Call (619) 287-3034
+                        Call 619-287-3034
                     </a>
 
                     {navLinks.map((link) => (
@@ -201,7 +201,7 @@ export default function Header() {
                         className={`${styles.mobileLink} ${styles.mobileAccordion}`}
                         onClick={() => setMobileInfoOpen(!mobileInfoOpen)}
                     >
-                        Helpful Info
+                        More Info
                         <svg className={`${styles.chevron} ${mobileInfoOpen ? styles.chevronOpen : ''}`} width="16" height="16" viewBox="0 0 12 12" fill="currentColor">
                             <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" strokeWidth="1.5" fill="none" />
                         </svg>

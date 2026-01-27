@@ -14,13 +14,14 @@
 .topSection {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--space-2xl);
+    gap: var(--space-xl);
     margin-bottom: var(--space-3xl);
 }
 
 @media (min-width: 768px) {
     .topSection {
         grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-2xl);
     }
 }
 
@@ -52,7 +53,7 @@
 
 .tagline {
     font-size: var(--text-sm);
-    color: rgba(245, 242, 237, 0.7);
+    color: var(--color-text-muted);
     margin-bottom: var(--space-md);
 }
 
@@ -86,7 +87,7 @@
 
 .nav a {
     font-size: var(--text-sm);
-    color: rgba(245, 242, 237, 0.7);
+    color: var(--color-text-muted);
     transition: color var(--transition-fast);
 }
 
@@ -103,14 +104,14 @@
 .address {
     font-style: normal;
     font-size: var(--text-sm);
-    color: rgba(245, 242, 237, 0.7);
+    color: var(--color-text-muted);
     line-height: 1.8;
     margin-bottom: var(--space-lg);
 }
 
 .businessName {
     font-weight: 600;
-    color: var(--color-cream);
+    color: var(--color-gold);
     margin-bottom: var(--space-xs);
 }
 
@@ -129,28 +130,6 @@
 .phoneLink:hover {
     color: var(--color-gold-light);
     text-shadow: 0 0 8px rgba(201, 162, 39, 0.4);
-}
-
-.businessName {
-    font-weight: 600;
-    color: var(--color-gold);
-    margin-bottom: var(--space-xs);
-}
-
-.phoneLink {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-xs);
-    margin-top: var(--space-sm);
-    font-weight: 600;
-    color: var(--color-gold);
-    text-decoration: none;
-    transition: all var(--transition-base);
-}
-
-.phoneLink:hover {
-    color: var(--color-gold-light);
-    text-shadow: 0 0 8px rgba(201, 162, 39, 0.3);
 }
 
 .bookBtn {
@@ -226,7 +205,7 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    color: rgba(245, 242, 237, 0.7);
+    color: var(--color-text-muted);
     border: 1px solid rgba(201, 162, 39, 0.3);
     border-radius: 50%;
     transition: all var(--transition-base);

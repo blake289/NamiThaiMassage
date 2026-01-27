@@ -30,7 +30,7 @@ export default function SeniorsMassagePage() {
                         of seniors, promoting comfort, mobility, and overall well-being.
                     </p>
                     <p className={styles.intro}>
-                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>619-287-3034</a></strong>
                         {' '}• Gentle, compassionate care
                     </p>
                 </header>
@@ -124,7 +124,7 @@ export default function SeniorsMassagePage() {
                             Comfortable, accessible setting • Serving seniors throughout San Diego
                         </p>
                         <p className={styles.locationNeighborhoods}>
-                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
                             {' '}• Flexible scheduling and gentle approach
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
@@ -139,7 +139,7 @@ export default function SeniorsMassagePage() {
                             a gentle, therapeutic session today. Shorter sessions available.
                         </p>
                         <p className={styles.ctaText}>
-                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Session

@@ -30,7 +30,7 @@ export default function DeepTissueMassagePage() {
                         our skilled therapist delivers precise deep tissue work that brings lasting relief.
                     </p>
                     <p className={styles.intro}>
-                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>619-287-3034</a></strong>
                         {' '}• Relief often felt after just one session
                     </p>
                 </header>
@@ -126,7 +126,7 @@ export default function DeepTissueMassagePage() {
                             South Park, City Heights, and all San Diego neighborhoods
                         </p>
                         <p className={styles.locationNeighborhoods}>
-                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
                             {' '}• Same-day appointments available
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
@@ -156,7 +156,7 @@ export default function DeepTissueMassagePage() {
                             lasting relief from chronic pain and tension. Most clients report significant improvement after their first visit.
                         </p>
                         <p className={styles.ctaText}>
-                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Session

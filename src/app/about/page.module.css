@@ -36,7 +36,7 @@
 
 .heroDescription {
     font-size: var(--text-base);
-    color: rgba(245, 242, 237, 0.7);
+    color: var(--color-text-muted);
     margin-top: var(--space-lg);
     max-width: 600px;
     margin-left: auto;
@@ -101,7 +101,7 @@
 
 /* ===== Story Section ===== */
 .story {
-    padding: var(--space-5xl) 0;
+    padding: var(--section-padding) 0;
     background-color: var(--color-warm-black);
 }
 
@@ -213,7 +213,7 @@
 
 /* ===== Philosophy Section ===== */
 .philosophy {
-    padding: var(--space-5xl) 0;
+    padding: var(--section-padding) 0;
     background-color: var(--color-forest-dark);
 }
 
@@ -246,7 +246,7 @@
 
 .philosophyText {
     font-size: var(--text-lg);
-    color: rgba(245, 242, 237, 0.7);
+    color: var(--color-text-muted);
     line-height: 1.8;
 }
 
@@ -292,7 +292,7 @@
 
 .pillarText {
     font-size: var(--text-sm);
-    color: rgba(245, 242, 237, 0.7);
+    color: var(--color-text-muted);
     line-height: 1.7;
 }
 
@@ -310,7 +310,7 @@
 
 /* ===== Location Section ===== */
 .location {
-    padding: var(--space-5xl) 0;
+    padding: var(--section-padding) 0;
     background: linear-gradient(135deg,
             var(--color-forest) 0%,
             var(--color-warm-black) 100%);
@@ -345,7 +345,7 @@
 
 .locationText {
     font-size: var(--text-lg);
-    color: rgba(245, 242, 237, 0.7);
+    color: var(--color-text-muted);
     line-height: 1.8;
     margin-bottom: var(--space-md);
 }
@@ -426,13 +426,13 @@
 }
 
 .locationCtas .btnPrimary {
-    padding: var(--space-lg) var(--space-2xl);
-    font-weight: 600;
+    padding: var(--space-md) var(--space-2xl);
+    font-weight: 500;
 }
 
 .locationCtas .btnSecondary {
-    padding: var(--space-md) var(--space-xl);
-    font-size: var(--text-xs);
+    padding: var(--space-md) var(--space-2xl);
+    font-size: var(--text-sm);
 }
 
 @media (min-width: 480px) {
@@ -455,7 +455,7 @@
 
 /* ===== Who I Help Section ===== */
 .whoIHelp {
-    padding: var(--space-5xl) 0;
+    padding: var(--section-padding) 0;
     background-color: var(--color-warm-black);
 }
 

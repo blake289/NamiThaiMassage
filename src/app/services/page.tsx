@@ -223,7 +223,7 @@ export default function ServicesPage() {
                     </p>
                     <div className={styles.heroContact}>
                         <a href="tel:+16192873034" className={styles.phoneButton}>
-                            📞 (619) 287-3034
+                            619-287-3034
                         </a>
                         <span className={styles.divider}>or</span>
                         <a
@@ -356,7 +356,7 @@ export default function ServicesPage() {
                                 href="tel:+16192873034"
                                 className={styles.btnSecondary}
                             >
-                                📞 Call (619) 287-3034
+                                Call 619-287-3034
                             </a>
                         </div>
                         <p className={styles.ctaMicrocopy}>

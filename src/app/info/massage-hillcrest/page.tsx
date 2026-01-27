@@ -30,7 +30,7 @@ export default function HillcrestMassagePage() {
                         just minutes from the Hillcrest neighborhood you love.
                     </p>
                     <p className={styles.intro}>
-                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>(619) 287-3034</a></strong>
+                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>619-287-3034</a></strong>
                         {' '}• Same-day appointments often available
                     </p>
                 </header>
@@ -125,7 +125,7 @@ export default function HillcrestMassagePage() {
                             Free street parking
                         </p>
                         <p className={styles.locationNeighborhoods}>
-                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
                             {' '}• Flexible scheduling including evenings
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
@@ -140,7 +140,7 @@ export default function HillcrestMassagePage() {
                             just minutes away in North Park. Most appointments available within 24-48 hours.
                         </p>
                         <p className={styles.ctaText}>
-                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>(619) 287-3034</a></strong>
+                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Appointment
