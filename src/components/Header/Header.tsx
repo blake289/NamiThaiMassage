@@ -82,10 +82,10 @@ export default function Header() {
                 {/* Logo */}
                 <Link href="/" className={styles.logo} onClick={closeMenu}>
                     <Image
-                        src="/logo.png"
+                        src="/images/nami-logo-full.png"
                         alt="Nami Thai Massage"
                         width={200}
-                        height={60}
+                        height={80}
                         className={styles.logoImage}
                         priority
                     />

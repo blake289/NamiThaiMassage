@@ -53,6 +53,13 @@
     opacity: 0.8;
 }
 
+.logoImage {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+}
+
 .loader {
     display: flex;
     gap: var(--space-sm);

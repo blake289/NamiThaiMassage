@@ -112,77 +112,7 @@ export default function Home() {
         </div>
         <div className={styles.heroOverlay}></div>
 
-        {/* Animated Flower Decorations - SVG Lotus with true transparency */}
-        <div className={styles.flowerLeft}>
-          <svg
-            className={styles.flowerImage}
-            viewBox="0 0 100 80"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            <defs>
-              <linearGradient
-                id="goldGradientLeft"
-                x1="0%"
-                y1="0%"
-                x2="100%"
-                y2="100%"
-              >
-                <stop offset="0%" stopColor="#8B7424" />
-                <stop offset="30%" stopColor="#C9A227" />
-                <stop offset="60%" stopColor="#E8D48B" />
-                <stop offset="100%" stopColor="#C9A227" />
-              </linearGradient>
-            </defs>
-            {/* Center petal */}
-            <path
-              d="M50 5 Q55 25 50 45 Q45 25 50 5"
-              fill="url(#goldGradientLeft)"
-            />
-            {/* Inner left petals */}
-            <path
-              d="M35 15 Q45 30 42 50 Q32 35 35 15"
-              fill="url(#goldGradientLeft)"
-            />
-            <path
-              d="M65 15 Q55 30 58 50 Q68 35 65 15"
-              fill="url(#goldGradientLeft)"
-            />
-            {/* Mid petals */}
-            <path
-              d="M22 22 Q38 35 36 55 Q22 42 22 22"
-              fill="url(#goldGradientLeft)"
-            />
-            <path
-              d="M78 22 Q62 35 64 55 Q78 42 78 22"
-              fill="url(#goldGradientLeft)"
-            />
-            {/* Outer petals */}
-            <path
-              d="M10 35 Q30 42 32 60 Q15 50 10 35"
-              fill="url(#goldGradientLeft)"
-            />
-            <path
-              d="M90 35 Q70 42 68 60 Q85 50 90 35"
-              fill="url(#goldGradientLeft)"
-            />
-            {/* Base petals */}
-            <path
-              d="M25 50 Q40 55 45 70 Q30 62 25 50"
-              fill="url(#goldGradientLeft)"
-            />
-            <path
-              d="M75 50 Q60 55 55 70 Q70 62 75 50"
-              fill="url(#goldGradientLeft)"
-            />
-            {/* Center bottom */}
-            <path
-              d="M50 50 Q55 62 50 75 Q45 62 50 50"
-              fill="url(#goldGradientLeft)"
-            />
-          </svg>
-        </div>
+        {/* Animated Flower Decoration - Right Side Only */}
         <div className={styles.flowerRight}>
           <svg
             className={styles.flowerImage}
@@ -257,6 +187,11 @@ export default function Home() {
           {/* Nami's Portrait on Left */}
           <div className={styles.heroPortrait}>
             <img
+              src="/images/nami-logo-full.png"
+              alt="Nami Thai Massage Logo"
+              className={styles.heroPortraitLogo}
+            />
+            <img
               src="/images/nami-portrait.png"
               alt="Nami - Licensed Massage Therapist specializing in Thai massage in North Park San Diego"
               className={styles.heroPortraitImage}
@@ -266,7 +201,9 @@ export default function Home() {
           {/* Hero Content on Right */}
           <div className={styles.heroContent}>
             <p className={styles.heroSubtitle}>
-              Thai Massage Therapist in North Park, San Diego
+              Licensed Massage Therapist
+              <br />
+              North Park, San Diego
             </p>
             <h1 className={styles.heroTitle}>
               Expert <span className={styles.goldText}>Thai Massage</span> for

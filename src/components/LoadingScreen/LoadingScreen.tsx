@@ -30,8 +30,11 @@ export default function LoadingScreen() {
         <div className={`${styles.loadingScreen} ${isFading ? styles.fadeOut : ''}`}>
             <div className={styles.loadingContent}>
                 <div className={styles.logoWrapper}>
-                    <span className={styles.logoNami}>Nami</span>
-                    <span className={styles.logoSub}>Thai Massage</span>
+                    <img
+                        src="/images/nami-logo-full.png"
+                        alt="Nami Thai Massage"
+                        className={styles.logoImage}
+                    />
                 </div>
                 <div className={styles.loader}>
                     <div className={styles.loaderDot}></div>

@@ -4,12 +4,12 @@
     left: 0;
     right: 0;
     height: var(--header-height-mobile);
-    background-color: rgba(17, 24, 16, 0.95);
-    backdrop-filter: blur(12px);
+    background-color: transparent;
+    backdrop-filter: none;
     z-index: var(--z-sticky);
     transition: all var(--transition-base);
-    border-bottom: 1px solid rgba(201, 162, 39, 0.15);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid transparent;
+    box-shadow: none;
 }
 
 @media (min-width: 768px) {
@@ -19,8 +19,9 @@
 }
 
 .scrolled {
-    background-color: rgba(26, 37, 24, 0.85);
-    backdrop-filter: blur(20px);
+    background-color: rgba(17, 24, 16, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(201, 162, 39, 0.15);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -42,14 +43,16 @@
 }
 
 .logoImage {
-    height: 70px;
+    height: 55px;
     width: auto;
+    max-width: 160px;
     object-fit: contain;
 }
 
 @media (min-width: 768px) {
     .logoImage {
-        height: 100px;
+        height: 65px;
+        max-width: 200px;
     }
 }
 
@@ -94,6 +97,24 @@
 
 .navLink:hover::after {
     width: 100%;
+}
+
+/* Phone Link */
+.headerPhone {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    font-weight: 700;
+    color: var(--color-gold);
+    text-decoration: none;
+    transition: all var(--transition-base);
+    white-space: nowrap;
+}
+
+.headerPhone:hover {
+    color: var(--color-gold-light);
+    text-shadow: 0 0 8px rgba(201, 162, 39, 0.3);
 }
 
 /* CTA Button */

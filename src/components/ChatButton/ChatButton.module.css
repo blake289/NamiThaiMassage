@@ -171,8 +171,7 @@
     transition: all var(--transition-base);
     cursor: pointer;
     position: relative;
-    animation: wiggle 3s ease-in-out infinite;
-    animation-delay: 2s;
+    animation: popAttention 5s ease-in-out infinite;
 }
 
 .chatButton:hover {
@@ -198,29 +197,25 @@
     white-space: nowrap;
 }
 
-/* Wiggle animation for attention */
-@keyframes wiggle {
+/* Pop animation for attention */
+@keyframes popAttention {
 
     0%,
-    90%,
+    85%,
     100% {
-        transform: rotate(0deg);
+        transform: scale(1);
+    }
+
+    88% {
+        transform: scale(1.15);
     }
 
     92% {
-        transform: rotate(-5deg);
+        transform: scale(0.95);
     }
 
-    94% {
-        transform: rotate(5deg);
-    }
-
-    96% {
-        transform: rotate(-5deg);
-    }
-
-    98% {
-        transform: rotate(5deg);
+    95% {
+        transform: scale(1.05);
     }
 }
 
