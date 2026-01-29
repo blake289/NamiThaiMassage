@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: var(--header-height-mobile) var(--container-padding) calc(var(--space-3xl) + 160px);
+  padding: var(--header-height-mobile) var(--space-md) var(--space-2xl);
   background: var(--color-forest-dark);
   overflow: hidden;
   max-width: 100vw;
@@ -206,13 +206,13 @@
 }
 
 .heroPortraitLogo {
-  width: 280px;
+  width: 200px;
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
   position: relative;
   z-index: 1;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   transition: all 0.4s ease;
 }
 
@@ -222,31 +222,29 @@
 }
 
 .heroPortraitImage {
-  width: 280px;
-  height: 280px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   object-position: center 15%;
   border-radius: 50%;
-  border: 4px solid rgba(201, 162, 39, 0.5);
-  box-shadow: 0 0 50px rgba(201, 162, 39, 0.3), 0 20px 40px rgba(0, 0, 0, 0.5);
+  border: 3px solid rgba(201, 162, 39, 0.5);
+  box-shadow: 0 0 30px rgba(201, 162, 39, 0.3), 0 15px 30px rgba(0, 0, 0, 0.5);
   transition: all 0.4s ease;
-  margin-top: var(--space-md);
+  margin-top: var(--space-sm);
   position: relative;
   z-index: 2;
-  transform: scale(1.6);
-  transform-origin: center center;
 }
 
 .heroPortrait:hover .heroPortraitImage {
   border-color: rgba(201, 162, 39, 0.8);
-  box-shadow: 0 0 80px rgba(201, 162, 39, 0.5), 0 30px 60px rgba(0, 0, 0, 0.6);
-  transform: scale(1.65);
+  box-shadow: 0 0 50px rgba(201, 162, 39, 0.5), 0 20px 40px rgba(0, 0, 0, 0.6);
+  transform: scale(1.05);
 }
 
 .heroPortraitImage:hover {
   border-color: rgba(201, 162, 39, 0.7);
-  box-shadow: 0 0 80px rgba(201, 162, 39, 0.4), 0 30px 60px rgba(0, 0, 0, 0.6);
-  transform: scale(1.65);
+  box-shadow: 0 0 50px rgba(201, 162, 39, 0.4), 0 20px 40px rgba(0, 0, 0, 0.6);
+  transform: scale(1.05);
 }
 
 @media (min-width: 768px) {
@@ -255,8 +253,8 @@
   }
 
   .heroPortraitImage {
-    width: 300px;
-    height: 300px;
+    width: 260px;
+    height: 260px;
   }
 }
 
@@ -266,8 +264,8 @@
   }
 
   .heroPortraitImage {
-    width: 340px;
-    height: 340px;
+    width: 300px;
+    height: 300px;
   }
 }
 
