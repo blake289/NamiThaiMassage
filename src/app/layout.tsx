@@ -4,6 +4,7 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import ChatButton from "@/components/ChatButton/ChatButton";
 import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
+import ScrollAnimator from "@/components/ScrollAnimator/ScrollAnimator";
 
 const siteUrl = "https://namithaimassage.com";
 
@@ -226,6 +227,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <ChatButton />
+        <ScrollAnimator />
       </body>
     </html>
   );

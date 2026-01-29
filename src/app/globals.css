@@ -434,27 +434,21 @@ select {
   }
 }
 
-/* Cards pop up when they come into view */
+/* Cards pop up when they come into view - triggered by JavaScript Intersection Observer */
 .scroll-animate {
   opacity: 0;
-  transform: translateY(40px) scale(0.95);
-  animation: popUp 0.5s ease forwards;
-  animation-timeline: view();
-  animation-range: entry 0% entry 30%;
+  transform: translateY(30px) scale(0.97);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-/* Fallback for browsers that don't support animation-timeline */
-@supports not (animation-timeline: view()) {
-  .scroll-animate {
-    opacity: 1;
-    transform: none;
-    animation: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+.scroll-animate.scroll-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
 
-  .scroll-animate:hover {
-    transform: translateY(-4px);
-  }
+/* Subtle hover lift effect */
+.scroll-animate:hover {
+  transform: translateY(-4px) scale(1);
 }
 
 /* ===== Selection ===== */
