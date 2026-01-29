@@ -328,7 +328,7 @@ export default function Home() {
 
           <div className={styles.testimonialGrid}>
             {testimonials.map((testimonial, index) => (
-              <div key={index} className={`${styles.testimonialCard} golden-glow`}>
+              <div key={index} className={`${styles.testimonialCard} golden-glow scroll-animate`}>
                 <div className={styles.quoteIcon}>&ldquo;</div>
                 <div className={styles.starRating}>
                   <span className={styles.star}>★</span>
