@@ -57,7 +57,7 @@ export default function ChatButton() {
                         </button>
                     </div>
                     <div className={styles.chatForm}>
-                        <p className={styles.introMessage}>Send me a text and I will reply back ASAP.</p>
+                        <p className={styles.introMessage}>Send me a text and I will reply back to you ASAP!</p>
                         <form onSubmit={handleSubmit}>
                             <div className={styles.formGroup}>
                                 <label htmlFor="chat-name" className={styles.label}>Name</label>

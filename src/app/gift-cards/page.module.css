@@ -86,8 +86,36 @@
 
 /* ===== Gift Section ===== */
 .giftSection {
+    position: relative;
     padding: var(--section-padding) 0;
     background-color: var(--color-warm-black);
+    overflow: hidden;
+}
+
+.giftSection::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/images/gift-relaxation.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.giftSection::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,
+            rgba(26, 37, 24, 0.92) 0%,
+            rgba(17, 17, 17, 0.95) 100%);
+    z-index: 1;
+}
+
+.giftSection>* {
+    position: relative;
+    z-index: 2;
 }
 
 .giftGrid {
@@ -424,6 +452,23 @@
 .howItWorks {
     padding: var(--section-padding) 0;
     background-color: var(--color-forest-dark);
+}
+
+.relaxationImageWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--space-3xl);
+}
+
+.relaxationImage {
+    width: 100%;
+    max-width: 700px;
+    max-height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(201, 162, 39, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
 .sectionHeader {

@@ -30,9 +30,16 @@ export default function NorthParkMassagePage() {
                         neighborhood and discover deep relaxation just steps from your favorite North Park spots.
                     </p>
                     <p className={styles.intro}>
-                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>619-287-3034</a></strong>
+                        <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit', textDecoration: 'underline' }}>619-287-3034</a></strong>
                         {' '}• Same-day appointments available
                     </p>
+                    <div className={styles.heroImageWrapper}>
+                        <img
+                            src="/images/spa_ambiance_1769650499497.png"
+                            alt="Relaxing spa ambiance at Nami Thai Massage in North Park"
+                            className={styles.heroImage}
+                        />
+                    </div>
                 </header>
 
                 <div className={styles.content}>
@@ -107,7 +114,7 @@ export default function NorthParkMassagePage() {
                         <p className={styles.paragraph}>
                             Our North Park neighbors appreciate our <strong>5-star Google reviews</strong>, our authentic
                             Thai massage techniques, and our warm, welcoming atmosphere. Whether you&apos;re an <Link href="/info/massage-for-office-workers">office
-                            worker</Link> dealing with desk tension, an <Link href="/info/massage-for-athletes">athlete</Link> seeking
+                                worker</Link> dealing with desk tension, an <Link href="/info/massage-for-athletes">athlete</Link> seeking
                             recovery, or just need stress relief, we provide expert care tailored to your needs. Whether you&apos;re
                             grabbing coffee at Dark Horse, shopping at Pigment, or dining at one of University Avenue&apos;s amazing
                             restaurants, stop in for the massage experience North Park deserves.
@@ -122,7 +129,7 @@ export default function NorthParkMassagePage() {
                             Walking distance from North Park Way and 30th Street
                         </p>
                         <p className={styles.locationNeighborhoods}>
-                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                             {' '}• Walk-ins welcome when available
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
@@ -137,7 +144,7 @@ export default function NorthParkMassagePage() {
                             Book your session at Nami Thai Massage today. Evening and weekend appointments available.
                         </p>
                         <p className={styles.ctaText}>
-                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Appointment

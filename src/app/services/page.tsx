@@ -21,7 +21,7 @@ const massages = [
         price: 120,
         description:
             "Classic relaxation massage using long flowing strokes to release muscle tension, improve circulation, and promote overall well-being. Ideal for stress relief and first-time massage clients.",
-        image: "/images/swedish-massage-new.png",
+        image: "/images/therapist_swedish_1769651403401.png",
     },
     {
         id: "swedish-90",
@@ -39,7 +39,7 @@ const massages = [
         price: 130,
         description:
             "Therapeutic deep tissue massage targeting chronic muscle tension and knots. Uses firm pressure to reach deep muscle layers for lasting pain relief.",
-        image: "/images/deep-tissue-massage-new.png",
+        image: "/images/therapist_deep_tissue_1769651389992.png",
     },
     {
         id: "deep-tissue-90",
@@ -57,7 +57,7 @@ const massages = [
         price: 149,
         description:
             "Specialized massage for athletes and active individuals. Enhances athletic performance, accelerates injury recovery, and prevents muscle strain.",
-        image: "/images/sports-massage-new.png",
+        image: "/images/therapist_sports_1769651427652.png",
     },
     {
         id: "sports-90",
@@ -80,7 +80,7 @@ const packages = [
         description:
             "Our most popular treatment: 60 min signature therapeutic massage + 15 min head & scalp massage + 15 min traditional Thai stretching. Complete relaxation and flexibility improvement.",
         featured: true,
-        image: "/images/thai-massage-new.png",
+        image: "/images/therapist_thai_stretch_1769651377578.png",
     },
     {
         id: "thai-combo",
@@ -90,7 +90,7 @@ const packages = [
         description:
             "Ultimate relaxation: 60 min deep tissue massage + 15 min hot stone therapy + 15 min reflexology foot massage. Combines multiple modalities for complete relief.",
         featured: true,
-        image: "/images/hot-stone-massage-new.png",
+        image: "/images/therapist_hot_stone_1769651444867.png",
     },
     {
         id: "aroma-release",
@@ -100,7 +100,7 @@ const packages = [
         description:
             "Luxury aromatherapy massage with essential oils combined with hot stone therapy. Promotes deep relaxation, stress relief, and improved circulation.",
         featured: true,
-        image: "/images/aromatherapy-massage-new.png",
+        image: "/images/therapist_aromatherapy_1769651458291.png",
     },
 ];
 

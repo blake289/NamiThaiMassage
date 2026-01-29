@@ -30,9 +30,16 @@ export default function SportsMassagePage() {
                         offers expert sports massage for athletes and active individuals throughout San Diego.
                     </p>
                     <p className={styles.intro}>
-                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>619-287-3034</a></strong>
+                        <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit', textDecoration: 'underline' }}>619-287-3034</a></strong>
                         {' '}• Pre- and post-event sessions available
                     </p>
+                    <div className={styles.heroImageWrapper}>
+                        <img
+                            src="/images/therapist_sports_1769651427652.png"
+                            alt="Sports massage therapy for athletic recovery"
+                            className={styles.heroImage}
+                        />
+                    </div>
                 </header>
 
                 <div className={styles.content}>
@@ -41,14 +48,14 @@ export default function SportsMassagePage() {
                         <p className={styles.paragraph}>
                             <strong>Sports massage</strong> is a targeted form of massage therapy designed specifically for
                             athletes and physically active people. It combines techniques from <Link href="/info/swedish-massage">Swedish
-                            massage</Link>, <Link href="/info/deep-tissue-massage">deep tissue work</Link>, and stretching to address
+                                massage</Link>, <Link href="/info/deep-tissue-massage">deep tissue work</Link>, and stretching to address
                             the unique demands placed on athletic bodies. Sports massage can be used before events to prepare muscles,
                             after events to speed recovery, or during training to maintain optimal performance. Our licensed therapist
                             has over 10 years of experience working with athletes of all levels.
                         </p>
                         <p className={styles.paragraph}>
                             For <strong>San Diego&apos;s active community</strong>—from runners in <Link href="/info/massage-balboa-park"><strong>Balboa
-                            Park</strong></Link> to CrossFit athletes in <Link href="/info/massage-north-park"><strong>North Park</strong></Link>,
+                                Park</strong></Link> to CrossFit athletes in <Link href="/info/massage-north-park"><strong>North Park</strong></Link>,
                             surfers in <strong>Ocean Beach</strong>, and cyclists throughout the county—sports massage is an essential tool
                             for staying at peak performance. We also specialize in helping <Link href="/info/massage-for-athletes">athletes</Link> prevent
                             and recover from injuries.
@@ -125,7 +132,7 @@ export default function SportsMassagePage() {
                             Near Balboa Park • Minutes from Hillcrest gyms • Serving all San Diego athletic communities
                         </p>
                         <p className={styles.locationNeighborhoods}>
-                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                             {' '}• Flexible scheduling around training
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
@@ -155,7 +162,7 @@ export default function SportsMassagePage() {
                             recover faster, and perform at their best. Book recovery sessions around your competition schedule.
                         </p>
                         <p className={styles.ctaText}>
-                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Session

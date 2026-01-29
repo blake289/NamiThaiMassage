@@ -130,20 +130,29 @@ export default function AboutPage() {
             {/* Philosophy Section */}
             <section className={styles.philosophy}>
                 <div className="container">
-                    <div className={styles.philosophyContent}>
-                        <p className={styles.philosophySubtitle}>Treatment Philosophy</p>
-                        <h2 className={styles.philosophyTitle}>
-                            What Makes{" "}
-                            <span className={styles.goldText}>Thai Massage Different</span>
-                        </h2>
-                        <div className={styles.goldLine}></div>
-                        <p className={styles.philosophyText}>
-                            Traditional Thai massage is more than just a spa treatment—it's an
-                            ancient healing art developed over 2,500 years ago. Unlike Swedish
-                            or standard relaxation massage, Thai massage combines
-                            acupressure, energy line work, and assisted stretching to restore
-                            balance throughout the entire body.
-                        </p>
+                    <div className={styles.philosophyGrid}>
+                        <div className={styles.philosophyImageWrapper}>
+                            <img
+                                src="/images/spa-ambiance-interior.png"
+                                alt="Serene Thai massage studio with warm lighting and traditional decor"
+                                className={styles.philosophyImage}
+                            />
+                        </div>
+                        <div className={styles.philosophyContent}>
+                            <p className={styles.philosophySubtitle}>Treatment Philosophy</p>
+                            <h2 className={styles.philosophyTitle}>
+                                What Makes{" "}
+                                <span className={styles.goldText}>Thai Massage Different</span>
+                            </h2>
+                            <div className={styles.goldLine}></div>
+                            <p className={styles.philosophyText}>
+                                Traditional Thai massage is more than just a spa treatment—it's an
+                                ancient healing art developed over 2,500 years ago. Unlike Swedish
+                                or standard relaxation massage, Thai massage combines
+                                acupressure, energy line work, and assisted stretching to restore
+                                balance throughout the entire body.
+                            </p>
+                        </div>
                     </div>
 
                     <div className={styles.pillarsGrid}>

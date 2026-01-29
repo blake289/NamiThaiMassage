@@ -30,9 +30,16 @@ export default function HillcrestMassagePage() {
                         just minutes from the Hillcrest neighborhood you love.
                     </p>
                     <p className={styles.intro}>
-                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>619-287-3034</a></strong>
+                        <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit', textDecoration: 'underline' }}>619-287-3034</a></strong>
                         {' '}• Same-day appointments often available
                     </p>
+                    <div className={styles.heroImageWrapper}>
+                        <img
+                            src="/images/spa_ambiance_1769650499497.png"
+                            alt="Relaxing massage studio serving Hillcrest San Diego"
+                            className={styles.heroImage}
+                        />
+                    </div>
                 </header>
 
                 <div className={styles.content}>
@@ -40,7 +47,7 @@ export default function HillcrestMassagePage() {
                         <h2 className={styles.sectionTitle}>Minutes from Hillcrest</h2>
                         <p className={styles.paragraph}>
                             Located at <strong>3055 University Avenue</strong> in neighboring <Link href="/info/massage-north-park">North
-                            Park</Link>, Nami Thai Massage is easily accessible from anywhere in <strong>Hillcrest</strong>. Whether
+                                Park</Link>, Nami Thai Massage is easily accessible from anywhere in <strong>Hillcrest</strong>. Whether
                             you&apos;re coming from the Hillcrest Farmers Market, University Avenue&apos;s shops and restaurants,
                             or your Hillcrest home, you&apos;ll be on our massage table in no time.
                         </p>
@@ -49,7 +56,7 @@ export default function HillcrestMassagePage() {
                             parking near our studio. Many Hillcrest residents make us their regular go-to for
                             massage therapy. Our licensed therapist has over 10 years of experience providing
                             expert <Link href="/info/deep-tissue-massage">deep tissue</Link>, <Link href="/info/thai-massage-benefits">Thai
-                            massage</Link>, and relaxation therapy.
+                                massage</Link>, and relaxation therapy.
                         </p>
                     </section>
 
@@ -105,7 +112,7 @@ export default function HillcrestMassagePage() {
                         <h2 className={styles.sectionTitle}>Services Popular with Hillcrest Clients</h2>
                         <p className={styles.paragraph}>
                             Our Hillcrest clients love variety. Popular choices include <Link href="/info/thai-massage-benefits">Thai
-                            Massage</Link> for flexibility and energy, <Link href="/info/deep-tissue-massage">Deep Tissue</Link> for
+                                Massage</Link> for flexibility and energy, <Link href="/info/deep-tissue-massage">Deep Tissue</Link> for
                             gym-goers and desk workers, <Link href="/info/swedish-massage">Swedish Massage</Link> for pure relaxation,
                             and <Link href="/info/hot-stone-massage">Hot Stone Massage</Link> for luxurious pampering.
                         </p>
@@ -113,7 +120,7 @@ export default function HillcrestMassagePage() {
                             Many of our Hillcrest regulars are <Link href="/info/massage-for-office-workers">professionals</Link> dealing
                             with work stress, active folks who exercise at nearby gyms, and wellness-minded individuals who understand
                             the value of regular bodywork. We also specialize in <Link href="/info/massage-for-stress-relief">stress
-                            relief</Link> and helping clients manage chronic tension.
+                                relief</Link> and helping clients manage chronic tension.
                         </p>
                     </section>
 
@@ -125,7 +132,7 @@ export default function HillcrestMassagePage() {
                             Free street parking
                         </p>
                         <p className={styles.locationNeighborhoods}>
-                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                             {' '}• Flexible scheduling including evenings
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
@@ -140,7 +147,7 @@ export default function HillcrestMassagePage() {
                             just minutes away in North Park. Most appointments available within 24-48 hours.
                         </p>
                         <p className={styles.ctaText}>
-                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Appointment

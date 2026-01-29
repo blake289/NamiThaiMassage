@@ -24,7 +24,7 @@ const giftCardStructuredData = {
     },
     offers: {
         "@type": "Offer",
-        price: "150",
+        price: "70",
         priceCurrency: "USD",
         availability: "https://schema.org/InStock",
         seller: {
@@ -90,7 +90,7 @@ export default function GiftCardsPage() {
                                     <div className={styles.giftCardDivider}></div>
                                     <div className={styles.giftCardValue}>
                                         <span className={styles.valueLabel}>Gift Certificate</span>
-                                        <span className={styles.valueAmount}>$150</span>
+                                        <span className={styles.valueAmount}>$70 - $215</span>
                                     </div>
                                     <div className={styles.giftCardFooter}>
                                         <span>North Park, San Diego</span>
@@ -157,7 +157,7 @@ export default function GiftCardsPage() {
                                 rel="noopener noreferrer"
                                 className={styles.btnPrimary}
                             >
-                                Purchase Gift Certificate - $150
+                                Purchase Gift Certificate
                             </a>
                             <p className={styles.giftNote}>
                                 Need a custom amount or have questions?{" "}
@@ -173,6 +173,13 @@ export default function GiftCardsPage() {
             {/* How It Works */}
             <section className={styles.howItWorks}>
                 <div className="container">
+                    <div className={styles.relaxationImageWrapper}>
+                        <img
+                            src="/images/gift-relaxation.png"
+                            alt="Hands receiving a relaxing massage - the perfect gift of wellness"
+                            className={styles.relaxationImage}
+                        />
+                    </div>
                     <div className={styles.sectionHeader}>
                         <p className={styles.sectionSubtitle}>Quick & Easy</p>
                         <h2 className={styles.sectionTitle}>
@@ -187,8 +194,8 @@ export default function GiftCardsPage() {
                             <div className={styles.stepNumber}>1</div>
                             <h3 className={styles.stepTitle}>Purchase Online</h3>
                             <p className={styles.stepText}>
-                                Click the button above to purchase a $150 digital gift
-                                certificate through our secure booking system. The process takes
+                                Click the button above to purchase a digital gift
+                                certificate in any amount ($70–$215) through our secure booking system. The process takes
                                 less than 2 minutes.
                             </p>
                         </div>

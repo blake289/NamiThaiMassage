@@ -96,6 +96,23 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
+.blogImageWrapper {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+}
+
+.blogImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-base);
+}
+
+.blogCard:hover .blogImage {
+    transform: scale(1.05);
+}
+
 .blogCardContent {
     padding: var(--space-xl);
 }

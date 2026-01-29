@@ -324,6 +324,13 @@ export default function Home() {
             {testimonials.map((testimonial, index) => (
               <div key={index} className={`${styles.testimonialCard} golden-glow`}>
                 <div className={styles.quoteIcon}>&ldquo;</div>
+                <div className={styles.starRating}>
+                  <span className={styles.star}>★</span>
+                  <span className={styles.star}>★</span>
+                  <span className={styles.star}>★</span>
+                  <span className={styles.star}>★</span>
+                  <span className={styles.star}>★</span>
+                </div>
                 <p className={styles.testimonialText}>{testimonial.text}</p>
                 <div className={styles.testimonialAuthor}>
                   <span className={styles.authorName}>

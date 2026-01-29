@@ -30,9 +30,16 @@ export default function StressReliefMassagePage() {
                         your mind, and restore your sense of calm through nurturing massage therapy.
                     </p>
                     <p className={styles.intro}>
-                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>619-287-3034</a></strong>
+                        <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit', textDecoration: 'underline' }}>619-287-3034</a></strong>
                         {' '}• Find your calm today
                     </p>
+                    <div className={styles.heroImageWrapper}>
+                        <img
+                            src="/images/blog_stress_relief_1769651498627.png"
+                            alt="Relaxing head massage for stress relief"
+                            className={styles.heroImage}
+                        />
+                    </div>
                 </header>
 
                 <div className={styles.content}>
@@ -48,7 +55,7 @@ export default function StressReliefMassagePage() {
                             Whether you&apos;re dealing with job stress in <strong>downtown San Diego</strong>, the demands
                             of parenting in <Link href="/info/massage-north-park"><strong>North Park</strong></Link>, or the pressures of student life in
                             <Link href="/info/massage-hillcrest"><strong>Hillcrest</strong></Link> and <Link href="/info/massage-university-heights"><strong>University
-                            Heights</strong></Link>, massage therapy offers a proven, natural way to reset your nervous system. Our licensed therapist has over
+                                Heights</strong></Link>, massage therapy offers a proven, natural way to reset your nervous system. Our licensed therapist has over
                             10 years of experience helping clients manage stress through therapeutic touch.
                         </p>
                     </section>
@@ -124,7 +131,7 @@ export default function StressReliefMassagePage() {
                             Step away from stress • A calm sanctuary serving all of San Diego
                         </p>
                         <p className={styles.locationNeighborhoods}>
-                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                             {' '}• Feel better in just one hour
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
@@ -139,7 +146,7 @@ export default function StressReliefMassagePage() {
                             restore your peace of mind. Same-day appointments often available.
                         </p>
                         <p className={styles.ctaText}>
-                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Session

@@ -30,9 +30,16 @@ export default function DeepTissueMassagePage() {
                         our skilled therapist delivers precise deep tissue work that brings lasting relief.
                     </p>
                     <p className={styles.intro}>
-                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>619-287-3034</a></strong>
+                        <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit', textDecoration: 'underline' }}>619-287-3034</a></strong>
                         {' '}• Relief often felt after just one session
                     </p>
+                    <div className={styles.heroImageWrapper}>
+                        <img
+                            src="/images/therapist_deep_tissue_1769651389992.png"
+                            alt="Deep tissue massage therapy technique"
+                            className={styles.heroImage}
+                        />
+                    </div>
                 </header>
 
                 <div className={styles.content}>
@@ -48,7 +55,7 @@ export default function DeepTissueMassagePage() {
                             This massage style is especially beneficial for those in <strong>San Diego</strong> who lead active lifestyles,
                             work physically demanding jobs, or spend long hours at desks in nearby <Link href="/info/massage-hillcrest"><strong>Hillcrest</strong></Link>,
                             <Link href="/info/massage-university-heights"><strong>University Heights</strong></Link>, or <Link href="/info/massage-north-park"><strong>North
-                            Park</strong></Link> offices. It&apos;s also excellent for <Link href="/info/massage-for-athletes">athletes</Link> and
+                                Park</strong></Link> offices. It&apos;s also excellent for <Link href="/info/massage-for-athletes">athletes</Link> and
                             anyone dealing with <Link href="/info/massage-for-chronic-pain">chronic muscle tension</Link> or repetitive strain injuries.
                             Our licensed therapist has over 10 years of experience in therapeutic deep tissue work.
                         </p>
@@ -107,7 +114,7 @@ export default function DeepTissueMassagePage() {
                         <p className={styles.paragraph}>
                             Deep tissue massage is ideal for <strong>San Diego residents</strong> who experience persistent muscle
                             tension that doesn&apos;t respond to lighter massage techniques. This includes <Link href="/info/massage-for-office-workers">office
-                            workers</Link> from <strong>Hillcrest</strong> and <strong>University Heights</strong> suffering from desk-related
+                                workers</Link> from <strong>Hillcrest</strong> and <strong>University Heights</strong> suffering from desk-related
                             pain, athletes training in the <Link href="/info/massage-balboa-park"><strong>Balboa Park</strong></Link> area,
                             and anyone recovering from injuries or dealing with conditions like:
                         </p>
@@ -126,7 +133,7 @@ export default function DeepTissueMassagePage() {
                             South Park, City Heights, and all San Diego neighborhoods
                         </p>
                         <p className={styles.locationNeighborhoods}>
-                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                             {' '}• Same-day appointments available
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
@@ -156,7 +163,7 @@ export default function DeepTissueMassagePage() {
                             lasting relief from chronic pain and tension. Most clients report significant improvement after their first visit.
                         </p>
                         <p className={styles.ctaText}>
-                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Session

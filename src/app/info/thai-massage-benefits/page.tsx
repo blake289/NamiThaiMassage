@@ -33,9 +33,16 @@ export default function ThaiMassageBenefitsPage() {
                         achieve optimal health and relaxation.
                     </p>
                     <p className={styles.intro}>
-                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>619-287-3034</a></strong>
+                        <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit', textDecoration: 'underline' }}>619-287-3034</a></strong>
                         {' '}• Experience authentic Thai massage today
                     </p>
+                    <div className={styles.heroImageWrapper}>
+                        <img
+                            src="/images/blog_flexibility_1769651566829.png"
+                            alt="Professional Thai massage stretching technique"
+                            className={styles.heroImage}
+                        />
+                    </div>
                 </header>
 
                 {/* Content */}
@@ -45,7 +52,7 @@ export default function ThaiMassageBenefitsPage() {
                         <p className={styles.paragraph}>
                             Often called &ldquo;lazy person&apos;s yoga,&rdquo; <strong>Thai massage</strong> is a 2,500-year-old
                             healing practice that originated in Thailand. Unlike Western massage styles like <Link href="/info/swedish-massage">Swedish
-                            massage</Link>, Thai massage is performed on a floor mat with the client fully clothed in comfortable attire.
+                                massage</Link>, Thai massage is performed on a floor mat with the client fully clothed in comfortable attire.
                             The therapist uses their hands, thumbs, elbows, knees, and feet to apply pressure along the body&apos;s
                             <strong> Sen energy lines</strong> while guiding you through assisted yoga stretches.
                         </p>
@@ -109,15 +116,15 @@ export default function ThaiMassageBenefitsPage() {
                         <h2 className={styles.sectionTitle}>Who Benefits Most from Thai Massage?</h2>
                         <p className={styles.paragraph}>
                             Thai massage in San Diego is ideal for a wide range of people. <Link href="/info/massage-for-office-workers"><strong>Office
-                            workers</strong></Link> from nearby <Link href="/info/massage-hillcrest">Hillcrest</Link> and <Link href="/info/massage-university-heights">University
-                            Heights</Link> find relief from desk-related tension. <Link href="/info/massage-for-athletes"><strong>Athletes</strong></Link> use
+                                workers</strong></Link> from nearby <Link href="/info/massage-hillcrest">Hillcrest</Link> and <Link href="/info/massage-university-heights">University
+                                    Heights</Link> find relief from desk-related tension. <Link href="/info/massage-for-athletes"><strong>Athletes</strong></Link> use
                             it for recovery and flexibility. Those with <Link href="/info/massage-for-chronic-pain"><strong>chronic pain</strong></Link> conditions
                             benefit from the therapeutic stretching. Even people simply seeking <Link href="/info/massage-for-stress-relief"><strong>stress
-                            relief</strong></Link> from busy San Diego lifestyles discover profound relaxation.
+                                relief</strong></Link> from busy San Diego lifestyles discover profound relaxation.
                         </p>
                         <p className={styles.paragraph}>
                             Whether you live in <Link href="/info/massage-north-park">North Park</Link>, <Link href="/info/massage-normal-heights">Normal
-                            Heights</Link>, or anywhere in greater San Diego, Nami Thai Massage offers convenient access to authentic Thai massage therapy
+                                Heights</Link>, or anywhere in greater San Diego, Nami Thai Massage offers convenient access to authentic Thai massage therapy
                             that can transform your health and well-being.
                         </p>
                     </section>
@@ -131,7 +138,7 @@ export default function ThaiMassageBenefitsPage() {
                             City Heights, Kensington, and all of San Diego
                         </p>
                         <p className={styles.locationNeighborhoods}>
-                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                             {' '}• Same-day bookings often available
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
@@ -164,7 +171,7 @@ export default function ThaiMassageBenefitsPage() {
                             feeling more flexible and energized immediately.
                         </p>
                         <p className={styles.ctaText}>
-                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Appointment

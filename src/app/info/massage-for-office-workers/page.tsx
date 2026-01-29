@@ -30,9 +30,16 @@ export default function OfficeWorkersMassagePage() {
                         Nami Thai Massage in North Park can help you feel like yourself again.
                     </p>
                     <p className={styles.intro}>
-                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>619-287-3034</a></strong>
+                        <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit', textDecoration: 'underline' }}>619-287-3034</a></strong>
                         {' '}• Evening appointments perfect for after-work relief
                     </p>
+                    <div className={styles.heroImageWrapper}>
+                        <img
+                            src="/images/blog_office_worker_1769651486205.png"
+                            alt="Massage therapy for office workers and desk jobs"
+                            className={styles.heroImage}
+                        />
+                    </div>
                 </header>
 
                 <div className={styles.content}>
@@ -108,14 +115,14 @@ export default function OfficeWorkersMassagePage() {
                         <p className={styles.paragraph}>
                             <Link href="/info/deep-tissue-massage"><strong>Deep Tissue Massage</strong></Link> for chronic knots and
                             adhesions in the upper back and shoulders • <Link href="/info/thai-massage-benefits"><strong>Thai
-                            Massage</strong></Link> stretching to counteract sitting posture and improve flexibility •
+                                Massage</strong></Link> stretching to counteract sitting posture and improve flexibility •
                             <Link href="/info/swedish-massage"><strong>Swedish Massage</strong></Link> for overall relaxation and
                             <Link href="/info/massage-for-stress-relief"> stress relief</Link> after demanding workweeks
                         </p>
                         <p className={styles.paragraph}>
                             Many of our clients from <Link href="/info/massage-north-park"><strong>North Park</strong></Link>,
                             <Link href="/info/massage-hillcrest"><strong>Hillcrest</strong></Link>, <Link href="/info/massage-university-heights"><strong>University
-                            Heights</strong></Link>, and <Link href="/info/massage-normal-heights"><strong>Normal Heights</strong></Link> tech
+                                Heights</strong></Link>, and <Link href="/info/massage-normal-heights"><strong>Normal Heights</strong></Link> tech
                             and professional offices schedule regular sessions to maintain pain-free, productive work lives.
                         </p>
                     </section>
@@ -128,7 +135,7 @@ export default function OfficeWorkersMassagePage() {
                             Hillcrest, and tech hubs throughout the city
                         </p>
                         <p className={styles.locationNeighborhoods}>
-                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                             {' '}• Same-day appointments often available
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
@@ -144,7 +151,7 @@ export default function OfficeWorkersMassagePage() {
                             relief after just one session.
                         </p>
                         <p className={styles.ctaText}>
-                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Appointment

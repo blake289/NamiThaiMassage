@@ -30,9 +30,16 @@ export default function AthletesMassagePage() {
                         in North Park helps you perform better and recover faster.
                     </p>
                     <p className={styles.intro}>
-                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>619-287-3034</a></strong>
+                        <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit', textDecoration: 'underline' }}>619-287-3034</a></strong>
                         {' '}• Flexible scheduling for training schedules
                     </p>
+                    <div className={styles.heroImageWrapper}>
+                        <img
+                            src="/images/therapist_sports_1769651427652.png"
+                            alt="Sports massage therapy for athletes"
+                            className={styles.heroImage}
+                        />
+                    </div>
                 </header>
 
                 <div className={styles.content}>
@@ -47,8 +54,8 @@ export default function AthletesMassagePage() {
                         </p>
                         <p className={styles.paragraph}>
                             From <Link href="/info/massage-balboa-park"><strong>Balboa Park</strong></Link> runners to <strong>Pacific
-                            Beach</strong> surfers, <strong>Mission Bay</strong> triathletes to <Link href="/info/massage-north-park"><strong>North
-                            Park</strong></Link> CrossFit athletes, <Link href="/info/sports-massage">sports massage</Link> therapy
+                                Beach</strong> surfers, <strong>Mission Bay</strong> triathletes to <Link href="/info/massage-north-park"><strong>North
+                                    Park</strong></Link> CrossFit athletes, <Link href="/info/sports-massage">sports massage</Link> therapy
                             supports the active San Diego lifestyle.
                         </p>
                     </section>
@@ -113,7 +120,7 @@ export default function AthletesMassagePage() {
                         </p>
                         <p className={styles.paragraph}>
                             We combine <Link href="/info/sports-massage">sports massage</Link> techniques with <Link href="/info/deep-tissue-massage">deep
-                            tissue</Link> work and <Link href="/info/thai-massage-benefits">Thai massage stretching</Link> for comprehensive
+                                tissue</Link> work and <Link href="/info/thai-massage-benefits">Thai massage stretching</Link> for comprehensive
                             athletic recovery.
                         </p>
                     </section>
@@ -125,7 +132,7 @@ export default function AthletesMassagePage() {
                             Minutes from Balboa Park • Convenient for Hillcrest gyms • Serving all San Diego athletes
                         </p>
                         <p className={styles.locationNeighborhoods}>
-                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                             {' '}• Book recovery sessions around your training
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
@@ -140,7 +147,7 @@ export default function AthletesMassagePage() {
                             and recover faster. Pre- and post-event sessions available.
                         </p>
                         <p className={styles.ctaText}>
-                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Session

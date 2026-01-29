@@ -30,9 +30,16 @@ export default function SeniorsMassagePage() {
                         of seniors, promoting comfort, mobility, and overall well-being.
                     </p>
                     <p className={styles.intro}>
-                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>619-287-3034</a></strong>
+                        <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit', textDecoration: 'underline' }}>619-287-3034</a></strong>
                         {' '}• Gentle, compassionate care
                     </p>
+                    <div className={styles.heroImageWrapper}>
+                        <img
+                            src="/images/blog_seniors_1769651553774.png"
+                            alt="Gentle hand massage for seniors"
+                            className={styles.heroImage}
+                        />
+                    </div>
                 </header>
 
                 <div className={styles.content}>
@@ -47,7 +54,7 @@ export default function SeniorsMassagePage() {
                         <p className={styles.paragraph}>
                             For older adults in <Link href="/info/massage-north-park"><strong>San Diego&apos;s North Park</strong></Link>,
                             <Link href="/info/massage-hillcrest"><strong>Hillcrest</strong></Link>, <Link href="/info/massage-university-heights"><strong>University
-                            Heights</strong></Link>, and surrounding communities, massage offers a drug-free approach to managing pain,
+                                Heights</strong></Link>, and surrounding communities, massage offers a drug-free approach to managing pain,
                             maintaining mobility, and enhancing quality of life. Our licensed therapist has over 10 years of experience working
                             with older adults and adapts techniques for individual needs.
                         </p>
@@ -112,7 +119,7 @@ export default function SeniorsMassagePage() {
                             Conditions we commonly work with include <strong>arthritis, osteoporosis</strong> (with gentle,
                             appropriate techniques), <strong>diabetes-related circulation issues</strong>, and general
                             age-related muscle stiffness. We also help with <Link href="/info/massage-for-chronic-pain">chronic pain
-                            management</Link> and <Link href="/info/massage-for-stress-relief">stress relief</Link>. Always consult
+                                management</Link> and <Link href="/info/massage-for-stress-relief">stress relief</Link>. Always consult
                             with your healthcare provider before starting massage therapy.
                         </p>
                     </section>
@@ -124,7 +131,7 @@ export default function SeniorsMassagePage() {
                             Comfortable, accessible setting • Serving seniors throughout San Diego
                         </p>
                         <p className={styles.locationNeighborhoods}>
-                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                             {' '}• Flexible scheduling and gentle approach
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
@@ -139,7 +146,7 @@ export default function SeniorsMassagePage() {
                             a gentle, therapeutic session today. Shorter sessions available.
                         </p>
                         <p className={styles.ctaText}>
-                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Session

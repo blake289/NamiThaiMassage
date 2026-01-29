@@ -30,9 +30,16 @@ export default function PrenatalMassagePage() {
                         from pregnancy-related aches while promoting relaxation and well-being.
                     </p>
                     <p className={styles.intro}>
-                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>619-287-3034</a></strong>
+                        <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit', textDecoration: 'underline' }}>619-287-3034</a></strong>
                         {' '}• Safe, specialized care for mothers-to-be
                     </p>
+                    <div className={styles.heroImageWrapper}>
+                        <img
+                            src="/images/blog_prenatal_1769651540822.png"
+                            alt="Prenatal massage therapy for expecting mothers"
+                            className={styles.heroImage}
+                        />
+                    </div>
                 </header>
 
                 <div className={styles.content}>
@@ -48,7 +55,7 @@ export default function PrenatalMassagePage() {
                             At Nami Thai Massage in <Link href="/info/massage-north-park"><strong>San Diego&apos;s North Park</strong></Link> neighborhood,
                             we provide a safe, nurturing environment where expecting mothers from <Link href="/info/massage-hillcrest"><strong>Hillcrest</strong></Link>,
                             <Link href="/info/massage-university-heights"><strong>University Heights</strong></Link>, <Link href="/info/massage-normal-heights"><strong>Normal
-                            Heights</strong></Link>, and throughout San Diego can find relief and relaxation. Our licensed therapist has over 10 years of experience
+                                Heights</strong></Link>, and throughout San Diego can find relief and relaxation. Our licensed therapist has over 10 years of experience
                             providing specialized prenatal care.
                         </p>
                     </section>
@@ -123,7 +130,7 @@ export default function PrenatalMassagePage() {
                             A peaceful sanctuary for expecting mothers • Serving all San Diego neighborhoods
                         </p>
                         <p className={styles.locationNeighborhoods}>
-                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                             {' '}• Flexible scheduling for all trimesters
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
@@ -138,7 +145,7 @@ export default function PrenatalMassagePage() {
                             massage and experience the comfort you need. Safe for second and third trimester.
                         </p>
                         <p className={styles.ctaText}>
-                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Session

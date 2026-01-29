@@ -213,14 +213,71 @@
 
 /* ===== Philosophy Section ===== */
 .philosophy {
+    position: relative;
     padding: var(--section-padding) 0;
     background-color: var(--color-forest-dark);
+    overflow: hidden;
+}
+
+.philosophy::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/images/spa-ambiance-interior.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.philosophy::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            var(--color-forest-dark) 0%,
+            rgba(26, 37, 24, 0.85) 30%,
+            rgba(26, 37, 24, 0.85) 70%,
+            var(--color-forest-dark) 100%);
+    z-index: 1;
+}
+
+.philosophy>* {
+    position: relative;
+    z-index: 2;
 }
 
 .philosophyContent {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto var(--space-3xl);
+    text-align: left;
+}
+
+.philosophyGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+    margin-bottom: var(--space-3xl);
+}
+
+@media (min-width: 1024px) {
+    .philosophyGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.philosophyImageWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.philosophyImage {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(201, 162, 39, 0.3);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
 }
 
 .philosophySubtitle {

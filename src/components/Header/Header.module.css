@@ -19,10 +19,10 @@
 }
 
 .scrolled {
-    background-color: rgba(17, 24, 16, 0.95);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(201, 162, 39, 0.15);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    background-color: rgba(17, 24, 16, 0.75);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(201, 162, 39, 0.12);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -104,7 +104,7 @@
     display: flex;
     align-items: center;
     font-family: var(--font-body);
-    font-size: var(--text-base);
+    font-size: var(--text-sm);
     font-weight: 700;
     color: var(--color-gold);
     text-decoration: none;
@@ -130,6 +130,19 @@
     background: linear-gradient(135deg, var(--color-gold-dark) 0%, var(--color-gold) 50%, var(--color-gold-light) 100%);
     border-radius: var(--radius-sm);
     transition: all var(--transition-base);
+    animation: headerCtaGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes headerCtaGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 20px rgba(201, 162, 39, 0.5), 0 0 35px rgba(201, 162, 39, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 4px 40px rgba(201, 162, 39, 0.8), 0 0 70px rgba(201, 162, 39, 0.5), 0 0 100px rgba(201, 162, 39, 0.3);
+    }
 }
 
 @media (min-width: 768px) {
@@ -139,8 +152,8 @@
 }
 
 .ctaBtn:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-gold);
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 0 50px rgba(201, 162, 39, 0.8), 0 0 80px rgba(201, 162, 39, 0.5);
     color: var(--color-forest-dark);
 }
 

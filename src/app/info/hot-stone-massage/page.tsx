@@ -30,9 +30,16 @@ export default function HotStoneMassagePage() {
                         experience that melts away tension and soothes both body and mind.
                     </p>
                     <p className={styles.intro}>
-                        <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit', textDecoration: 'underline'}}>619-287-3034</a></strong>
+                        <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit', textDecoration: 'underline' }}>619-287-3034</a></strong>
                         {' '}• Ultimate relaxation experience
                     </p>
+                    <div className={styles.heroImageWrapper}>
+                        <img
+                            src="/images/therapist_hot_stone_1769651444867.png"
+                            alt="Hot stone massage therapy with heated basalt stones"
+                            className={styles.heroImage}
+                        />
+                    </div>
                 </header>
 
                 <div className={styles.content}>
@@ -126,7 +133,7 @@ export default function HotStoneMassagePage() {
                             University Heights, and surrounding neighborhoods
                         </p>
                         <p className={styles.locationNeighborhoods}>
-                            <strong>Call: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                             {' '}• Book your luxury escape today
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
@@ -141,7 +148,7 @@ export default function HotStoneMassagePage() {
                             massage at Nami Thai Massage today. Perfect for special occasions or self-care.
                         </p>
                         <p className={styles.ctaText}>
-                            <strong>Call or text: <a href="tel:6192873034" style={{color: 'inherit'}}>619-287-3034</a></strong>
+                            <strong>Call or text: <a href="tel:6192873034" style={{ color: 'inherit' }}>619-287-3034</a></strong>
                         </p>
                         <Link href="/book" className={styles.ctaButton}>
                             Schedule Your Session

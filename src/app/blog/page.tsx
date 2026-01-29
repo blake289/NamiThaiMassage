@@ -19,6 +19,7 @@ const blogPosts = [
         category: "Thai Massage",
         date: "January 2025",
         href: "/info/thai-massage-benefits",
+        image: "/images/blog_flexibility_1769651566829.png",
     },
     {
         slug: "deep-tissue-massage",
@@ -27,6 +28,7 @@ const blogPosts = [
         category: "Massage Types",
         date: "January 2025",
         href: "/info/deep-tissue-massage",
+        image: "/images/therapist_deep_tissue_1769651389992.png",
     },
     {
         slug: "massage-for-office-workers",
@@ -35,6 +37,7 @@ const blogPosts = [
         category: "Wellness",
         date: "January 2025",
         href: "/info/massage-for-office-workers",
+        image: "/images/blog_office_worker_1769651486205.png",
     },
     {
         slug: "massage-for-athletes",
@@ -43,6 +46,7 @@ const blogPosts = [
         category: "Sports",
         date: "January 2025",
         href: "/info/massage-for-athletes",
+        image: "/images/therapist_sports_1769651427652.png",
     },
     {
         slug: "massage-for-chronic-pain",
@@ -51,6 +55,7 @@ const blogPosts = [
         category: "Pain Relief",
         date: "January 2025",
         href: "/info/massage-for-chronic-pain",
+        image: "/images/blog_chronic_pain_1769651512432.png",
     },
     {
         slug: "massage-for-stress-relief",
@@ -59,6 +64,7 @@ const blogPosts = [
         category: "Wellness",
         date: "January 2025",
         href: "/info/massage-for-stress-relief",
+        image: "/images/blog_stress_relief_1769651498627.png",
     },
 ];
 
@@ -86,6 +92,13 @@ export default function BlogPage() {
                     <div className={styles.blogGrid}>
                         {blogPosts.map((post) => (
                             <Link href={post.href} key={post.slug} className={styles.blogCard}>
+                                <div className={styles.blogImageWrapper}>
+                                    <img
+                                        src={post.image}
+                                        alt={post.title}
+                                        className={styles.blogImage}
+                                    />
+                                </div>
                                 <div className={styles.blogCardContent}>
                                     <div className={styles.blogMeta}>
                                         <span className={styles.category}>{post.category}</span>

@@ -6,7 +6,6 @@ import Image from 'next/image';
 import styles from './Header.module.css';
 
 const navLinks = [
-    { href: '/', label: 'Home' },
     { href: '/services', label: 'Services' },
     { href: '/about', label: 'About' },
     { href: '/gift-cards', label: 'Gift Cards' },

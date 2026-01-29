@@ -11,11 +11,13 @@ export default function Footer() {
                 <div className={styles.topSection}>
                     {/* Brand */}
                     <div className={styles.brand}>
-                        <h3 className={styles.brandName}>
-                            <span className={styles.goldText}>Nami</span> Thai Massage
-                        </h3>
+                        <img
+                            src="/images/nami-logo-full.png"
+                            alt="Nami Thai Massage"
+                            className={styles.brandLogo}
+                        />
                         <p className={styles.tagline}>
-                            Personalized healing for body and mind
+                            Personalized healing where true relaxation meets 10+ years of expertise.
                         </p>
                         <div className={styles.goldLine}></div>
                     </div>
@@ -28,6 +30,7 @@ export default function Footer() {
                             <Link href="/services">Services</Link>
                             <Link href="/about">About</Link>
                             <Link href="/gift-cards">Gift Cards</Link>
+                            <Link href="/blog">Blog</Link>
                             <Link href="/contact">Contact</Link>
                         </nav>
                     </div>
