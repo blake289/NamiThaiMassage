@@ -11,12 +11,21 @@ export default function ChatButton() {
         message: ''
     });
 
-    // Auto-open after a short delay
+    // Auto-open after user scrolls past hero section
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsOpen(true);
-        }, 3000);
-        return () => clearTimeout(timer);
+        let hasOpened = false;
+
+        const handleScroll = () => {
+            // Open when user scrolls past approximately the hero section (100vh)
+            if (!hasOpened && window.scrollY > window.innerHeight * 0.8) {
+                setIsOpen(true);
+                hasOpened = true;
+                window.removeEventListener('scroll', handleScroll);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     const handleSubmit = (e: React.FormEvent) => {
