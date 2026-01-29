@@ -191,11 +191,17 @@ export default function Home() {
               alt="Nami Thai Massage Logo"
               className={styles.heroPortraitLogo}
             />
-            <img
-              src="/images/nami-portrait.png"
-              alt="Nami - Licensed Massage Therapist specializing in Thai massage in North Park San Diego"
-              className={styles.heroPortraitImage}
-            />
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcSet="/images/nami-portrait-mobile.png"
+              />
+              <img
+                src="/images/nami-portrait.png"
+                alt="Nami - Licensed Massage Therapist specializing in Thai massage in North Park San Diego"
+                className={styles.heroPortraitImage}
+              />
+            </picture>
           </div>
 
           {/* Hero Content on Right */}

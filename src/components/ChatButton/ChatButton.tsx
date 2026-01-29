@@ -5,21 +5,23 @@ import styles from './ChatButton.module.css';
 
 export default function ChatButton() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
         message: ''
     });
 
-    // Auto-open after user scrolls past hero section
+    // Show widget and auto-open after user scrolls past hero section
     useEffect(() => {
-        let hasOpened = false;
+        let hasTriggered = false;
 
         const handleScroll = () => {
-            // Open when user scrolls past approximately the hero section (100vh)
-            if (!hasOpened && window.scrollY > window.innerHeight * 0.8) {
+            // Show and open when user scrolls past approximately the hero section (100vh)
+            if (!hasTriggered && window.scrollY > window.innerHeight * 0.8) {
+                setIsVisible(true);
                 setIsOpen(true);
-                hasOpened = true;
+                hasTriggered = true;
                 window.removeEventListener('scroll', handleScroll);
             }
         };
@@ -42,6 +44,11 @@ export default function ChatButton() {
             [e.target.name]: e.target.value
         });
     };
+
+    // Don't render anything until visible
+    if (!isVisible) {
+        return null;
+    }
 
     return (
         <div className={styles.chatContainer}>
