@@ -206,6 +206,7 @@
 }
 
 .heroPortraitLogo {
+  display: none;
   width: 200px;
   height: auto;
   object-fit: contain;
@@ -214,6 +215,12 @@
   z-index: 1;
   margin-bottom: 12px;
   transition: all 0.4s ease;
+}
+
+@media (min-width: 768px) {
+  .heroPortraitLogo {
+    display: block;
+  }
 }
 
 .heroPortrait:hover .heroPortraitLogo {
